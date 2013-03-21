@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Eclipse | Programming Rambling]]></title>
+  <link href="http://mrzard.github.com/blog/categories/eclipse/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.com/"/>
+  <updated>2013-03-21T13:40:57+01:00</updated>
+  <id>http://mrzard.github.com/</id>
+  <author>
+    <name><![CDATA[Gonzalo Míguez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Getting a grey window in the compare editor with Eclipse Helios (w/PDT)]]></title>
+    <link href="http://mrzard.github.com/blog/2010/11/23/getting-a-grey-window-in-the-compare-editor-w/"/>
+    <updated>2010-11-23T11:58:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2010/11/23/getting-a-grey-window-in-the-compare-editor-w</id>
+    <content type="html"><![CDATA[<p>This is a very annoying bug (it really surprises me it is not already patched
+in the main update site), that makes the compare editor not work.</p>
+
+<p>The solution is pretty simple, though, just add <a href="http://download.eclipse.org/tools/pdt/updates/2.2/milestones">http://download.eclipse.org/tools/pdt/updates/2.2/milestones</a>
+as a software source and update PDT to get rid of the problem.</p>
+
+<p>You can find detailed info at <a href="http://stackoverflow.com/questions/4230865/eclipse-problem-with-subclipse">StackOverflow</a> and <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=326194">Eclipse Bugs</a></p>
+]]></content>
+  </entry>
+  
+</feed>
