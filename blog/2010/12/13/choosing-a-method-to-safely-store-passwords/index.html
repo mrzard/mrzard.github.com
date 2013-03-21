@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Choosing a method to store passwords safely. - Programming Rambling</title>
+  <meta name="author" content="Gonzalo Míguez">
+
+  
+  <meta name="description" content="As seen in the Gawker/Gizmodo HUGE problem with having their passwords compromised,
+I found a short and excellent post about why using speed-oriented &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mrzard.github.com/blog/2010/12/13/choosing-a-method-to-safely-store-passwords">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Programming Rambling" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Programming Rambling</a></h1>
+  
+    <h2>mrzard's ramblings in the wild</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mrzard.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Choosing a Method to Store Passwords Safely.</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-12-13T13:30:00+01:00" pubdate data-updated="true">Dec 13<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>As seen in the Gawker/Gizmodo HUGE problem with having their passwords compromised,
+I found a short and excellent post about why using speed-oriented hash functions
+is a bad idea for password encryption.</p>
+
+<p>In a nutshell, MD5, SHA1 and the like are designed to work fast with large
+amounts of data, so they are most useful when calculating data integrity and
+the like, but being fast, they are also easy to attack by brute force.</p>
+
+<p>On the other hand <a href="http://bcrypt.sourceforge.net/">Bcrypt</a> is &#8216;slow&#8217; when compared with other hashing algorithms,
+which makes it strong against brute force attacks. You can find the original
+post here: <a href="http://codahale.com/how-to-safely-store-a-password/">http://codahale.com/how-to-safely-store-a-password/</a></p>
+
+<p>I do not necessarily agree with the &#8216;uselessness&#8217; of salting passwords, as
+that makes it harder to find a general pattern to attack ALL of the accounts
+protected by a single password in the system, but I see the point of it not
+being able to prevent or slow brute force attacks.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Gonzalo Míguez</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-12-13T13:30:00+01:00" pubdate data-updated="true">Dec 13<span>th</span>, 2010</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mrzard.github.com/blog/2010/12/13/choosing-a-method-to-safely-store-passwords/" data-via="mrzard" data-counturl="http://mrzard.github.com/blog/2010/12/13/choosing-a-method-to-safely-store-passwords/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2010/11/23/getting-a-grey-window-in-the-compare-editor-w/" title="Previous Post: Getting a grey window in the compare editor with Eclipse Helios (w/PDT)">&laquo; Getting a grey window in the compare editor with Eclipse Helios (w/PDT)</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2010/12/31/great-post-about-lambdas-and-closures-on-php/" title="Next Post: Great post about Lambdas and Closures on PHP 5.3">Great post about Lambdas and Closures on PHP 5.3 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/">MySQL Query to Export Prestashop Data to a Shopify CSV</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/">Generate CSRF token programatically in Symfony 2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/">Release cycles and policies, deploying code thoughts.</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/12/14/common-recruiting-errors-made-by-companies/">Common recruiting errors made by companies.</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/12/12/generate-a-valid-google-premier-signature-in/">Generate a valid Google Premier signature in PHP</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/mrzard">@mrzard</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mrzard',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Gonzalo Míguez -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

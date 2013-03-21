@@ -1,15 +1,129 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>
+            http://mrzard.github.com/blog/2010/09/24/a-new-take-on-php-object-oriented-programming/
+        </loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://mrzard.github.com/blog/2010/09/30/easy-virtualbox-setup-between-host-guest-and/
+        </loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://mrzard.github.com/blog/2010/10/01/webp-the-new-google-image-format/</loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://mrzard.github.com/blog/2010/11/14/the-two-things-about-computer-programming-by/
+        </loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://mrzard.github.com/blog/2010/11/16/very-nice-video-about-dvcs-kiln-mercurial/
+        </loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://mrzard.github.com/blog/2010/11/17/svn-merge-conflict-fffffffuuuuuuuuuuuu-comic/
+        </loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://mrzard.github.com/blog/2010/11/23/getting-a-grey-window-in-the-compare-editor-w/
+        </loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://mrzard.github.com/blog/2010/12/13/choosing-a-method-to-safely-store-passwords/
+        </loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://mrzard.github.com/blog/2010/12/31/great-post-about-lambdas-and-closures-on-php/
+        </loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://mrzard.github.com/blog/2011/02/01/failed-to-connect-to-socket-comubuntuupstart/
+        </loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://mrzard.github.com/blog/2011/04/12/drag-and-drop-interaction-made-easy-with-jque/
+        </loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://mrzard.github.com/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio/
+        </loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://mrzard.github.com/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte/
+        </loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://mrzard.github.com/blog/2011/09/26/ubuntu-window-borders-toolbars-gone/</loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://mrzard.github.com/blog/2011/10/25/php-namespaces-simple-explanation/</loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://mrzard.github.com/blog/2011/12/12/generate-a-valid-google-premier-signature-in/
+        </loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://mrzard.github.com/blog/2011/12/14/common-recruiting-errors-made-by-companies/
+        </loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://mrzard.github.com/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/
+        </loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://mrzard.github.com/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/
+        </loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/
+        </loc>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
+    </url>
+    <url>
         <loc>http://mrzard.github.com/robots.txt</loc>
         <lastmod>2013-03-21T12:48:05+01:00</lastmod>
     </url>
     <url>
         <loc>http://mrzard.github.com/blog/archives/</loc>
-        <lastmod>2013-03-21T12:48:05+01:00</lastmod>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
     </url>
     <url>
         <loc>http://mrzard.github.com/</loc>
-        <lastmod>2013-03-21T12:48:05+01:00</lastmod>
+        <lastmod>2013-03-21T13:14:14+01:00</lastmod>
     </url>
 </urlset>

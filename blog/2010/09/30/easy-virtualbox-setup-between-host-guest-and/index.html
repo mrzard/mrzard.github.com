@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Easy VirtualBox setup between Host, Guest and other networks - Programming Rambling</title>
+  <meta name="author" content="Gonzalo Míguez">
+
+  
+  <meta name="description" content="At work, we use VirtualBox as our development box. Yesterday due to the
+strike, I worked from home, and as I grew tired of changing network settings &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mrzard.github.com/blog/2010/09/30/easy-virtualbox-setup-between-host-guest-and">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Programming Rambling" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Programming Rambling</a></h1>
+  
+    <h2>mrzard's ramblings in the wild</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mrzard.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Easy VirtualBox Setup Between Host, Guest and Other Networks</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-30T09:16:00+02:00" pubdate data-updated="true">Sep 30<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>At work, we use <a href="http://www.virtualbox.org/">VirtualBox</a> as our development box. Yesterday due to the
+strike, I worked from home, and as I grew tired of changing network settings
+to make my VirtualBox installation accessible, I gathered some info and found
+a perfect solution.</p>
+
+<p>First I created a Network adapter that used NAT. In most configurations that
+will make your Virtual Machine have access &#8216;to the outside world&#8217; (provided
+your host machine has access).</p>
+
+<p>Then I created another connection using the host-only adapter. This ensures
+you&#8217;ll have host to guest and guest to host connection no matter where you
+are. For this connection, you&#8217;ll have to assign an static IP with address mask
+255.255.255.0 and no default gateway on your host machine, then configure your
+adapter in the guest with an IP in the same range, also with no default gateway.</p>
+
+<p>With this you can access your guest machine using the IP in the range of the
+host-only adapter, while the guest machine will be able to access anything
+available to the host machine via the NAT connection.</p>
+
+<p>Then if you need to have your guest machine available in other networks, you
+just have to enable another adapter and configure it for the network in question.</p>
+
+<p>With this configuration I now can plug my development machine (host and guest)
+at home or at the office and just work with no further configuring.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Gonzalo Míguez</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-30T09:16:00+02:00" pubdate data-updated="true">Sep 30<span>th</span>, 2010</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mrzard.github.com/blog/2010/09/30/easy-virtualbox-setup-between-host-guest-and/" data-via="mrzard" data-counturl="http://mrzard.github.com/blog/2010/09/30/easy-virtualbox-setup-between-host-guest-and/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2010/09/24/a-new-take-on-php-object-oriented-programming/" title="Previous Post: A new take on PHP Object Oriented Programming">&laquo; A new take on PHP Object Oriented Programming</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2010/10/01/webp-the-new-google-image-format/" title="Next Post: WebP, The New Google Image Format">WebP, The New Google Image Format &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/">MySQL Query to Export Prestashop Data to a Shopify CSV</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/">Generate CSRF token programatically in Symfony 2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/">Release cycles and policies, deploying code thoughts.</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/12/14/common-recruiting-errors-made-by-companies/">Common recruiting errors made by companies.</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/12/12/generate-a-valid-google-premier-signature-in/">Generate a valid Google Premier signature in PHP</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/mrzard">@mrzard</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mrzard',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Gonzalo Míguez -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
