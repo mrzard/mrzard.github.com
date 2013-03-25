@@ -4,7 +4,7 @@ title: "Drag and drop interaction made easy with jQuery (and jQuery UI)"
 date: 2011/04/12 01:18:00 -0700
 comments: false
 external-url:
-categories:
+categories: [jQuery, JavaScript]
 ---
 
 

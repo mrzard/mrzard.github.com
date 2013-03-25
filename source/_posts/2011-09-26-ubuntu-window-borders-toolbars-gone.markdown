@@ -4,7 +4,7 @@ title: "Ubuntu: Window borders & toolbars gone."
 date: 2011/09/26 00:01:00 -0700
 comments: false
 external-url:
-categories:
+categories: [GNU/Linux]
 ---
 
 

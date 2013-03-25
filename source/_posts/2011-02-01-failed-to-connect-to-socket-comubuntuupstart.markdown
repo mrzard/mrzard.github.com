@@ -4,7 +4,7 @@ title: "Failed to connect to socket /com/ubuntu/upstart ? Upstart Jobs Cannot be
 date: 2011/02/01 04:01:00 -0800
 comments: false
 external-url:
-categories:
+categories: [GNU/Linux]
 ---
 
 

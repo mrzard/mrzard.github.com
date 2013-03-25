@@ -4,7 +4,7 @@ title: "The Two Things about Computer Programming (by Charles Miller)"
 date: 2010/11/14 07:30:00 -0800
 comments: false
 external-url:
-categories:
+categories: [other ramblings, programming]
 ---
 
 

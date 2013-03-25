@@ -4,7 +4,7 @@ title: "WebP, The New Google Image Format"
 date: 2010/10/01 00:44:00 -0700
 comments: false
 external-url:
-categories:
+categories: [image formats,other ramblings,WebP]
 ---
 
 

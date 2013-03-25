@@ -4,7 +4,7 @@ title: "Release cycles and policies, deploying code thoughts."
 date: 2012/02/15 12:17:00 -0800
 comments: false
 external-url:
-categories:
+categories: [programming]
 ---
 
 

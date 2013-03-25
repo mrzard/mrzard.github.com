@@ -4,7 +4,7 @@ title: "PHP namespaces simple explanation"
 date: 2011/10/25 02:58:00 -0700
 comments: false
 external-url:
-categories:
+categories: [PHP, programming]
 ---
 
 

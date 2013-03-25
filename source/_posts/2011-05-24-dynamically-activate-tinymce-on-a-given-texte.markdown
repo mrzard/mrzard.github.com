@@ -4,7 +4,7 @@ title: "Dynamically activate tinyMCE on a given textarea."
 date: 2011/05/24 02:05:00 -0700
 comments: false
 external-url:
-categories:
+categories: [tinyMCE, JavaScript]
 ---
 
 

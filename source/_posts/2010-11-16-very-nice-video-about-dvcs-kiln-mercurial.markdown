@@ -4,7 +4,7 @@ title: "Very nice video about DVCS - Kiln - Mercurial"
 date: 2010/11/16 07:52:00 -0800
 comments: false
 external-url:
-categories:
+categories: [DVCS, SVN, Mercurial]
 ---
 
 

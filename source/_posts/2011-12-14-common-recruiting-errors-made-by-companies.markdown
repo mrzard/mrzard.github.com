@@ -4,7 +4,7 @@ title: "Common recruiting errors made by companies."
 date: 2011/12/14 01:26:00 -0800
 comments: false
 external-url:
-categories:
+categories: [other ramblings]
 ---
 
 

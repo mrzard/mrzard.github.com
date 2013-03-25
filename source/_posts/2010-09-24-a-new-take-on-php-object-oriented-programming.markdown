@@ -4,7 +4,7 @@ title: "A new take on PHP Object Oriented Programming"
 date: 2010/09/24 08:20:00 -0700
 comments: false
 external-url:
-categories:
+categories: [PHP, Programming]
 ---
 
 
