@@ -2,7 +2,7 @@
 layout: post
 title: "Nice quick reference for Paypal HTML Variables for Website Payments"
 date: 2010/09/13 23:02:00 -0700
-comments: false
+comments: true
 external-url:
 categories: PayPal
 ---

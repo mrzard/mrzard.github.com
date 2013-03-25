@@ -2,7 +2,7 @@
 layout: post
 title: "WebP, The New Google Image Format"
 date: 2010/10/01 00:44:00 -0700
-comments: false
+comments: true
 external-url:
 categories: [image formats,other ramblings,WebP]
 ---

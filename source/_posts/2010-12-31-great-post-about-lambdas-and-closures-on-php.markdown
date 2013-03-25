@@ -2,7 +2,7 @@
 layout: post
 title: "Great post about Lambdas and Closures on PHP 5.3"
 date: 2010/12/31 04:21:00 -0800
-comments: false
+comments: true
 external-url:
 categories: [programming, PHP]
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "Common recruiting errors made by companies."
 date: 2011/12/14 01:26:00 -0800
-comments: false
+comments: true
 external-url:
 categories: [other ramblings]
 ---

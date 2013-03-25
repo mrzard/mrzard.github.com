@@ -2,7 +2,7 @@
 layout: post
 title: "Memcache vs Memcached (PHP): A simple explanation"
 date: 2011/05/06 00:19:00 -0700
-comments: false
+comments: true
 external-url:
 categories: [PHP, cache]
 ---

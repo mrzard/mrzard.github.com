@@ -2,7 +2,7 @@
 layout: post
 title: "A new take on PHP Object Oriented Programming"
 date: 2010/09/24 08:20:00 -0700
-comments: false
+comments: true
 external-url:
 categories: [PHP, Programming]
 ---

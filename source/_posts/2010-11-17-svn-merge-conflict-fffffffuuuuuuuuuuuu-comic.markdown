@@ -2,7 +2,7 @@
 layout: post
 title: "SVN merge conflict fffffffuuuuuuuuuuuu comic"
 date: 2010/11/17 00:00:51 -0800
-comments: false
+comments: true
 external-url:
 categories: [SVN, VCS, funny]
 ---

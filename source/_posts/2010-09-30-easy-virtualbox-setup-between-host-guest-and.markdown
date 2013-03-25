@@ -2,7 +2,7 @@
 layout: post
 title: "Easy VirtualBox setup between Host, Guest and other networks"
 date: 2010/09/30 00:16:00 -0700
-comments: false
+comments: true
 external-url:
 categories: [VirtualBox]
 ---

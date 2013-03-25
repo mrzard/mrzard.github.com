@@ -2,7 +2,7 @@
 layout: post
 title: "Generate a valid Google Premier signature in PHP"
 date: 2011/12/12 02:23:00 -0800
-comments: false
+comments: true
 external-url:
 categories: [PHP, programming]
 ---

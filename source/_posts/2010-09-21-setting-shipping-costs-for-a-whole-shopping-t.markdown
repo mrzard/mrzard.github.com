@@ -2,7 +2,7 @@
 layout: post
 title: "Setting Shipping Costs For A Whole Third Party Shopping Cart With Paypal"
 date: 2010/09/21 07:26:00 -0700
-comments: false
+comments: true
 external-url:
 categories: PayPal
 ---

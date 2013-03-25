@@ -2,7 +2,7 @@
 layout: post
 title: "Lagoa, a breathtaking physics engine"
 date: 2010/07/21 03:52:00 -0700
-comments: false
+comments: true
 external-url:
 categories: [other ramblings]
 ---

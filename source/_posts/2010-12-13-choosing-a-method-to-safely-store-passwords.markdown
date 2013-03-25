@@ -2,7 +2,7 @@
 layout: post
 title: "Choosing a method to store passwords safely."
 date: 2010/12/13 04:30:00 -0800
-comments: false
+comments: true
 external-url:
 categories: [programming, security]
 ---

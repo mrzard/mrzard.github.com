@@ -2,7 +2,7 @@
 layout: post
 title: "MySQL Query to Export Prestashop Data to a Shopify CSV"
 date: 2013/02/13 09:19:00 -0800
-comments: false
+comments: true
 external-url:
 categories: [MySQL, Prestashop, Programming, PHP, Shopify]
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "Getting a grey window in the compare editor with Eclipse Helios (w/PDT)"
 date: 2010/11/23 02:58:00 -0800
-comments: false
+comments: true
 external-url:
 categories: [Eclipse, programming]
 ---

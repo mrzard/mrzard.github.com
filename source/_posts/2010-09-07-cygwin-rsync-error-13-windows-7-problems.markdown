@@ -2,7 +2,7 @@
 layout: post
 title: "Cygwin + Rsync error 13 + Windows 7 problems"
 date: 2010/09/07 14:30:00 -0700
-comments: false
+comments: true
 external-url:
 categories: [GNU/Linux, Windows 7, cygwin, rsync]
 ---

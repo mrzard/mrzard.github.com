@@ -2,7 +2,7 @@
 layout: post
 title: "MySQL, what are you smoking?"
 date: 2010/07/27 01:35:00 -0700
-comments: false
+comments: true
 external-url:
 categories: [MySQL]
 ---

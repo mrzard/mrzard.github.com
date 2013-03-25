@@ -2,7 +2,7 @@
 layout: post
 title: "Dynamically activate tinyMCE on a given textarea."
 date: 2011/05/24 02:05:00 -0700
-comments: false
+comments: true
 external-url:
 categories: [tinyMCE, JavaScript]
 ---

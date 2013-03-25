@@ -2,7 +2,7 @@
 layout: post
 title: "Failed to connect to socket /com/ubuntu/upstart ? Upstart Jobs Cannot be Run on chroot"
 date: 2011/02/01 04:01:00 -0800
-comments: false
+comments: true
 external-url:
 categories: [GNU/Linux]
 ---

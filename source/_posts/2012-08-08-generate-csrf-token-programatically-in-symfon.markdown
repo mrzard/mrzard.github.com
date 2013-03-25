@@ -2,7 +2,7 @@
 layout: post
 title: "Generate CSRF token programatically in Symfony 2"
 date: 2012/08/08 07:28:29 -0700
-comments: false
+comments: true
 external-url:
 categories: [Symfony2, PHP, programming]
 ---

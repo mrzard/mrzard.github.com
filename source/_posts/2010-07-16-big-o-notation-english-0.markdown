@@ -2,7 +2,7 @@
 layout: post
 title: "Big O Notation in plain english."
 date: 2010/07/16 03:06:00 -0700
-comments: false
+comments: true
 external-url:
 categories: [big O notation, programming]
 ---
