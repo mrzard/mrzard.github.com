@@ -4,7 +4,7 @@
   <title><![CDATA[Category: PHP | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/php/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2013-03-25T12:52:22+01:00</updated>
+  <updated>2013-03-25T13:08:36+01:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -62,7 +62,7 @@ WHERE
     <content type="html"><![CDATA[<p>If you find yourself in the need of generating a CSRF token for a 'built' Request
 or something in that fashion, you can do it rather easily:</p>
 
-<p><code>php Generate CSRF token
+<p><code>phpinline Generate CSRF token
 csrfProvider = $this-&gt;container-&gt;get('form.csrf_provider');
 $csrfToken = $csrfProvider-&gt;generateCsrfToken('unknown');
 </code></p>
