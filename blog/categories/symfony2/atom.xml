@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Symfony2 | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/symfony2/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2013-03-25T13:15:23+01:00</updated>
+  <updated>2013-03-25T13:23:44+01:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -21,12 +21,10 @@
     <content type="html"><![CDATA[<p>If you find yourself in the need of generating a CSRF token for a 'built' Request
 or something in that fashion, you can do it rather easily:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Generate CSRF token programatically  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$csrfProvider</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">container</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;form.csrf_provider&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="nv">$csrfToken</span> <span class="o">=</span> <span class="nv">$csrfProvider</span><span class="o">-&gt;</span><span class="na">generateCsrfToken</span><span class="p">(</span><span class="s1">&#39;unknown&#39;</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock Generate CSRF token programatically lang:phpinline %}
+$csrfProvider = $this->container->get('form.csrf_provider');
+$csrfToken = $csrfProvider->generateCsrfToken('unknown');
+{% endcodeblock %}</p>
 
 <p><em>'unknown'</em> is the default 'intention' of CSRF tokens in Symfony2, change 'unknown'
 for the correct intention if you are using that option.</p>

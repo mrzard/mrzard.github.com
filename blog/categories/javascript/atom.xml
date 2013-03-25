@@ -4,7 +4,7 @@
   <title><![CDATA[Category: JavaScript | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2013-03-25T13:15:23+01:00</updated>
+  <updated>2013-03-25T13:23:44+01:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -46,20 +46,39 @@ binded to the droppable plugin.</p>
 <p>In case it's of help for somebody, here's a quick 'skeleton' on top of which
 you can code the drag&amp;drop interactions you want.</p>
 
-<pre><code>var draggable_options = { helper: 'clone', /* makes the item 'move' a copy 
-of itself rather than 'leave' the original area */ revert: 'invalid', /* makes 
-the item return to its original position if not dropped in a 'droppable' area 
-*/ cursor: 'move' // changes the cursor appearance on hover }; //we give the 
-items the draggable plugin with the options $(".draggable").draggable(draggable_options); 
-$(".droppable").droppable({ drop: function(event, ui) { /* detect where we 
-dropped the draggable element, in my case, the key part was the element's id 
-*/ var dropped_in = $(this).attr('id'); /* here i put '...' in the droppable 
-container's body to inform the user 'something' is happening */ var context 
-= $(this); context.html('...'); var dragged = $(ui.draggable); /* ui.draggable 
-is a reference to the dropped element now you can use all jQuery functions 
-like dragged.attr('id') to get its id, or dragged.html('whatever') to change 
-its innerHTML, etc... */ /* Here comes interaction, the removal of '...' and 
-display of the action results */ } });
+<p>{% codeblock Draggable-Droppable example lang:javascript %}</p>
+
+<pre><code>var draggable_options = { 
+        helper: 'clone',    /* makes the item 'move' a copy of itself rather than 
+                        '   leave' the original area */ 
+        revert: 'invalid',  /* makes the item return to its original position 
+                            if not dropped in a 'droppable' area */ 
+        cursor: 'move'      // changes the cursor appearance on hover 
+}; 
+
+//we give the items the draggable plugin with the options 
+$(".draggable").draggable(draggable_options); 
+
+$(".droppable").droppable({
+    drop: function(event, ui) { 
+        /* detect where we dropped the draggable element, 
+        in my case, the key part was the element's id */ 
+        var dropped_in = $(this).attr('id'); 
+
+        /* here i put '...' in the droppable container's body to inform 
+        the user 'something' is happening */ 
+        var context = $(this); 
+        context.html('...'); 
+
+        var dragged = $(ui.draggable); 
+        /* ui.draggable is a reference to the dropped element. 
+        Now you can use all jQuery functions like dragged.attr('id') to get its id, 
+        or dragged.html('whatever') to change its innerHTML, etc... */ 
+
+        /* Here comes interaction, the removal of '...' and 
+        display of the action results */ 
+    } 
+});
 </code></pre>
 ]]></content>
   </entry>
