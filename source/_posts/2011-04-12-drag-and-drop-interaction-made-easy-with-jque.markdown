@@ -52,7 +52,7 @@ you can code the drag&drop interactions you want.
 			display of the action results */ 
 		} 
 	});
-
+{% endcodeblock %}
 
 
 [1]: http://jqueryui.com/demos/draggable/
