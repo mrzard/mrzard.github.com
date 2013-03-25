@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2013-03-25T13:25:33+01:00</updated>
+  <updated>2013-03-25T13:26:09+01:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -21,10 +21,12 @@
     <content type="html"><![CDATA[<p>If you find yourself in the need of generating a CSRF token for a 'built' Request
 or something in that fashion, you can do it rather easily:</p>
 
-<p>{% codeblock Generate CSRF token programatically lang:phpinline %}
-$csrfProvider = $this->container->get('form.csrf_provider');
-$csrfToken = $csrfProvider->generateCsrfToken('unknown');
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Generate CSRF token programatically  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$csrfProvider</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">container</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;form.csrf_provider&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$csrfToken</span> <span class="o">=</span> <span class="nv">$csrfProvider</span><span class="o">-&gt;</span><span class="na">generateCsrfToken</span><span class="p">(</span><span class="s1">&#39;unknown&#39;</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p><em>'unknown'</em> is the default 'intention' of CSRF tokens in Symfony2, change 'unknown'
 for the correct intention if you are using that option.</p>
@@ -96,13 +98,18 @@ to do it, as there is no PHP example in the <a href="http://code.google.com/intl
 </ul>
 
 
-<p>{% codeblock Generate a valid Google Premier signature lang:phpinline %}
-$url_parts = parse_url($request_url); $signable_part = $url_parts['path'].'?'.$url_parts['query'];
-$decoded_key = base64_decode(strtr($signature_key, '-<em>', '+/');
-$url_signature = hash_hmac('sha1', $signable_part, $decoded_key), true);
-$base64signature = strtr(base64_encode($url_signature), '+/', '-</em>');
-$signature_param = '&amp;signature='.urlencode($base64signature);
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Generate a valid Google Premier signature  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$url_parts</span> <span class="o">=</span> <span class="nb">parse_url</span><span class="p">(</span><span class="nv">$request_url</span><span class="p">);</span> <span class="nv">$signable_part</span> <span class="o">=</span> <span class="nv">$url_parts</span><span class="p">[</span><span class="s1">&#39;path&#39;</span><span class="p">]</span><span class="o">.</span><span class="s1">&#39;?&#39;</span><span class="o">.</span><span class="nv">$url_parts</span><span class="p">[</span><span class="s1">&#39;query&#39;</span><span class="p">];</span>
+</span><span class='line'><span class="nv">$decoded_key</span> <span class="o">=</span> <span class="nb">base64_decode</span><span class="p">(</span><span class="nx">strtr</span><span class="p">(</span><span class="nv">$signature_key</span><span class="p">,</span> <span class="s1">&#39;-&lt;em&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;+/&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$url_signature</span> <span class="o">=</span> <span class="nb">hash_hmac</span><span class="p">(</span><span class="s1">&#39;sha1&#39;</span><span class="p">,</span> <span class="nv">$signable_part</span><span class="p">,</span> <span class="nv">$decoded_key</span><span class="p">),</span> <span class="k">true</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$base64signature</span> <span class="o">=</span> <span class="nx">strtr</span><span class="p">(</span><span class="nb">base64_encode</span><span class="p">(</span><span class="nv">$url_signature</span><span class="p">),</span> <span class="s1">&#39;+/&#39;</span><span class="p">,</span> <span class="s1">&#39;-&lt;/em&gt;&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$signature_param</span> <span class="o">=</span> <span class="s1">&#39;&amp;amp;signature=&#39;</span><span class="o">.</span><span class="nb">urlencode</span><span class="p">(</span><span class="nv">$base64signature</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>'Strange' things in this snippet:</p>
 

@@ -96,21 +96,32 @@ going to ask for, then send that signature alongside the request. &hellip;">
 
 <div class="entry-content"><p>Google Premier requires for you to generate a signature over the URL you&#8217;re
 going to ask for, then send that signature alongside the request. Here is how
-to do it, as there is no PHP example in the <a href="http://code.google.com/intl/es-ES/apis/maps/documentation/webservices/#URLSigning">Google Primer URL Signature documentation</a></p>
+to do it, as there is no PHP example in the <a href="http://code.google.com/intl/es-ES/apis/maps/documentation/webservices/#URLSigning">Google Premier URL Signature documentation</a></p>
 
 <p>In this code snippet we assume:</p>
 
 <ul>
-<li>$request_url has the url that will be using the Google Premier service (for example, Static Maps API). It also already has the client param, sensor param, etc.</li>
-<li>$signature_key has the key provided to you by Google</li>
+<li><code>$request_url</code> has the url that will be using the Google Premier service (for example, Static Maps API). It also already has the client param, sensor param, etc.</li>
+<li><code>$signature_key</code> has the key provided to you by Google</li>
 <li>You are running this snippet from an authorized domain</li>
-<li><p>Props to <a href="http://stackoverflow.com/questions/3125410/trying-to-digitally-sign-via-hmac-sha1-with-php">ZZ Coder at StackOverflow</a></p>
-
-<p>  $url_parts = parse_url($request_url); $signable_part = $url_parts[&#8216;path&#8217;].&#8217;?&#8217;.$url_parts[&#8216;query&#8217;];
-  $decoded_key = base64_decode(strtr($signature_key, &#8216;-<em>&#8217;, &#8216;+/&#8217;); $url_signature
-  = hash_hmac(&#8216;sha1&#8217;, $signable_part, $decoded_key), true); $base64signature
-  = strtr(base64_encode($url_signature), &#8216;+/&#8217;, &#8216;-</em>&#8217;); $signature_param = &#8216;&amp;signature=&#8217;.urlencode($base64signature);</p></li>
+<li>Props to <a href="http://stackoverflow.com/questions/3125410/trying-to-digitally-sign-via-hmac-sha1-with-php">ZZ Coder at StackOverflow</a></li>
 </ul>
+
+
+<figure class='code'><figcaption><span>Generate a valid Google Premier signature  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'>
+</span><span class='line'><span class="nv">$url_parts</span> <span class="o">=</span> <span class="nb">parse_url</span><span class="p">(</span><span class="nv">$request_url</span><span class="p">);</span> <span class="nv">$signable_part</span> <span class="o">=</span> <span class="nv">$url_parts</span><span class="p">[</span><span class="s1">&#39;path&#39;</span><span class="p">]</span><span class="o">.</span><span class="s1">&#39;?&#39;</span><span class="o">.</span><span class="nv">$url_parts</span><span class="p">[</span><span class="s1">&#39;query&#39;</span><span class="p">];</span>
+</span><span class='line'><span class="nv">$decoded_key</span> <span class="o">=</span> <span class="nb">base64_decode</span><span class="p">(</span><span class="nx">strtr</span><span class="p">(</span><span class="nv">$signature_key</span><span class="p">,</span> <span class="s1">&#39;-_&#39;</span><span class="p">,</span> <span class="s1">&#39;+/&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$url_signature</span> <span class="o">=</span> <span class="nb">hash_hmac</span><span class="p">(</span><span class="s1">&#39;sha1&#39;</span><span class="p">,</span> <span class="nv">$signable_part</span><span class="p">,</span> <span class="nv">$decoded_key</span><span class="p">),</span> <span class="k">true</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$base64signature</span> <span class="o">=</span> <span class="nx">strtr</span><span class="p">(</span><span class="nb">base64_encode</span><span class="p">(</span><span class="nv">$url_signature</span><span class="p">),</span> <span class="s1">&#39;+/&#39;</span><span class="p">,</span> <span class="s1">&#39;-_&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$signature_param</span> <span class="o">=</span> <span class="s1">&#39;&amp;signature=&#39;</span><span class="o">.</span><span class="nb">urlencode</span><span class="p">(</span><span class="nv">$base64signature</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
 
 
 <p>&#8216;Strange&#8217; things in this snippet:</p>
@@ -121,8 +132,8 @@ to do it, as there is no PHP example in the <a href="http://code.google.com/intl
 </ul>
 
 
-<p>Then you just have to append $signature_param to your original request (which
-we&#8217;ve assumed is in $request_url) to have a correctly signed Google Premier
+<p>Then you just have to append <code>$signature_param</code> to your original request (which
+we&#8217;ve assumed is in <code>$request_url</code>) to have a correctly signed Google Premier
 request.</p>
 </div>
 
