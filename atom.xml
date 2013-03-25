@@ -4,7 +4,7 @@
   <title><![CDATA[Programming Rambling]]></title>
   <link href="http://mrzard.github.com/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2013-03-25T13:26:09+01:00</updated>
+  <updated>2013-03-25T15:47:03+01:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[MrZarD, now on Octopress on GitHub Pages]]></title>
+    <link href="http://mrzard.github.com/blog/2013/03/25/mrzard-now-octopress-github-pages/"/>
+    <updated>2013-03-25T15:45:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2013/03/25/mrzard-now-octopress-github-pages</id>
+    <content type="html"><![CDATA[<p>Due to <a href="http://www.posterous.com/">Posterous</a> closing soon I had to look for another place to host my (seldomly updated) blog. After 10 minutes, I saw GitHub Pages and then saw <a href="http://octopress.org/">Octopress</a>. The combination of both is awesome and really feels great for a developer instead of a classic web interface.</p>
+
+<p>So, now you can find me here, at GitHub. Same content, same guy, same few updates!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MySQL Query to Export Prestashop Data to a Shopify CSV]]></title>
@@ -563,32 +574,6 @@ just have to enable another adapter and configure it for the network in question
 
 <p>With this configuration I now can plug my development machine (host and guest)
 at home or at the office and just work with no further configuring.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[A new take on PHP Object Oriented Programming]]></title>
-    <link href="http://mrzard.github.com/blog/2010/09/24/a-new-take-on-php-object-oriented-programming/"/>
-    <updated>2010-09-24T17:20:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2010/09/24/a-new-take-on-php-object-oriented-programming</id>
-    <content type="html"><![CDATA[<p>I think this is an interesting idea, check it out!</p>
-
-<p><a href="http://dhotson.tumblr.com/post/1167021666/php-object-oriented-programming-reinvented">Antipodean - PHP OO Programming reinvented</a></p>
-
-<p>Author Dennis Hotson says about it:</p>
-
-<blockquote><p>There are some interesting implications of this:</p>
-
-<ul>
-<li>Classes can be hacked / patched / cloned. Methods can be added to classes at
-any time</li>
-<li>Classes can be scoped. They’re not global, unless you want them to be.</li>
-<li>Classes can be temporary (and garbage collected).</li>
-</ul>
-</blockquote>
-
-<p>Although I don&#8217;t think it&#8217;s that useful or advisable, it&#8217;s a great example
-of how far you can push PHP&#8217;s limits.</p>
 ]]></content>
   </entry>
   

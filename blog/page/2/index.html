@@ -9,8 +9,8 @@
   <meta name="author" content="Gonzalo Míguez">
 
   
-  <meta name="description" content="Thanks to http://www.ashang.org/2010/10/unable-to-connect-to-upstart.html
-I was finally able to upgrade my system while chrooted. Being on chroot &hellip;">
+  <meta name="description" content="Last week at work I had to make a drag-and-drop configurable homepage, where
+individual news items had to had the ability to be moved and arranged in &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +66,124 @@ I was finally able to upgrade my system while chrooted. Being on chroot &hellip;
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/04/12/drag-and-drop-interaction-made-easy-with-jque/">Drag and Drop Interaction Made Easy With jQuery (and jQuery UI)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-04-12T10:18:00+02:00" pubdate data-updated="true">Apr 12<span>th</span>, 2011</time>
+        
+         | <a href="/blog/2011/04/12/drag-and-drop-interaction-made-easy-with-jque/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Last week at work I had to make a drag-and-drop configurable homepage, where
+individual news items had to had the ability to be moved and arranged in a
+grid which represented the available placeholders on the homepage.</p>
+
+<p>My work was made MUCH easier by the <a href="http://jqueryui.com/demos/draggable/">draggable</a> and <a href="http://jqueryui.com/demos/droppable/">droppable</a> plugins
+in jQuery UI. I just had to add a class which I binded the draggable plugin
+to to the news items and then add another class to the placeholders which I
+binded to the droppable plugin.</p>
+
+<p>In case it&#8217;s of help for somebody, here&#8217;s a quick &#8216;skeleton&#8217; on top of which
+you can code the drag&amp;drop interactions you want.</p>
+
+<figure class='code'><figcaption><span>Draggable-Droppable example  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">draggable_options</span> <span class="o">=</span> <span class="p">{</span>
+</span><span class='line'>          <span class="nx">helper</span><span class="o">:</span> <span class="s1">&#39;clone&#39;</span><span class="p">,</span>  <span class="cm">/* makes the item &#39;move&#39; a copy of itself rather than </span>
+</span><span class='line'><span class="cm">                         &#39;   leave&#39; the original area */</span>
+</span><span class='line'>          <span class="nx">revert</span><span class="o">:</span> <span class="s1">&#39;invalid&#39;</span><span class="p">,</span>    <span class="cm">/* makes the item return to its original position </span>
+</span><span class='line'><span class="cm">                             if not dropped in a &#39;droppable&#39; area */</span>
+</span><span class='line'>          <span class="nx">cursor</span><span class="o">:</span> <span class="s1">&#39;move&#39;</span>       <span class="c1">// changes the cursor appearance on hover </span>
+</span><span class='line'>  <span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">//we give the items the draggable plugin with the options </span>
+</span><span class='line'>  <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.draggable&quot;</span><span class="p">).</span><span class="nx">draggable</span><span class="p">(</span><span class="nx">draggable_options</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.droppable&quot;</span><span class="p">).</span><span class="nx">droppable</span><span class="p">({</span>
+</span><span class='line'>      <span class="nx">drop</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">,</span> <span class="nx">ui</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>          <span class="cm">/* detect where we dropped the draggable element, </span>
+</span><span class='line'><span class="cm">         in my case, the key part was the element&#39;s id */</span>
+</span><span class='line'>          <span class="kd">var</span> <span class="nx">dropped_in</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">);</span>
+</span><span class='line'>          
+</span><span class='line'>          <span class="cm">/* here i put &#39;...&#39; in the droppable container&#39;s body to inform </span>
+</span><span class='line'><span class="cm">         the user &#39;something&#39; is happening */</span>
+</span><span class='line'>          <span class="kd">var</span> <span class="nx">context</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+</span><span class='line'>          <span class="nx">context</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;...&#39;</span><span class="p">);</span>
+</span><span class='line'>          
+</span><span class='line'>          <span class="kd">var</span> <span class="nx">dragged</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nx">ui</span><span class="p">.</span><span class="nx">draggable</span><span class="p">);</span>
+</span><span class='line'>          <span class="cm">/* ui.draggable is a reference to the dropped element. </span>
+</span><span class='line'><span class="cm">         Now you can use all jQuery functions like dragged.attr(&#39;id&#39;) to get its id, </span>
+</span><span class='line'><span class="cm">         or dragged.html(&#39;whatever&#39;) to change its innerHTML, etc... */</span>
+</span><span class='line'>
+</span><span class='line'>          <span class="cm">/* Here comes interaction, the removal of &#39;...&#39; and </span>
+</span><span class='line'><span class="cm">         display of the action results */</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>  <span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -515,61 +633,6 @@ at home or at the office and just work with no further configuring.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/09/24/a-new-take-on-php-object-oriented-programming/">A New Take on PHP Object Oriented Programming</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-09-24T17:20:00+02:00" pubdate data-updated="true">Sep 24<span>th</span>, 2010</time>
-        
-         | <a href="/blog/2010/09/24/a-new-take-on-php-object-oriented-programming/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I think this is an interesting idea, check it out!</p>
-
-<p><a href="http://dhotson.tumblr.com/post/1167021666/php-object-oriented-programming-reinvented">Antipodean - PHP OO Programming reinvented</a></p>
-
-<p>Author Dennis Hotson says about it:</p>
-
-<blockquote><p>There are some interesting implications of this:</p>
-
-<ul>
-<li>Classes can be hacked / patched / cloned. Methods can be added to classes at
-any time</li>
-<li>Classes can be scoped. They’re not global, unless you want them to be.</li>
-<li>Classes can be temporary (and garbage collected).</li>
-</ul>
-</blockquote>
-
-<p>Although I don&#8217;t think it&#8217;s that useful or advisable, it&#8217;s a great example
-of how far you can push PHP&#8217;s limits.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -587,6 +650,10 @@ of how far you can push PHP&#8217;s limits.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/03/25/mrzard-now-octopress-github-pages/">MrZarD, now on Octopress on GitHub Pages</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/">MySQL Query to Export Prestashop Data to a Shopify CSV</a>
       </li>
     
@@ -600,10 +667,6 @@ of how far you can push PHP&#8217;s limits.</p>
     
       <li class="post">
         <a href="/blog/2011/12/14/common-recruiting-errors-made-by-companies/">Common recruiting errors made by companies.</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/12/12/generate-a-valid-google-premier-signature-in/">Generate a valid Google Premier signature in PHP</a>
       </li>
     
   </ul>

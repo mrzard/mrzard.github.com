@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: octopress | Programming Rambling]]></title>
+  <link href="http://mrzard.github.com/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.com/"/>
+  <updated>2013-03-25T15:47:03+01:00</updated>
+  <id>http://mrzard.github.com/</id>
+  <author>
+    <name><![CDATA[Gonzalo Míguez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[MrZarD, now on Octopress on GitHub Pages]]></title>
+    <link href="http://mrzard.github.com/blog/2013/03/25/mrzard-now-octopress-github-pages/"/>
+    <updated>2013-03-25T15:45:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2013/03/25/mrzard-now-octopress-github-pages</id>
+    <content type="html"><![CDATA[<p>Due to <a href="http://www.posterous.com/">Posterous</a> closing soon I had to look for another place to host my (seldomly updated) blog. After 10 minutes, I saw GitHub Pages and then saw <a href="http://octopress.org/">Octopress</a>. The combination of both is awesome and really feels great for a developer instead of a classic web interface.</p>
+
+<p>So, now you can find me here, at GitHub. Same content, same guy, same few updates!</p>
+]]></content>
+  </entry>
+  
+</feed>
