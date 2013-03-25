@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2013-03-25T12:14:24+01:00</updated>
+  <updated>2013-03-25T12:52:22+01:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -21,8 +21,10 @@
     <content type="html"><![CDATA[<p>If you find yourself in the need of generating a CSRF token for a 'built' Request
 or something in that fashion, you can do it rather easily:</p>
 
-<pre><code>$csrfProvider = $this-&gt;container-&gt;get('form.csrf_provider'); $csrfToken = $csrfProvider-&gt;generateCsrfToken('unknown'); 
-</code></pre>
+<p><code>php Generate CSRF token
+csrfProvider = $this-&gt;container-&gt;get('form.csrf_provider');
+$csrfToken = $csrfProvider-&gt;generateCsrfToken('unknown');
+</code></p>
 
 <p><em>'unknown'</em> is the default 'intention' of CSRF tokens in Symfony2, change 'unknown'
 for the correct intention if you are using that option.</p>

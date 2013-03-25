@@ -97,8 +97,12 @@ or something in that fashion, you can do it rather &hellip;">
 <div class="entry-content"><p>If you find yourself in the need of generating a CSRF token for a &#8216;built&#8217; Request
 or something in that fashion, you can do it rather easily:</p>
 
-<pre><code>$csrfProvider = $this-&gt;container-&gt;get('form.csrf_provider'); $csrfToken = $csrfProvider-&gt;generateCsrfToken('unknown'); 
-</code></pre>
+<figure class='code'><figcaption><span>Generate CSRF token</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">csrfProvider = $this-&gt;container-&gt;get(&#39;form.csrf_provider&#39;); </span>
+</span><span class='line'><span class="x">$csrfToken = $csrfProvider-&gt;generateCsrfToken(&#39;unknown&#39;); </span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p><em>&#8216;unknown&#8217;</em> is the default &#8216;intention&#8217; of CSRF tokens in Symfony2, change &#8216;unknown&#8217;
 for the correct intention if you are using that option.</p>
