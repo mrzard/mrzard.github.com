@@ -4,7 +4,7 @@
   <title><![CDATA[Category: PHP | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/php/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2013-03-26T12:33:52+01:00</updated>
+  <updated>2013-03-26T12:37:12+01:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -18,7 +18,7 @@
     <link href="http://mrzard.github.com/blog/2013/03/26/my-experience-with-paymill/"/>
     <updated>2013-03-26T12:30:00+01:00</updated>
     <id>http://mrzard.github.com/blog/2013/03/26/my-experience-with-paymill</id>
-    <content type="html"><![CDATA[<p>I have been using [Paymill][1] at work for some time now, and this is what I think of it thus far:</p>
+    <content type="html"><![CDATA[<p>I have been using <a href="https://www.paymill.com">Paymill</a> at work for some time now, and this is what I think of it thus far:</p>
 
 <p>PROS:</p>
 
@@ -30,26 +30,18 @@
 <li>Pays every 7 days, directly to your bank account.</li>
 <li>Removes lots of man-hours in payment-gateway related stuff.</li>
 <li>Removes the need to be PCI-compliant.</li>
-<li>They have [libraries][2] for lots of languages and software packages.</li>
+<li>They have <a href="https://github.com/Paymill">libraries</a> for lots of languages and software packages.</li>
 </ul>
 
 
 <p>CONS:</p>
 
 <ul>
-<li>Test mode and live mode do <em>not</em> behave the same in some instances.
-
-<ul>
+<li>Test mode and live mode do <em>not</em> behave the same in some instances.</li>
 <li>Have not checked recently, but at a point the test mode worked with a deprecated parameter that resulted in an error if used in live mode.</li>
 <li>As of now, the amount sent to the bridge and the backend do NOT have to match in test mode for a successful transaction</li>
-</ul>
-</li>
-<li>Error messages are not that clear, although they have improved in that area.
-
-<ul>
+<li>Error messages are not that clear, although they have improved in that area.</li>
 <li><code>40000 RESPONSE_DATA: general problem with data</code> or <code>40100 RESPONSE_DATA_CARD: problem with creditcard data</code> are not very telling. I got a 40100 for a client who did not have 3D-Secure enabled.</li>
-</ul>
-</li>
 <li>Sometimes they take a long time to answer to support tickets.</li>
 </ul>
 
@@ -57,9 +49,6 @@
 <p>BOTTOMLINE:</p>
 
 <p>Paymill is a great tool and I recommend it if you need a payment gateway FAST and cannot / do not want to spend time going PCI-compliant. Only thing that worries me is the discrepancy in behaviour between test mode and live mode which makes it necessary to run some 'live' tests that would not be necessary otherwise. Anyway, once you have detected these little things you can work around them with your own tests and assertions.</p>
-
-<p>[1] https://www.paymill.com/
-[2] https://github.com/Paymill</p>
 ]]></content>
   </entry>
   
