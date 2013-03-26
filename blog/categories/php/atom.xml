@@ -4,7 +4,7 @@
   <title><![CDATA[Category: PHP | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/php/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2013-03-25T15:47:03+01:00</updated>
+  <updated>2013-03-26T12:31:08+01:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[My experience with Paymill]]></title>
+    <link href="http://mrzard.github.com/blog/2013/03/26/my-experience-with-paymill/"/>
+    <updated>2013-03-26T12:30:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2013/03/26/my-experience-with-paymill</id>
+    <content type="html"><![CDATA[<p>I have been using [Paymill][1] at work for some time now, and this is what I think of it thus far:</p>
+
+<p>PROS:
+* Easy to implement. As in dumb-proof easy.
+* Commission (2.95% + 0.28€) is reasonable against time of implementation.
+* No other fees. No setup fee, no base usage fee, nothing, only their commission.
+* They only charge for successful transactions.
+* Pays every 7 days, directly to your bank account.
+* Removes lots of man-hours in payment-gateway related stuff.
+* Removes the need to be PCI-compliant.
+* They have [libraries][2] for lots of languages and software packages.</p>
+
+<p>CONS:
+* Test mode and live mode do <em>not</em> behave the same in some instances.</p>
+
+<pre><code>* Have not checked recently, but at a point the test mode worked with a deprecated parameter that resulted in an error if used in live mode.
+* As of now, the amount sent to the bridge and the backend do NOT have to match in test mode for a successful transaction
+</code></pre>
+
+<ul>
+<li>Error messages are not that clear, although they have improved in that area.
+
+<ul>
+<li><code>40000 RESPONSE_DATA: general problem with data</code> or <code>40100 RESPONSE_DATA_CARD: problem with creditcard data</code> are not very telling. I got a 40100 for a client who did not have 3D-Secure enabled.</li>
+</ul>
+</li>
+<li>Sometimes they take a long time to answer to support tickets.</li>
+</ul>
+
+
+<p>BOTTOMLINE:
+Paymill is a great tool and I recommend it if you need a payment gateway FAST and cannot / do not want to spend time going PCI-compliant. Only thing that worries me is the discrepancy in behaviour between test mode and live mode which makes it necessary to run some 'live' tests that would not be necessary otherwise. Anyway, once you have detected these little things you can work around them with your own tests and assertions.</p>
+
+<p>[1] https://www.paymill.com/
+[2] https://github.com/Paymill</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MySQL Query to Export Prestashop Data to a Shopify CSV]]></title>
@@ -130,28 +173,6 @@ ever seen. If you're having trouble understanding the logic behind them or
 how to use them, please do take a look at it:</p>
 
 <p><a href="http://phpmaster.com/php-namespaces/">PHP Namespaces on PHPMaster.com</a> by Moshe Teutsch (<a href="http://phpmaster.com/author/moteutsch/">http://phpmaster.com/author/moteutsch/</a>)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Memcache vs Memcached (PHP): A simple explanation]]></title>
-    <link href="http://mrzard.github.com/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio/"/>
-    <updated>2011-05-06T09:19:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio</id>
-    <content type="html"><![CDATA[<p>In a nutshell:</p>
-
-<p>memcache is older, less mantained.</p>
-
-<p>memcached is newer, developed by Digg people and generally preferred. Also
-it seems it is more configurable and has more options.</p>
-
-<p>Complete explanation and opinions: <a href="http://serverfault.com/questions/63383/memcache-vs-memcached">http://serverfault.com/questions/63383/memcache-vs-memcached</a></p>
-
-<p>Client comparision: <a href="http://code.google.com/p/memcached/wiki/PHPClientComparison">http://code.google.com/p/memcached/wiki/PHPClientComparison</a></p>
-
-<p>PECL pages:<br/>
-<a href="http://pecl.php.net/package/memcache">http://pecl.php.net/package/memcache</a><br/>
-<a href="http://pecl.php.net/package/memcached">http://pecl.php.net/package/memcached</a></p>
 ]]></content>
   </entry>
   

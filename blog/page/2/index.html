@@ -9,8 +9,8 @@
   <meta name="author" content="Gonzalo Míguez">
 
   
-  <meta name="description" content="Last week at work I had to make a drag-and-drop configurable homepage, where
-individual news items had to had the ability to be moved and arranged in &hellip;">
+  <meta name="description" content="In a nutshell: memcache is older, less mantained. memcached is newer, developed by Digg people and generally preferred. Also
+it seems it is more &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +66,57 @@ individual news items had to had the ability to be moved and arranged in &hellip
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio/">Memcache vs Memcached (PHP): A Simple Explanation</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-06T09:19:00+02:00" pubdate data-updated="true">May 6<span>th</span>, 2011</time>
+        
+         | <a href="/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>In a nutshell:</p>
+
+<p>memcache is older, less mantained.</p>
+
+<p>memcached is newer, developed by Digg people and generally preferred. Also
+it seems it is more configurable and has more options.</p>
+
+<p>Complete explanation and opinions: <a href="http://serverfault.com/questions/63383/memcache-vs-memcached">http://serverfault.com/questions/63383/memcache-vs-memcached</a></p>
+
+<p>Client comparision: <a href="http://code.google.com/p/memcached/wiki/PHPClientComparison">http://code.google.com/p/memcached/wiki/PHPClientComparison</a></p>
+
+<p>PECL pages:<br/>
+<a href="http://pecl.php.net/package/memcache">http://pecl.php.net/package/memcache</a><br/>
+<a href="http://pecl.php.net/package/memcached">http://pecl.php.net/package/memcached</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -572,67 +623,6 @@ faster and easier, and I will be keeping an eye out for this new format.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/09/30/easy-virtualbox-setup-between-host-guest-and/">Easy VirtualBox Setup Between Host, Guest and Other Networks</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-09-30T09:16:00+02:00" pubdate data-updated="true">Sep 30<span>th</span>, 2010</time>
-        
-         | <a href="/blog/2010/09/30/easy-virtualbox-setup-between-host-guest-and/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>At work, we use <a href="http://www.virtualbox.org/">VirtualBox</a> as our development box. Yesterday due to the
-strike, I worked from home, and as I grew tired of changing network settings
-to make my VirtualBox installation accessible, I gathered some info and found
-a perfect solution.</p>
-
-<p>First I created a Network adapter that used NAT. In most configurations that
-will make your Virtual Machine have access &#8216;to the outside world&#8217; (provided
-your host machine has access).</p>
-
-<p>Then I created another connection using the host-only adapter. This ensures
-you&#8217;ll have host to guest and guest to host connection no matter where you
-are. For this connection, you&#8217;ll have to assign an static IP with address mask
-255.255.255.0 and no default gateway on your host machine, then configure your
-adapter in the guest with an IP in the same range, also with no default gateway.</p>
-
-<p>With this you can access your guest machine using the IP in the range of the
-host-only adapter, while the guest machine will be able to access anything
-available to the host machine via the NAT connection.</p>
-
-<p>Then if you need to have your guest machine available in other networks, you
-just have to enable another adapter and configure it for the network in question.</p>
-
-<p>With this configuration I now can plug my development machine (host and guest)
-at home or at the office and just work with no further configuring.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -650,6 +640,10 @@ at home or at the office and just work with no further configuring.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/03/26/my-experience-with-paymill/">My experience with Paymill</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/03/25/mrzard-now-octopress-github-pages/">MrZarD, now on Octopress on GitHub Pages</a>
       </li>
     
@@ -663,10 +657,6 @@ at home or at the office and just work with no further configuring.</p>
     
       <li class="post">
         <a href="/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/">Release cycles and policies, deploying code thoughts.</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/12/14/common-recruiting-errors-made-by-companies/">Common recruiting errors made by companies.</a>
       </li>
     
   </ul>

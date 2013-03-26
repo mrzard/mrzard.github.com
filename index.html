@@ -9,7 +9,8 @@
   <meta name="author" content="Gonzalo Míguez">
 
   
-  <meta name="description" content="Due to Posterous closing soon I had to look for another place to host my (seldomly updated) blog. After 10 minutes, I saw GitHub Pages and then saw &hellip;">
+  <meta name="description" content="I have been using [Paymill][1] at work for some time now, and this is what I think of it thus far: PROS:
+* Easy to implement. As in dumb-proof easy &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +66,78 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/26/my-experience-with-paymill/">My Experience With Paymill</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-26T12:30:00+01:00" pubdate data-updated="true">Mar 26<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/03/26/my-experience-with-paymill/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I have been using [Paymill][1] at work for some time now, and this is what I think of it thus far:</p>
+
+<p>PROS:
+* Easy to implement. As in dumb-proof easy.
+* Commission (2.95% + 0.28€) is reasonable against time of implementation.
+* No other fees. No setup fee, no base usage fee, nothing, only their commission.
+* They only charge for successful transactions.
+* Pays every 7 days, directly to your bank account.
+* Removes lots of man-hours in payment-gateway related stuff.
+* Removes the need to be PCI-compliant.
+* They have [libraries][2] for lots of languages and software packages.</p>
+
+<p>CONS:
+* Test mode and live mode do <em>not</em> behave the same in some instances.</p>
+
+<pre><code>* Have not checked recently, but at a point the test mode worked with a deprecated parameter that resulted in an error if used in live mode.
+* As of now, the amount sent to the bridge and the backend do NOT have to match in test mode for a successful transaction
+</code></pre>
+
+<ul>
+<li>Error messages are not that clear, although they have improved in that area.
+
+<ul>
+<li><code>40000 RESPONSE_DATA: general problem with data</code> or <code>40100 RESPONSE_DATA_CARD: problem with creditcard data</code> are not very telling. I got a 40100 for a client who did not have 3D-Secure enabled.</li>
+</ul>
+</li>
+<li>Sometimes they take a long time to answer to support tickets.</li>
+</ul>
+
+
+<p>BOTTOMLINE:
+Paymill is a great tool and I recommend it if you need a payment gateway FAST and cannot / do not want to spend time going PCI-compliant. Only thing that worries me is the discrepancy in behaviour between test mode and live mode which makes it necessary to run some &#8216;live&#8217; tests that would not be necessary otherwise. Anyway, once you have detected these little things you can work around them with your own tests and assertions.</p>
+
+<p>[1] https://www.paymill.com/
+[2] https://github.com/Paymill</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -593,57 +666,6 @@ you just have to add this on the javascript function that adds said textarea.</p
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio/">Memcache vs Memcached (PHP): A Simple Explanation</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-05-06T09:19:00+02:00" pubdate data-updated="true">May 6<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>In a nutshell:</p>
-
-<p>memcache is older, less mantained.</p>
-
-<p>memcached is newer, developed by Digg people and generally preferred. Also
-it seems it is more configurable and has more options.</p>
-
-<p>Complete explanation and opinions: <a href="http://serverfault.com/questions/63383/memcache-vs-memcached">http://serverfault.com/questions/63383/memcache-vs-memcached</a></p>
-
-<p>Client comparision: <a href="http://code.google.com/p/memcached/wiki/PHPClientComparison">http://code.google.com/p/memcached/wiki/PHPClientComparison</a></p>
-
-<p>PECL pages:<br/>
-<a href="http://pecl.php.net/package/memcache">http://pecl.php.net/package/memcache</a><br/>
-<a href="http://pecl.php.net/package/memcached">http://pecl.php.net/package/memcached</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -659,6 +681,10 @@ it seems it is more configurable and has more options.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/03/26/my-experience-with-paymill/">My experience with Paymill</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/03/25/mrzard-now-octopress-github-pages/">MrZarD, now on Octopress on GitHub Pages</a>
       </li>
     
@@ -672,10 +698,6 @@ it seems it is more configurable and has more options.</p>
     
       <li class="post">
         <a href="/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/">Release cycles and policies, deploying code thoughts.</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/12/14/common-recruiting-errors-made-by-companies/">Common recruiting errors made by companies.</a>
       </li>
     
   </ul>
