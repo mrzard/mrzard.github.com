@@ -115,11 +115,19 @@
 <p>CONS:</p>
 
 <ul>
-<li>Test mode and live mode do <em>not</em> behave the same in some instances.</li>
+<li>Test mode and live mode do <em>not</em> behave the same in some instances.
+
+<ul>
 <li>Have not checked recently, but at a point the test mode worked with a deprecated parameter that resulted in an error if used in live mode.</li>
 <li>As of now, the amount sent to the bridge and the backend do NOT have to match in test mode for a successful transaction</li>
-<li>Error messages are not that clear, although they have improved in that area.</li>
+</ul>
+</li>
+<li>Error messages are not that clear, although they have improved in that area.
+
+<ul>
 <li><code>40000 RESPONSE_DATA: general problem with data</code> or <code>40100 RESPONSE_DATA_CARD: problem with creditcard data</code> are not very telling. I got a 40100 for a client who did not have 3D-Secure enabled.</li>
+</ul>
+</li>
 <li>Sometimes they take a long time to answer to support tickets.</li>
 </ul>
 
