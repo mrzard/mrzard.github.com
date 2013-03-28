@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: fonts | Programming Rambling]]></title>
+  <link href="http://mrzard.github.com/blog/categories/fonts/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.com/"/>
+  <updated>2013-03-28T14:09:45+01:00</updated>
+  <id>http://mrzard.github.com/</id>
+  <author>
+    <name><![CDATA[Gonzalo Míguez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Loading cross-domain fronts from Firefox]]></title>
+    <link href="http://mrzard.github.com/blog/2013/03/28/loading-cross-domain-fronts-from-firefox/"/>
+    <updated>2013-03-28T14:00:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2013/03/28/loading-cross-domain-fronts-from-firefox</id>
+    <content type="html"><![CDATA[<p>When requiring a font from an external CSS file (assets domain, CDN, etc), you may see that Firefox refuses to display the font. This is because Firefox, by default, disables cross-domain fonts. To solve this you have to add a header to the response with the font file. The header is <code>Access-Control-Allow-Origin: *</code></p>
+
+<p>In a typical <code>nginx</code> setup, this is achieved with this snippet:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>nginx add header </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>location ~* .(eot|ttf|woff)$ {&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>add_header Access-Control-Allow-Origin *;
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>}</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Once you have that in place, the fonts will be loaded correctly from Firefox.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -159,15 +159,21 @@
         <lastmod>2013-03-26T12:48:31+01:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://mrzard.github.com/blog/2013/03/28/loading-cross-domain-fronts-from-firefox/
+        </loc>
+        <lastmod>2013-03-28T14:08:24+01:00</lastmod>
+    </url>
+    <url>
         <loc>http://mrzard.github.com/robots.txt</loc>
         <lastmod>2013-03-21T12:48:05+01:00</lastmod>
     </url>
     <url>
         <loc>http://mrzard.github.com/blog/archives/</loc>
-        <lastmod>2013-03-26T12:48:31+01:00</lastmod>
+        <lastmod>2013-03-28T14:08:24+01:00</lastmod>
     </url>
     <url>
         <loc>http://mrzard.github.com/</loc>
-        <lastmod>2013-03-26T12:48:31+01:00</lastmod>
+        <lastmod>2013-03-28T14:08:24+01:00</lastmod>
     </url>
 </urlset>

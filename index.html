@@ -9,7 +9,7 @@
   <meta name="author" content="Gonzalo Míguez">
 
   
-  <meta name="description" content="I have been using Paymill at work for some time now, and this is what I think of it thus far: PROS: Easy to implement. As in dumb-proof easy. &hellip;">
+  <meta name="description" content="When requiring a font from an external CSS file (assets domain, CDN, etc), you may see that Firefox refuses to display the font. This is because &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +65,57 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/28/loading-cross-domain-fronts-from-firefox/">Loading Cross-domain Fronts From Firefox</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-28T14:00:00+01:00" pubdate data-updated="true">Mar 28<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/03/28/loading-cross-domain-fronts-from-firefox/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>When requiring a font from an external CSS file (assets domain, CDN, etc), you may see that Firefox refuses to display the font. This is because Firefox, by default, disables cross-domain fonts. To solve this you have to add a header to the response with the font file. The header is <code>Access-Control-Allow-Origin: *</code></p>
+
+<p>In a typical <code>nginx</code> setup, this is achieved with this snippet:</p>
+
+<figure class='code'><figcaption><span>nginx add header </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>location ~* \.(eot|ttf|woff)$ {
+</span><span class='line'>  add_header Access-Control-Allow-Origin *;
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Once you have that in place, the fonts will be loaded correctly from Firefox.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -624,51 +675,6 @@ and you&#8217;re redy to go.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte/">Dynamically Activate tinyMCE on a Given Textarea.</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-05-24T11:05:00+02:00" pubdate data-updated="true">May 24<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>If you are adding textareas dynamically and wish to enable tinyMCE on them,
-you just have to add this on the javascript function that adds said textarea.</p>
-
-<p><code>tinyMCE.execCommand('mceAddControl',false, id_of_addedtextarea);</code></p>
-
-<p>Where &#8216;id_of_addedtextarea&#8217; is what its name implies ;)</p>
-
-<p>More detailed and better info here: <a href="http://blog.dileno.com/archive/201102/adding-tinymce-editor-dynamically-and-get-its-value/">http://blog.dileno.com/archive/201102/adding-tinymce-editor-dynamically-and-get-its-value/</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -684,6 +690,10 @@ you just have to add this on the javascript function that adds said textarea.</p
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/03/28/loading-cross-domain-fronts-from-firefox/">Loading cross-domain fronts from Firefox</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/03/26/my-experience-with-paymill/">My experience with Paymill</a>
       </li>
     
@@ -697,10 +707,6 @@ you just have to add this on the javascript function that adds said textarea.</p
     
       <li class="post">
         <a href="/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/">Generate CSRF token programatically in Symfony 2</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/">Release cycles and policies, deploying code thoughts.</a>
       </li>
     
   </ul>
