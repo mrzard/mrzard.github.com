@@ -4,7 +4,7 @@
   <title><![CDATA[Category: headers | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/headers/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2013-03-28T14:09:45+01:00</updated>
+  <updated>2013-03-28T14:11:09+01:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Loading cross-domain fronts from Firefox]]></title>
-    <link href="http://mrzard.github.com/blog/2013/03/28/loading-cross-domain-fronts-from-firefox/"/>
+    <title type="html"><![CDATA[Loading cross-domain fonts from Firefox]]></title>
+    <link href="http://mrzard.github.com/blog/2013/03/28/loading-cross-domain-fonts-from-firefox/"/>
     <updated>2013-03-28T14:00:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2013/03/28/loading-cross-domain-fronts-from-firefox</id>
+    <id>http://mrzard.github.com/blog/2013/03/28/loading-cross-domain-fonts-from-firefox</id>
     <content type="html"><![CDATA[<p>When requiring a font from an external CSS file (assets domain, CDN, etc), you may see that Firefox refuses to display the font. This is because Firefox, by default, disables cross-domain fonts. To solve this you have to add a header to the response with the font file. The header is <code>Access-Control-Allow-Origin: *</code></p>
 
 <p>In a typical <code>nginx</code> setup, this is achieved with this snippet:</p>
