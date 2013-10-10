@@ -4,7 +4,7 @@
   <title><![CDATA[Category: EntityManager | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/entitymanager/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2013-10-10T11:13:21+02:00</updated>
+  <updated>2013-10-10T11:14:27+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -18,7 +18,9 @@
     <link href="http://mrzard.github.com/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/"/>
     <updated>2013-10-10T11:10:00+02:00</updated>
     <id>http://mrzard.github.com/blog/2013/10/10/flushing-only-desired-entities-with-doctrine</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p>Sometimes, you may be working with several entities at the same time. If this entities are managed by Doctrine, you may find yourself in the situation where you want to flush only some of them. If you want to do so, you can pass an array of entities to the flush(), so it only affects the entities you explicitly pass to the function.</p>
+
+<p>This is very useful to avoid side-effects in some instances.</p>
 ]]></content>
   </entry>
   
