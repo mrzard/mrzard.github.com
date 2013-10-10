@@ -4,7 +4,7 @@
   <title><![CDATA[Programming Rambling]]></title>
   <link href="http://mrzard.github.com/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2013-03-28T14:11:09+01:00</updated>
+  <updated>2013-10-10T11:13:21+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Flushing only desired entities with Doctrine]]></title>
+    <link href="http://mrzard.github.com/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/"/>
+    <updated>2013-10-10T11:10:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2013/10/10/flushing-only-desired-entities-with-doctrine</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Loading cross-domain fonts from Firefox]]></title>
@@ -556,36 +565,6 @@ Enjoy! :)</p>
     <content type="html"><![CDATA[<p>I&#8217;d like to give this a try, SVN&#8217;s merges are really very painful sometimes.</p>
 
 <p><a href="http://www.youtube.com/v/1BbK9o5fQD4?fs=1&amp;hl=es_ES"></a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Two Things about Computer Programming (by Charles Miller)]]></title>
-    <link href="http://mrzard.github.com/blog/2010/11/14/the-two-things-about-computer-programming-by/"/>
-    <updated>2010-11-14T16:30:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2010/11/14/the-two-things-about-computer-programming-by</id>
-    <content type="html"><![CDATA[<p><a href="http://fishbowl.pastiche.org/2007/04/15/the_two_things_about_computer_programming/">This article</a> by Charles Miller says there are only two things that are
-<strong>really important</strong> to any discipline. This may or may not be true, but I
-really think he nailed it when it comes to programming.</p>
-
-<blockquote><p><strong>Computer Programming:</strong></p>
-
-<ol>
-<li>Every problem can be solved by breaking it up into a series of smaller problems.</li>
-<li>The computer will always do exactly what you tell it to.</li>
-</ol>
-
-
-<p><strong>Software Engineering:</strong></p>
-
-<ol>
-<li>Writing the code is the easy part. Writing it so someone else can understand it later is the important part.</li>
-<li>Make it work, then make it elegant, then make it fast.</li>
-</ol>
-</blockquote>
-
-<p>It&#8217;s very nice to see there are people out there who can summarize things in
-such a comprehensive and spot-on manner.</p>
 ]]></content>
   </entry>
   

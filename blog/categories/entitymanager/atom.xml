@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: EntityManager | Programming Rambling]]></title>
+  <link href="http://mrzard.github.com/blog/categories/entitymanager/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.com/"/>
+  <updated>2013-10-10T11:13:21+02:00</updated>
+  <id>http://mrzard.github.com/</id>
+  <author>
+    <name><![CDATA[Gonzalo Míguez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Flushing only desired entities with Doctrine]]></title>
+    <link href="http://mrzard.github.com/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/"/>
+    <updated>2013-10-10T11:10:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2013/10/10/flushing-only-desired-entities-with-doctrine</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>

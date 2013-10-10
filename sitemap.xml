@@ -165,15 +165,21 @@
         <lastmod>2013-03-28T14:10:41+01:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://mrzard.github.com/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/
+        </loc>
+        <lastmod>2013-10-10T11:11:03+02:00</lastmod>
+    </url>
+    <url>
         <loc>http://mrzard.github.com/robots.txt</loc>
         <lastmod>2013-03-21T12:48:05+01:00</lastmod>
     </url>
     <url>
         <loc>http://mrzard.github.com/blog/archives/</loc>
-        <lastmod>2013-03-28T14:10:41+01:00</lastmod>
+        <lastmod>2013-10-10T11:11:03+02:00</lastmod>
     </url>
     <url>
         <loc>http://mrzard.github.com/</loc>
-        <lastmod>2013-03-28T14:10:41+01:00</lastmod>
+        <lastmod>2013-10-10T11:11:03+02:00</lastmod>
     </url>
 </urlset>
