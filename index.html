@@ -9,7 +9,7 @@
   <meta name="author" content="Gonzalo Míguez">
 
   
-  <meta name="description" content="Sometimes, you may be working with several entities at the same time. If this entities are managed by Doctrine, you may find yourself in the &hellip;">
+  <meta name="description" content="When working with complex forms, sometimes you will be in need of creating a collection field type to manage relations. When this is the case, you &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +66,68 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/">Customize Form Prototype for Collections in Symfony2</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-30T15:57:00+01:00" pubdate data-updated="true">Oct 30<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>When working with complex forms, sometimes you will be in need of creating a collection field type to manage relations. When this is the case, you may find yourself in the need of tweaking how the &#8216;add&#8217; form shows.</p>
+
+<p>It&#8217;s pretty simple. In twig the protoype can be found under form.collection.vars.prototype and can be used as a regular form (i.e. if your form.collection member form has a &#8216;name&#8217;, it will also be available in form.collection.vars.protoype.name).</p>
+
+<p>With this information now you can create a twig that recieves an &#8216;item&#8217;, which can be either a form.collection member or a prototype, and it will be rendered the same.</p>
+
+<p>Finally, wherever you hold the collection html, you will have to output something like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>data-prototype="{% filter escape %}{% include 'prototype.twig' with { 'item': form.collection.vars.prototype } %}{% endfilter %}"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And your <code>prototype.twig</code> should look like</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{{ form_row(item.field0) }}
+</span><span class='line'>{{ form_row(item.field1) }}
+</span><span class='line'>{{ form_row(item.field2) }}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This way, you will have access to the prototype as if it were a regular form, and you can apply all the customization you want (you can user form_widget and the other functions, or access the vars directly, etc&#8230;)</p>
+
+<p>Creating the helper twig is optional though, but handy because you have to use the escape filter to the twig so you can put it in the correct data-attribute.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -629,48 +691,6 @@ request.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/10/25/php-namespaces-simple-explanation/">PHP Namespaces Simple Explanation</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-10-25T11:58:00+02:00" pubdate data-updated="true">Oct 25<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/10/25/php-namespaces-simple-explanation/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>This is one of the most clear and comprehensible articles on namespaces I have
-ever seen. If you&#8217;re having trouble understanding the logic behind them or
-how to use them, please do take a look at it:</p>
-
-<p><a href="http://phpmaster.com/php-namespaces/">PHP Namespaces on PHPMaster.com</a> by Moshe Teutsch (<a href="http://phpmaster.com/author/moteutsch/">http://phpmaster.com/author/moteutsch/</a>)</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -686,6 +706,10 @@ how to use them, please do take a look at it:</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/">Customize form prototype for collections in Symfony2</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/">Flushing only desired entities with Doctrine</a>
       </li>
     
@@ -699,10 +723,6 @@ how to use them, please do take a look at it:</p>
     
       <li class="post">
         <a href="/blog/2013/03/25/mrzard-now-octopress-github-pages/">MrZarD, now on Octopress on GitHub Pages</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/">MySQL Query to Export Prestashop Data to a Shopify CSV</a>
       </li>
     
   </ul>

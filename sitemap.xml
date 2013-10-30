@@ -171,16 +171,22 @@
         <lastmod>2013-10-10T11:14:13+02:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://mrzard.github.com/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/
+        </loc>
+        <lastmod>2013-10-30T16:20:57+01:00</lastmod>
+    </url>
+    <url>
         <loc>http://mrzard.github.com/robots.txt</loc>
         <lastmod>2013-03-21T12:48:05+01:00</lastmod>
     </url>
     <url>
         <loc>http://mrzard.github.com/blog/archives/</loc>
-        <lastmod>2013-10-10T11:14:13+02:00</lastmod>
+        <lastmod>2013-10-30T16:20:57+01:00</lastmod>
     </url>
     <url>
         <loc>http://mrzard.github.com/</loc>
-        <lastmod>2013-10-10T11:14:13+02:00</lastmod>
+        <lastmod>2013-10-30T16:20:57+01:00</lastmod>
     </url>
     <url>
         <loc>http://mrzard.github.com/about-me/</loc>
