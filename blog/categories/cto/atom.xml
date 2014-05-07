@@ -4,7 +4,7 @@
   <title><![CDATA[Category: CTO | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/cto/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2014-05-07T09:42:51+02:00</updated>
+  <updated>2014-05-07T09:53:50+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -49,7 +49,8 @@ and organisation when working in a very fast-paced and very improvisational star
 <li>Voice disagreement and take a stand when needed
 
 <ul>
-<li>Sometimes I have voiced disagreement with decisions by just making the Product team know I was against the decision made.</li>
+<li>Sometimes I have voiced disagreement with decisions by just making the Product team know I was against the decision made, but not
+stating why and how I could give a better solution.</li>
 <li>When I feel a decision is plain wrong (not just a difference in opinion) I have to stand my ground and not budge.</li>
 <li>Don't be afraid of denying requests if you can back your denial with data.</li>
 </ul>
@@ -58,7 +59,7 @@ and organisation when working in a very fast-paced and very improvisational star
 
 <ul>
 <li>When handing out tasks I tend to plan them, and give them to someone on my team, then just wait for them to complete it. However, if they get stuck and ask for help I tend to sweep in and almost take over development. I have to improve because this, rightfully, can enrage senior developers, as well
-and be a hindrance to junior developers learning.</li>
+as be a hindrance to junior developers' learning.</li>
 </ul>
 </li>
 <li>Be less aggressive with estimates.
@@ -73,8 +74,7 @@ and be a hindrance to junior developers learning.</li>
 
 <ul>
 <li>I used to see myself as the technical element for a business. Now I see myself as the technical bridge for a business. I have to take
-a more direct approach and influence on the product side, become a domain expert so I can really understand the business needs and can
-choose the best technical solution more easily.</li>
+a more direct approach and influence on the product side, become a domain expert so I can really understand the business needs and choose the best technical solution more easily.</li>
 </ul>
 </li>
 </ul>
@@ -89,7 +89,7 @@ choose the best technical solution more easily.</li>
 <li>Your team should not be interrupted by anyone. Concentration is key.</li>
 <li>Success is result of the team being awesome, or a team member exceeding expectations.</li>
 <li>Failure comes when we as managers fail to provide the team with the right information and opportunity.</li>
-<li>Basically, as a CTO, if your team succeeds it's because they are awesome. If they fail because you did not do your work.</li>
+<li>Basically, as a CTO, if your team succeeds it's because they are awesome. If they fail it's because you did not do your work.</li>
 </ul>
 </li>
 <li>Install a ticket-centric culture.
