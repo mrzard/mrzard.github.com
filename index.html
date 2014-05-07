@@ -9,7 +9,7 @@
   <meta name="author" content="Gonzalo Míguez">
 
   
-  <meta name="description" content="When working with complex forms, sometimes you will be in need of creating a collection field type to manage relations. When this is the case, you &hellip;">
+  <meta name="description" content="When May comes to and end, I will end my one and a half years journey as a CTO for ChicPlace.com. The reasons for my depature are diverse, and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +66,69 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/05/06/what-i-have-learnt-as-a-cto/">What I Have Learnt as a CTO</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-06T13:10:00+02:00" pubdate data-updated="true">May 6<span>th</span>, 2014</time>
+        
+         | <a href="/blog/2014/05/06/what-i-have-learnt-as-a-cto/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>When May comes to and end, I will end my one and a half years journey as a CTO for <a href="http://www.chicplace.com">ChicPlace.com</a>.</p>
+
+<p>The reasons for my depature are diverse, and possibly this is not the best place to discuss them, but
+I am very grateful for the opportunity to grow and learn while developing a project that has the
+potential to be something special.</p>
+
+<p>During this time I have gained a lot of experience managing teams, and learnt a lot about myself,
+specially when it comes to working with non-technical people, and how to manage expectations, deadlines
+and organisation when working in a very fast-paced and very improvisational startup.</p>
+
+<p>I will write a list of things that I have learnt, in the form of:</p>
+
+<ul>
+<li>List item.
+
+<ul>
+<li>How it has affected me personally.</li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/05/06/what-i-have-learnt-as-a-cto/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -613,84 +676,6 @@ and expand this list :D</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/12/12/generate-a-valid-google-premier-signature-in/">Generate a Valid Google Premier Signature in PHP</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-12-12T11:23:00+01:00" pubdate data-updated="true">Dec 12<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/12/12/generate-a-valid-google-premier-signature-in/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Google Premier requires for you to generate a signature over the URL you&#8217;re
-going to ask for, then send that signature alongside the request. Here is how
-to do it, as there is no PHP example in the <a href="http://code.google.com/intl/es-ES/apis/maps/documentation/webservices/#URLSigning">Google Premier URL Signature documentation</a></p>
-
-<p>In this code snippet we assume:</p>
-
-<ul>
-<li><code>$request_url</code> has the url that will be using the Google Premier service (for example, Static Maps API). It also already has the client param, sensor param, etc.</li>
-<li><code>$signature_key</code> has the key provided to you by Google</li>
-<li>You are running this snippet from an authorized domain</li>
-<li>Props to <a href="http://stackoverflow.com/questions/3125410/trying-to-digitally-sign-via-hmac-sha1-with-php">ZZ Coder at StackOverflow</a></li>
-</ul>
-
-
-<figure class='code'><figcaption><span>Generate a valid Google Premier signature  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'>
-</span><span class='line'><span class="nv">$url_parts</span> <span class="o">=</span> <span class="nb">parse_url</span><span class="p">(</span><span class="nv">$request_url</span><span class="p">);</span> <span class="nv">$signable_part</span> <span class="o">=</span> <span class="nv">$url_parts</span><span class="p">[</span><span class="s1">&#39;path&#39;</span><span class="p">]</span><span class="o">.</span><span class="s1">&#39;?&#39;</span><span class="o">.</span><span class="nv">$url_parts</span><span class="p">[</span><span class="s1">&#39;query&#39;</span><span class="p">];</span>
-</span><span class='line'><span class="nv">$decoded_key</span> <span class="o">=</span> <span class="nb">base64_decode</span><span class="p">(</span><span class="nx">strtr</span><span class="p">(</span><span class="nv">$signature_key</span><span class="p">,</span> <span class="s1">&#39;-_&#39;</span><span class="p">,</span> <span class="s1">&#39;+/&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="nv">$url_signature</span> <span class="o">=</span> <span class="nb">hash_hmac</span><span class="p">(</span><span class="s1">&#39;sha1&#39;</span><span class="p">,</span> <span class="nv">$signable_part</span><span class="p">,</span> <span class="nv">$decoded_key</span><span class="p">),</span> <span class="k">true</span><span class="p">);</span>
-</span><span class='line'><span class="nv">$base64signature</span> <span class="o">=</span> <span class="nx">strtr</span><span class="p">(</span><span class="nb">base64_encode</span><span class="p">(</span><span class="nv">$url_signature</span><span class="p">),</span> <span class="s1">&#39;+/&#39;</span><span class="p">,</span> <span class="s1">&#39;-_&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="nv">$signature_param</span> <span class="o">=</span> <span class="s1">&#39;&amp;signature=&#39;</span><span class="o">.</span><span class="nb">urlencode</span><span class="p">(</span><span class="nv">$base64signature</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>&#8216;Strange&#8217; things in this snippet:</p>
-
-<ul>
-<li>Why the strtr()? Because Google uses URL-Safe base64</li>
-<li>Why the true param at the end of hash_hmac? Because we need it the signature to be returned in binary before base64encondig it.</li>
-</ul>
-
-
-<p>Then you just have to append <code>$signature_param</code> to your original request (which
-we&#8217;ve assumed is in <code>$request_url</code>) to have a correctly signed Google Premier
-request.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -706,6 +691,10 @@ request.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/05/06/what-i-have-learnt-as-a-cto/">What I have learnt as a CTO</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/">Customize form prototype for collections in Symfony2</a>
       </li>
     
@@ -719,10 +708,6 @@ request.</p>
     
       <li class="post">
         <a href="/blog/2013/03/26/my-experience-with-paymill/">My experience with Paymill</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/03/25/mrzard-now-octopress-github-pages/">MrZarD, now on Octopress on GitHub Pages</a>
       </li>
     
   </ul>
@@ -771,7 +756,7 @@ request.</p>
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Gonzalo Míguez -
+  Copyright &copy; 2014 - Gonzalo Míguez -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Programming Rambling]]></title>
   <link href="http://mrzard.github.com/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2013-10-30T16:21:09+01:00</updated>
+  <updated>2014-05-07T09:42:51+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -12,6 +12,136 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[What I have learnt as a CTO]]></title>
+    <link href="http://mrzard.github.com/blog/2014/05/06/what-i-have-learnt-as-a-cto/"/>
+    <updated>2014-05-06T13:10:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2014/05/06/what-i-have-learnt-as-a-cto</id>
+    <content type="html"><![CDATA[<p>When May comes to and end, I will end my one and a half years journey as a CTO for <a href="http://www.chicplace.com">ChicPlace.com</a>.</p>
+
+<p>The reasons for my depature are diverse, and possibly this is not the best place to discuss them, but
+I am very grateful for the opportunity to grow and learn while developing a project that has the
+potential to be something special.</p>
+
+<p>During this time I have gained a lot of experience managing teams, and learnt a lot about myself,
+specially when it comes to working with non-technical people, and how to manage expectations, deadlines
+and organisation when working in a very fast-paced and very improvisational startup.</p>
+
+<p>I will write a list of things that I have learnt, in the form of:</p>
+
+<ul>
+<li>List item.
+
+<ul>
+<li>How it has affected me personally.</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>Things that I now know I have to improve on and play a very big role in being a good CTO:</p>
+
+<ul>
+<li>Voice disagreement and take a stand when needed
+
+<ul>
+<li>Sometimes I have voiced disagreement with decisions by just making the Product team know I was against the decision made.</li>
+<li>When I feel a decision is plain wrong (not just a difference in opinion) I have to stand my ground and not budge.</li>
+<li>Don&#8217;t be afraid of denying requests if you can back your denial with data.</li>
+</ul>
+</li>
+<li>Find a sweet spot between being hands-off and hands-on
+
+<ul>
+<li>When handing out tasks I tend to plan them, and give them to someone on my team, then just wait for them to complete it. However, if they get stuck and ask for help I tend to sweep in and almost take over development. I have to improve because this, rightfully, can enrage senior developers, as well
+and be a hindrance to junior developers learning.</li>
+</ul>
+</li>
+<li>Be less aggressive with estimates.
+
+<ul>
+<li>Most developers underestimate how long tasks will take, or the number of interruptions that will happen, and I am one of them</li>
+<li>An estimate like &#8216;3 days if I can work full-time on this&#8217; is useless when you positively know that you will be able to put only
+40-50% of your time in it. Say 7 to 9 days right away, because all your counterparts will remember is &#8216;you said 3 days&#8217;</li>
+</ul>
+</li>
+<li>Involve yourself in strategic decisions.
+
+<ul>
+<li>I used to see myself as the technical element for a business. Now I see myself as the technical bridge for a business. I have to take
+a more direct approach and influence on the product side, become a domain expert so I can really understand the business needs and can
+choose the best technical solution more easily.</li>
+</ul>
+</li>
+</ul>
+
+
+<p>Things that I think I got right:</p>
+
+<ul>
+<li>Protect you team.
+
+<ul>
+<li>Your team should not be interrupted by anyone. Concentration is key.</li>
+<li>Success is result of the team being awesome, or a team member exceeding expectations.</li>
+<li>Failure comes when we as managers fail to provide the team with the right information and opportunity.</li>
+<li>Basically, as a CTO, if your team succeeds it&#8217;s because they are awesome. If they fail because you did not do your work.</li>
+</ul>
+</li>
+<li>Install a ticket-centric culture.
+
+<ul>
+<li>No ad-hoc requests, everything has to go through a ticketing system (i.e. Redmine).</li>
+</ul>
+</li>
+<li>No premature optimization.
+
+<ul>
+<li>We did not worry about going too deep into performance until we had a decent amount of functionality and traffic going.</li>
+</ul>
+</li>
+<li>Try to find a &#8216;good-enough&#8217; solution, and keep improving it when it&#8217;s no longer good enough.
+
+<ul>
+<li>Finding the perfect and definitive solution might be tempting, but when you work tight schedules, with the possibility of last-minute-changes
+on every turn, learning to recognise good-enough solutions will save you and your team tons of frustration.</li>
+</ul>
+</li>
+<li>Trust your team.
+
+<ul>
+<li>I had immense luck in working with people like <a href="https://twitter.com/nadalsol">Nadal Soler</a>, <a href="https://twitter.com/dpcat237">Denys Pasishnyi</a>, <a href="https://twitter.com/mmoreram">Marc Morera</a>, <a href="https://twitter.com/zimage">Aldo Chiecchia</a>,
+<a href="http://es.linkedin.com/pub/tomoki-kamo-mora/17/692/584">Tomoki Kamo</a>, <a href="https://twitter.com/SantiCastells">Santi Castells</a>, <a href="http://es.linkedin.com/pub/alejandra-casal-tarr%C3%A9/53/335/450">Alejandra Casal</a>, <a href="http://justlivingcool.wordpress.com/">Mercè Fernàndez</a>, <a href="http://fr.linkedin.com/pub/audrey-maman/31/279/139">Audrey Maman</a> and Olga de Mena, among others. All of them are exceptional at their jobs, and you can just be sure that their work will be top-class. As Tina Fey says on Bossypants &#8220;In most cases, being a good boss means hiring talented people and then getting out of their way&#8221;.</li>
+</ul>
+</li>
+<li>Always listen
+
+<ul>
+<li>There are no stupid questions.</li>
+<li>There are no stupid suggestions.</li>
+<li>Not everything has to be decided by the managers.</li>
+<li>The idea that makes your business might be that one you didn&#8217;t want to listen to.</li>
+</ul>
+</li>
+</ul>
+
+
+<p>In a nutshell:</p>
+
+<ul>
+<li>Measure everything. Try to improve. Rinse and repeat.</li>
+<li>Build a great team. Trust them to do wonderful things. Assume they are awesome, let them prove you wrong: Most of the time they will not let you down.</li>
+<li>Lose the fear to say NO.</li>
+<li>Be kind, encourage the people around you.</li>
+<li>Be honest, especially when it&#8217;s difficult. Dishonesty brings doubt and drives a wedge between team members.</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Customize form prototype for collections in Symfony2]]></title>
@@ -575,20 +705,6 @@ in the main update site), that makes the compare editor not work.</p>
 as a software source and update PDT to get rid of the problem.</p>
 
 <p>You can find detailed info at <a href="http://stackoverflow.com/questions/4230865/eclipse-problem-with-subclipse">StackOverflow</a> and <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=326194">Eclipse Bugs</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[SVN merge conflict fffffffuuuuuuuuuuuu comic]]></title>
-    <link href="http://mrzard.github.com/blog/2010/11/17/svn-merge-conflict-fffffffuuuuuuuuuuuu-comic/"/>
-    <updated>2010-11-17T09:00:51+01:00</updated>
-    <id>http://mrzard.github.com/blog/2010/11/17/svn-merge-conflict-fffffffuuuuuuuuuuuu-comic</id>
-    <content type="html"><![CDATA[<p>I found this comic, it perfectly expresses how painful code merges can be&#8230;
-Enjoy! :)</p>
-
-<p><img src="http://i.imgur.com/tTnUH.png" alt="" /></p>
-
-<p>Found vía <a href="http://www.reddit.com">Reddit</a> - <a href="http://www.reddit.com/r/programming/comments/e75yf/merge_conflict_rage/">Original thread</a></p>
 ]]></content>
   </entry>
   
