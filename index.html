@@ -1,1 +1,819 @@
 My Octopress Page is coming soon &hellip;
+=======
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Programming Rambling</title>
+  <meta name="author" content="Gonzalo Míguez">
+
+  
+  <meta name="description" content="When May comes to and end, I will end my one and a half years journey as a CTO for ChicPlace.com. The reasons for my depature are diverse, and &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mrzard.github.com">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Programming Rambling" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Programming Rambling</a></h1>
+  
+    <h2>mrzard's ramblings in the wild</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mrzard.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/about-me">About me</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/05/06/what-i-have-learnt-as-a-cto/">What I Have Learnt as a CTO</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-06T13:10:00+02:00" pubdate data-updated="true">May 6<span>th</span>, 2014</time>
+        
+         | <a href="/blog/2014/05/06/what-i-have-learnt-as-a-cto/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>When May comes to and end, I will end my one and a half years journey as a CTO for <a href="http://www.chicplace.com">ChicPlace.com</a>.</p>
+
+<p>The reasons for my depature are diverse, and possibly this is not the best place to discuss them, but
+I am very grateful for the opportunity to grow and learn while developing a project that has the
+potential to be something special.</p>
+
+<p>During this time I have gained a lot of experience managing teams, and learnt a lot about myself,
+specially when it comes to working with non-technical people, and how to manage expectations, deadlines
+and organisation when working in a very fast-paced and very improvisational startup.</p>
+
+<p>I will write a list of things that I have learnt, in the form of:</p>
+
+<ul>
+<li>List item.
+
+<ul>
+<li>How it has affected me personally.</li>
+</ul>
+</li>
+</ul>
+
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/05/06/what-i-have-learnt-as-a-cto/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/">Customize Form Prototype for Collections in Symfony2</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-30T15:57:00+01:00" pubdate data-updated="true">Oct 30<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>When working with complex forms, sometimes you will be in need of creating a collection field type to manage relations. When this is the case, you may find yourself in the need of tweaking how the &#8216;add&#8217; form shows.</p>
+
+<p>It&#8217;s pretty simple. In twig the protoype can be found under form.collection.vars.prototype and can be used as a regular form (i.e. if your form.collection member form has a &#8216;name&#8217;, it will also be available in form.collection.vars.protoype.name).</p>
+
+<p>With this information now you can create a twig that recieves an &#8216;item&#8217;, which can be either a form.collection member or a prototype, and it will be rendered the same.</p>
+
+<p>Finally, wherever you hold the collection html, you will have to output something like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>data-prototype="{% filter escape %}{% include 'prototype.twig' with { 'item': form.collection.vars.prototype } %}{% endfilter %}"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And your <code>prototype.twig</code> should look like</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{{ form_row(item.field0) }}
+</span><span class='line'>{{ form_row(item.field1) }}
+</span><span class='line'>{{ form_row(item.field2) }}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This way, you will have access to the prototype as if it were a regular form, and you can apply all the customization you want (you can user form_widget and the other functions, or access the vars directly, etc&#8230;)</p>
+
+<p>Creating the helper twig is optional though, but handy because you have to use the escape filter to the twig so you can put it in the correct data-attribute.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/">Flushing Only Desired Entities With Doctrine</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-10T11:10:00+02:00" pubdate data-updated="true">Oct 10<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Sometimes, you may be working with several entities at the same time. If this entities are managed by Doctrine, you may find yourself in the situation where you want to flush only some of them. If you want to do so, you can pass an array of entities to the flush(), so it only affects the entities you explicitly pass to the function.</p>
+
+<p>This is very useful to avoid side-effects in some instances.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/28/loading-cross-domain-fonts-from-firefox/">Loading Cross-domain Fonts From Firefox</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-28T14:00:00+01:00" pubdate data-updated="true">Mar 28<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/03/28/loading-cross-domain-fonts-from-firefox/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>When requiring a font from an external CSS file (assets domain, CDN, etc), you may see that Firefox refuses to display the font. This is because Firefox, by default, disables cross-domain fonts. To solve this you have to add a header to the response with the font file. The header is <code>Access-Control-Allow-Origin: *</code></p>
+
+<p>In a typical <code>nginx</code> setup, this is achieved with this snippet:</p>
+
+<figure class='code'><figcaption><span>nginx add header </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>location ~* \.(eot|ttf|woff)$ {
+</span><span class='line'>  add_header Access-Control-Allow-Origin *;
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Once you have that in place, the fonts will be loaded correctly from Firefox.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/26/my-experience-with-paymill/">My Experience With Paymill</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-26T12:30:00+01:00" pubdate data-updated="true">Mar 26<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/03/26/my-experience-with-paymill/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I have been using <a href="https://www.paymill.com">Paymill</a> at work for some time now, and this is what I think of it thus far:</p>
+
+<p>PROS:</p>
+
+<ul>
+<li>Easy to implement. As in dumb-proof easy.</li>
+<li>Commission (2.95% + 0.28€) is reasonable against time of implementation.</li>
+<li>No other fees. No setup fee, no base usage fee, nothing, only their commission.</li>
+<li>They only charge for successful transactions.</li>
+<li>Pays every 7 days, directly to your bank account.</li>
+<li>Removes lots of man-hours in payment-gateway related stuff.</li>
+<li>Removes the need to be PCI-compliant.</li>
+<li>They have <a href="https://github.com/Paymill">libraries</a> for lots of languages and software packages.</li>
+</ul>
+
+
+<p>CONS:</p>
+
+<ul>
+<li>Test mode and live mode do <em>not</em> behave the same in some instances.
+
+<ul>
+<li>Have not checked recently, but at a point the test mode worked with a deprecated parameter that resulted in an error if used in live mode.</li>
+<li>As of now, the amount sent to the bridge and the backend do NOT have to match in test mode for a successful transaction</li>
+</ul>
+</li>
+<li>Error messages are not that clear, although they have improved in that area.
+
+<ul>
+<li><code>40000 RESPONSE_DATA: general problem with data</code> or <code>40100 RESPONSE_DATA_CARD: problem with creditcard data</code> are not very telling. I got a 40100 for a client who did not have 3D-Secure enabled.</li>
+</ul>
+</li>
+<li>Sometimes they take a long time to answer to support tickets.</li>
+</ul>
+
+
+<p>BOTTOMLINE:</p>
+
+<p>Paymill is a great tool and I recommend it if you need a payment gateway FAST and cannot / do not want to spend time going PCI-compliant. Only thing that worries me is the discrepancy in behaviour between test mode and live mode which makes it necessary to run some &#8216;live&#8217; tests that would not be necessary otherwise. Anyway, once you have detected these little things you can work around them with your own tests and assertions.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/25/mrzard-now-octopress-github-pages/">MrZarD, Now on Octopress on GitHub Pages</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-25T15:45:00+01:00" pubdate data-updated="true">Mar 25<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/03/25/mrzard-now-octopress-github-pages/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Due to <a href="http://www.posterous.com/">Posterous</a> closing soon I had to look for another place to host my (seldomly updated) blog. After 10 minutes, I saw GitHub Pages and then saw <a href="http://octopress.org/">Octopress</a>. The combination of both is awesome and really feels great for a developer instead of a classic web interface.</p>
+
+<p>So, now you can find me here, at GitHub. Same content, same guy, same few updates!</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/">MySQL Query to Export Prestashop Data to a Shopify CSV</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-13T18:19:00+01:00" pubdate data-updated="true">Feb 13<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>If you find yourself migrating your shop from Prestashop to Shopify, you can
+use this query. It was written for an old version of Prestashop, but you probably
+won&#8217;t have much trouble adapting it to newer versions.</p>
+
+<p>Also, take in consideration this query only outputs basic data, no variants,
+colors, etc. Also check which values do you need for &#8216;variant requires shipping&#8217;,
+ID_LANG, etc.</p>
+
+<pre><code>SELECT pl.link_rewrite as `Handle`, pl.name as `Title`, 
+pl.description as `Body (HTML)`, 'VENDORNAME' as `Vendor`, pcl.`name` as `Type`, 
+t.`name` as Tags, '' as `Option1 Name`, '' as `Option1 Value`, '' as `Option2 Name`, 
+'' as `Option2 Value`, '' as `Option3 Name`, '' as `Option3 Value`, '' as `Variant SKU`, 
+p.weight * 1000 as `Variant Grams`, '' as `Variant Inventory Tracker`, p.`quantity` 
+as `Variant Inventory Qty`, 'deny' as `Variant Inventory Policy`, 'manual' 
+as `Variant Fulfillment Service`, p.price as `Variant Price`, p.price_before 
+as `Variant Compare At Price`, 'true' as `Variant Requires Shipping`, 'true' 
+as `Variant Taxable`, '' as `Image Src` 
+FROM 
+    `ps_product` p 
+    INNER JOIN `ps_product_lang` pl ON pl.`id_product` = p.`id_product` 
+    LEFT JOIN `ps_product_tag` pt ON pt.`id_product` = p.`id_product` 
+    LEFT JOIN `ps_tag` t ON t.`id_tag` = pt.`id_tag` 
+    INNER JOIN `ps_image` pi ON pi.`id_product` = p.`id_product` 
+    INNER JOIN `ps_category_lang` pcl ON pcl.`id_category` = p.`id_category_default` 
+WHERE 
+    pl.`id_lang` = ID_LANG 
+    AND pcl.`id_lang` = ID_LANG 
+    AND p.`id_category_default` IN (
+        SELECT `id_category` 
+        FROM `ps_category` WHERE `active` = 1
+    ) 
+    AND p.`active` = 1 GROUP BY p.`id_product`; 
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/">Generate CSRF Token Programatically in Symfony 2</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-08T16:28:29+02:00" pubdate data-updated="true">Aug 8<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>If you find yourself in the need of generating a CSRF token for a &#8216;built&#8217; Request
+or something in that fashion, you can do it rather easily:</p>
+
+<figure class='code'><figcaption><span>Generate CSRF token programatically  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'>
+</span><span class='line'><span class="nv">$csrfProvider</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">container</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;form.csrf_provider&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$csrfToken</span> <span class="o">=</span> <span class="nv">$csrfProvider</span><span class="o">-&gt;</span><span class="na">generateCsrfToken</span><span class="p">(</span><span class="s1">&#39;unknown&#39;</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>&#8216;unknown&#8217;</em> is the default &#8216;intention&#8217; of CSRF tokens in Symfony2, change &#8216;unknown&#8217;
+for the correct intention if you are using that option.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/">Release Cycles and Policies, Deploying Code Thoughts.</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-15T21:17:00+01:00" pubdate data-updated="true">Feb 15<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>In my programming experience I have worked with different ways of handling
+releases. From the old easy FTP access to other cool stuff like <a href="">phing</a>.</p>
+
+<p>What I have learned is that it does not really matter which tools you use,
+and is pretty much contained in the next points.</p>
+
+<p>0 - Prepare for the release. Write a &#8216;script&#8217; of what code has been changed/added
+and what tests it must pass (unit, integration, user&#8230;). Iterate until all
+tests have passed. Then move the release to your staging server. Always have
+100% awareness of what is going into the release.</p>
+
+<p>1 - Have a proper staging server(s). This allows for good testing, and reduces
+(hopefully eliminates) the necessity to double check stuff in the live server(s).</p>
+
+<p>3 - The release has to work. Test everything, then test it again. Then release.
+And go to 4.</p>
+
+<p>4 - Shit happens. The relese does not always work. This is pretty common, specially
+with large codebases, multiple programmers and code merging (SVN I&#8217;m looking
+at you). Or discrepancies between your live servers and your testing servers.
+Or simply someone forgot to run a test.</p>
+
+<p>5 - Your release system must work for you, not against you. It&#8217;s fine to have
+a release date / system, but fear not of changing it to fit your needs. This
+leads us to the next point.</p>
+
+<p>6 - Make it that the release system is quick and can be fired anytime. You
+never know when you&#8217;re going to need an emergency fix. Make it easy to fix
+mistakes. Also make it painful to make them. You don&#8217;t want developers feeling
+confident they can release a half cooked solution and fix it later. I must
+confess though that I prefer to release and fix than to never release.</p>
+
+<p>7 - Use of tools like phing can help you a lot automating some boring stuff,
+but again make deploying a simple procedure that has no bottlenecks and allows
+you to eliminate any serious enough bug or mistake in a heartbeat.</p>
+
+<p>8 - Do not fire your lean, quick release system for everything. That CSS fix
+can wait until the next release.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/14/common-recruiting-errors-made-by-companies/">Common Recruiting Errors Made by Companies.</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-14T10:26:00+01:00" pubdate data-updated="true">Dec 14<span>th</span>, 2011</time>
+        
+         | <a href="/blog/2011/12/14/common-recruiting-errors-made-by-companies/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Lately I&#8217;ve seen a lot of posts about errors candidates make in interviews.
+Now I am going to write a list of error employers make when looking for candidates.</p>
+
+<p>1 - Adding them in LinkedIn without asking or even introducing themselves.</p>
+
+<p>Guys,we get it, you are important. Now, please, the thing is YOU came looking
+for us, not the other way around. Introduce yourself. Why are you adding me
+as a contact? Keep in mind we do not know each other. For me this is the professional
+equivalent to &#8220;hey, wanna hook up?&#8221; in a dating site.</p>
+
+<p>2 - Recruting agencies special: Not disclosing which company they are recruiting
+for</p>
+
+<p>Yes, I can understand you want to be discreet and everything, but again, you
+came looking for a candidate. Do you really expect a (hopefully) talented person
+to engage in a (possibly) lengthy selection process when they know nothing
+about their employer?</p>
+
+<p>3 - Not stating salary / compensation</p>
+
+<p>If you are out there looking for talent, that talent is most of the time already
+employed. Why waste your time and the candidate&#8217;s time by making him/her go
+to interviews just to know the salary bracket? Also, even for unemployed talent,
+they will be drawn to the offers that give the most information. Hiding this
+crucial piece of info makes no sense to me.</p>
+
+<p>4 - Keeping a <code>you're _sooooo_ lucky</code> attitude</p>
+
+<p>Yes, we are lucky because most of us love our jobs. That&#8217;s it. You came looking
+for us, not the other way around, this is a key concept.<strong> You are the lucky
+ones if we are the top-notch employees you are looking for:</strong> <strong>we make more
+money for you than from you</strong>.</p>
+
+<p>5 - Not having tech people at the interview</p>
+
+<p>Personal interviews are fine, but we usually want to discuss details. Which
+technologies are we going to use? How many users? How many people are on the
+team? Is there a lot of turnover? Do we have a VPN so we can work remotely?
+Frameworks? And these are just basic questions most of the time HR cannot answer.
+Please, please, please, have a tech person there.</p>
+
+<p>Have I left something out? (Pretty sure I have). Don&#8217;t hesitate to comment
+and expand this list :D</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/2/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/05/06/what-i-have-learnt-as-a-cto/">What I have learnt as a CTO</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/">Customize form prototype for collections in Symfony2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/">Flushing only desired entities with Doctrine</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/28/loading-cross-domain-fonts-from-firefox/">Loading cross-domain fonts from Firefox</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/26/my-experience-with-paymill/">My experience with Paymill</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/mrzard">@mrzard</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mrzard',
+            count: 0,
+            skip_forks: false,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+<section>
+<h1>Twitter</h1>
+<a class="twitter-timeline" href="https://twitter.com/mrzard_dev" data-widget-id="316573872377970688">@mrzard_dev</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Gonzalo Míguez -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'mrzardblog';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Programming Rambling]]></title>
+  <link href="http://mrzard.github.com/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.com/"/>
+  <updated>2014-05-08T13:21:56+02:00</updated>
+  <id>http://mrzard.github.com/</id>
+  <author>
+    <name><![CDATA[Gonzalo Míguez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[What I have learnt as a CTO]]></title>
+    <link href="http://mrzard.github.com/blog/2014/05/06/what-i-have-learnt-as-a-cto/"/>
+    <updated>2014-05-06T13:10:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2014/05/06/what-i-have-learnt-as-a-cto</id>
+    <content type="html"><![CDATA[<p>When May comes to and end, I will end my one and a half years journey as a CTO for <a href="http://www.chicplace.com">ChicPlace.com</a>.</p>
+
+<p>The reasons for my depature are diverse, and possibly this is not the best place to discuss them, but
+I am very grateful for the opportunity to grow and learn while developing a project that has the
+potential to be something special.</p>
+
+<p>During this time I have gained a lot of experience managing teams, and learnt a lot about myself,
+specially when it comes to working with non-technical people, and how to manage expectations, deadlines
+and organisation when working in a very fast-paced and very improvisational startup.</p>
+
+<p>I will write a list of things that I have learnt, in the form of:</p>
+
+<ul>
+<li>List item.
+
+<ul>
+<li>How it has affected me personally.</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>Things that I now know I have to improve on and play a very big role in being a good CTO:</p>
+
+<ul>
+<li>Voice disagreement and take a stand when needed
+
+<ul>
+<li>Sometimes I have voiced disagreement with decisions by just making the Product team know I was against the decision made, but not
+stating why and how I could give a better solution.</li>
+<li>When I feel a decision is plain wrong (not just a difference in opinion) I have to stand my ground and not budge.</li>
+<li>Don&#8217;t be afraid of denying requests if you can back your denial with data.</li>
+</ul>
+</li>
+<li>Find a sweet spot between being hands-off and hands-on
+
+<ul>
+<li>When handing out tasks I tend to plan them, and give them to someone on my team, then just wait for them to complete it. However, if they get stuck and ask for help I tend to sweep in and almost take over development. I have to improve because this, rightfully, can enrage senior developers, as well
+as be a hindrance to junior developers&#8217; learning.</li>
+</ul>
+</li>
+<li>Be less aggressive with estimates.
+
+<ul>
+<li>Most developers underestimate how long tasks will take, or the number of interruptions that will happen, and I am one of them</li>
+<li>An estimate like &#8216;3 days if I can work full-time on this&#8217; is useless when you positively know that you will be able to put only
+40-50% of your time in it. Say 7 to 9 days right away, because all your counterparts will remember is &#8216;you said 3 days&#8217;</li>
+</ul>
+</li>
+<li>Involve yourself in strategic decisions.
+
+<ul>
+<li>I used to see myself as the technical element for a business. Now I see myself as the technical bridge for a business. I have to take
+a more direct approach and influence on the product side, become a domain expert so I can really understand the business needs and choose the best technical solution more easily.</li>
+</ul>
+</li>
+</ul>
+
+
+<p>Things that I think I got right:</p>
+
+<ul>
+<li>Protect you team.
+
+<ul>
+<li>Your team should not be interrupted by anyone. Concentration is key.</li>
+<li>Success is result of the team being awesome, or a team member exceeding expectations.</li>
+<li>Failure comes when we as managers fail to provide the team with the right information and opportunity.</li>
+<li>Basically, as a CTO, if your team succeeds it&#8217;s because they are awesome. If they fail it&#8217;s because you did not do your work.</li>
+</ul>
+</li>
+<li>Install a ticket-centric culture.
+
+<ul>
+<li>No ad-hoc requests, everything has to go through a ticketing system (i.e. Redmine).</li>
+</ul>
+</li>
+<li>No premature optimization.
+
+<ul>
+<li>We did not worry about going too deep into performance until we had a decent amount of functionality and traffic going.</li>
+</ul>
+</li>
+<li>Try to find a &#8216;good-enough&#8217; solution, and keep improving it when it&#8217;s no longer good enough.
+
+<ul>
+<li>Finding the perfect and definitive solution might be tempting, but when you work tight schedules, with the possibility of last-minute-changes
+on every turn, learning to recognise good-enough solutions will save you and your team tons of frustration.</li>
+</ul>
+</li>
+<li>Trust your team.
+
+<ul>
+<li>I had immense luck in working with people like <a href="https://twitter.com/nadalsol">Nadal Soler</a>, <a href="https://twitter.com/dpcat237">Denys Pasishnyi</a>, <a href="https://twitter.com/mmoreram">Marc Morera</a>, <a href="https://twitter.com/zimage">Aldo Chiecchia</a>,
+<a href="http://es.linkedin.com/pub/tomoki-kamo-mora/17/692/584">Tomoki Kamo</a>, <a href="https://twitter.com/SantiCastells">Santi Castells</a>, <a href="http://es.linkedin.com/pub/alejandra-casal-tarr%C3%A9/53/335/450">Alejandra Casal</a>, <a href="http://justlivingcool.wordpress.com/">Mercè Fernàndez</a>, <a href="http://fr.linkedin.com/pub/audrey-maman/31/279/139">Audrey Maman</a> and Olga de Mena, among others. All of them are exceptional at their jobs, and you can just be sure that their work will be top-class. As Tina Fey says on Bossypants &#8220;In most cases, being a good boss means hiring talented people and then getting out of their way&#8221;.</li>
+</ul>
+</li>
+<li>Always listen
+
+<ul>
+<li>There are no stupid questions.</li>
+<li>There are no stupid suggestions.</li>
+<li>Not everything has to be decided by the managers.</li>
+<li>The idea that makes your business might be that one you didn&#8217;t want to listen to.</li>
+</ul>
+</li>
+</ul>
+
+
+<p>In a nutshell:</p>
+
+<ul>
+<li>Measure everything. Try to improve. Rinse and repeat.</li>
+<li>Build a great team. Trust them to do wonderful things. Assume they are awesome, let them prove you wrong: Most of the time they will not let you down.</li>
+<li>Lose the fear to say NO.</li>
+<li>Be kind, encourage the people around you.</li>
+<li>Be honest, especially when it&#8217;s difficult. Dishonesty brings doubt and drives a wedge between team members.</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Customize form prototype for collections in Symfony2]]></title>
+    <link href="http://mrzard.github.com/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/"/>
+    <updated>2013-10-30T15:57:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2</id>
+    <content type="html"><![CDATA[<p>When working with complex forms, sometimes you will be in need of creating a collection field type to manage relations. When this is the case, you may find yourself in the need of tweaking how the &#8216;add&#8217; form shows.</p>
+
+<p>It&#8217;s pretty simple. In twig the protoype can be found under form.collection.vars.prototype and can be used as a regular form (i.e. if your form.collection member form has a &#8216;name&#8217;, it will also be available in form.collection.vars.protoype.name).</p>
+
+<p>With this information now you can create a twig that recieves an &#8216;item&#8217;, which can be either a form.collection member or a prototype, and it will be rendered the same.</p>
+
+<p>Finally, wherever you hold the collection html, you will have to output something like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>data-prototype="{% filter escape %}{% include 'prototype.twig' with { 'item': form.collection.vars.prototype } %}{% endfilter %}"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And your <code>prototype.twig</code> should look like</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{{ form_row(item.field0) }}
+</span><span class='line'>{{ form_row(item.field1) }}
+</span><span class='line'>{{ form_row(item.field2) }}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This way, you will have access to the prototype as if it were a regular form, and you can apply all the customization you want (you can user form_widget and the other functions, or access the vars directly, etc&#8230;)</p>
+
+<p>Creating the helper twig is optional though, but handy because you have to use the escape filter to the twig so you can put it in the correct data-attribute.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Flushing only desired entities with Doctrine]]></title>
+    <link href="http://mrzard.github.com/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/"/>
+    <updated>2013-10-10T11:10:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2013/10/10/flushing-only-desired-entities-with-doctrine</id>
+    <content type="html"><![CDATA[<p>Sometimes, you may be working with several entities at the same time. If this entities are managed by Doctrine, you may find yourself in the situation where you want to flush only some of them. If you want to do so, you can pass an array of entities to the flush(), so it only affects the entities you explicitly pass to the function.</p>
+
+<p>This is very useful to avoid side-effects in some instances.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Loading cross-domain fonts from Firefox]]></title>
+    <link href="http://mrzard.github.com/blog/2013/03/28/loading-cross-domain-fonts-from-firefox/"/>
+    <updated>2013-03-28T14:00:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2013/03/28/loading-cross-domain-fonts-from-firefox</id>
+    <content type="html"><![CDATA[<p>When requiring a font from an external CSS file (assets domain, CDN, etc), you may see that Firefox refuses to display the font. This is because Firefox, by default, disables cross-domain fonts. To solve this you have to add a header to the response with the font file. The header is <code>Access-Control-Allow-Origin: *</code></p>
+
+<p>In a typical <code>nginx</code> setup, this is achieved with this snippet:</p>
+
+<figure class='code'><figcaption><span>nginx add header </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>location ~* \.(eot|ttf|woff)$ {
+</span><span class='line'>  add_header Access-Control-Allow-Origin *;
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Once you have that in place, the fonts will be loaded correctly from Firefox.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My experience with Paymill]]></title>
+    <link href="http://mrzard.github.com/blog/2013/03/26/my-experience-with-paymill/"/>
+    <updated>2013-03-26T12:30:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2013/03/26/my-experience-with-paymill</id>
+    <content type="html"><![CDATA[<p>I have been using <a href="https://www.paymill.com">Paymill</a> at work for some time now, and this is what I think of it thus far:</p>
+
+<p>PROS:</p>
+
+<ul>
+<li>Easy to implement. As in dumb-proof easy.</li>
+<li>Commission (2.95% + 0.28€) is reasonable against time of implementation.</li>
+<li>No other fees. No setup fee, no base usage fee, nothing, only their commission.</li>
+<li>They only charge for successful transactions.</li>
+<li>Pays every 7 days, directly to your bank account.</li>
+<li>Removes lots of man-hours in payment-gateway related stuff.</li>
+<li>Removes the need to be PCI-compliant.</li>
+<li>They have <a href="https://github.com/Paymill">libraries</a> for lots of languages and software packages.</li>
+</ul>
+
+
+<p>CONS:</p>
+
+<ul>
+<li>Test mode and live mode do <em>not</em> behave the same in some instances.
+
+<ul>
+<li>Have not checked recently, but at a point the test mode worked with a deprecated parameter that resulted in an error if used in live mode.</li>
+<li>As of now, the amount sent to the bridge and the backend do NOT have to match in test mode for a successful transaction</li>
+</ul>
+</li>
+<li>Error messages are not that clear, although they have improved in that area.
+
+<ul>
+<li><code>40000 RESPONSE_DATA: general problem with data</code> or <code>40100 RESPONSE_DATA_CARD: problem with creditcard data</code> are not very telling. I got a 40100 for a client who did not have 3D-Secure enabled.</li>
+</ul>
+</li>
+<li>Sometimes they take a long time to answer to support tickets.</li>
+</ul>
+
+
+<p>BOTTOMLINE:</p>
+
+<p>Paymill is a great tool and I recommend it if you need a payment gateway FAST and cannot / do not want to spend time going PCI-compliant. Only thing that worries me is the discrepancy in behaviour between test mode and live mode which makes it necessary to run some &#8216;live&#8217; tests that would not be necessary otherwise. Anyway, once you have detected these little things you can work around them with your own tests and assertions.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MrZarD, now on Octopress on GitHub Pages]]></title>
+    <link href="http://mrzard.github.com/blog/2013/03/25/mrzard-now-octopress-github-pages/"/>
+    <updated>2013-03-25T15:45:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2013/03/25/mrzard-now-octopress-github-pages</id>
+    <content type="html"><![CDATA[<p>Due to <a href="http://www.posterous.com/">Posterous</a> closing soon I had to look for another place to host my (seldomly updated) blog. After 10 minutes, I saw GitHub Pages and then saw <a href="http://octopress.org/">Octopress</a>. The combination of both is awesome and really feels great for a developer instead of a classic web interface.</p>
+
+<p>So, now you can find me here, at GitHub. Same content, same guy, same few updates!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MySQL Query to Export Prestashop Data to a Shopify CSV]]></title>
+    <link href="http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/"/>
+    <updated>2013-02-13T18:19:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv</id>
+    <content type="html"><![CDATA[<p>If you find yourself migrating your shop from Prestashop to Shopify, you can
+use this query. It was written for an old version of Prestashop, but you probably
+won&#8217;t have much trouble adapting it to newer versions.</p>
+
+<p>Also, take in consideration this query only outputs basic data, no variants,
+colors, etc. Also check which values do you need for &#8216;variant requires shipping&#8217;,
+ID_LANG, etc.</p>
+
+<pre><code>SELECT pl.link_rewrite as `Handle`, pl.name as `Title`, 
+pl.description as `Body (HTML)`, 'VENDORNAME' as `Vendor`, pcl.`name` as `Type`, 
+t.`name` as Tags, '' as `Option1 Name`, '' as `Option1 Value`, '' as `Option2 Name`, 
+'' as `Option2 Value`, '' as `Option3 Name`, '' as `Option3 Value`, '' as `Variant SKU`, 
+p.weight * 1000 as `Variant Grams`, '' as `Variant Inventory Tracker`, p.`quantity` 
+as `Variant Inventory Qty`, 'deny' as `Variant Inventory Policy`, 'manual' 
+as `Variant Fulfillment Service`, p.price as `Variant Price`, p.price_before 
+as `Variant Compare At Price`, 'true' as `Variant Requires Shipping`, 'true' 
+as `Variant Taxable`, '' as `Image Src` 
+FROM 
+    `ps_product` p 
+    INNER JOIN `ps_product_lang` pl ON pl.`id_product` = p.`id_product` 
+    LEFT JOIN `ps_product_tag` pt ON pt.`id_product` = p.`id_product` 
+    LEFT JOIN `ps_tag` t ON t.`id_tag` = pt.`id_tag` 
+    INNER JOIN `ps_image` pi ON pi.`id_product` = p.`id_product` 
+    INNER JOIN `ps_category_lang` pcl ON pcl.`id_category` = p.`id_category_default` 
+WHERE 
+    pl.`id_lang` = ID_LANG 
+    AND pcl.`id_lang` = ID_LANG 
+    AND p.`id_category_default` IN (
+        SELECT `id_category` 
+        FROM `ps_category` WHERE `active` = 1
+    ) 
+    AND p.`active` = 1 GROUP BY p.`id_product`; 
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Generate CSRF token programatically in Symfony 2]]></title>
+    <link href="http://mrzard.github.com/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/"/>
+    <updated>2012-08-08T16:28:29+02:00</updated>
+    <id>http://mrzard.github.com/blog/2012/08/08/generate-csrf-token-programatically-in-symfon</id>
+    <content type="html"><![CDATA[<p>If you find yourself in the need of generating a CSRF token for a &#8216;built&#8217; Request
+or something in that fashion, you can do it rather easily:</p>
+
+<figure class='code'><figcaption><span>Generate CSRF token programatically  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'>
+</span><span class='line'><span class="nv">$csrfProvider</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">container</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;form.csrf_provider&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$csrfToken</span> <span class="o">=</span> <span class="nv">$csrfProvider</span><span class="o">-&gt;</span><span class="na">generateCsrfToken</span><span class="p">(</span><span class="s1">&#39;unknown&#39;</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>&#8216;unknown&#8217;</em> is the default &#8216;intention&#8217; of CSRF tokens in Symfony2, change &#8216;unknown&#8217;
+for the correct intention if you are using that option.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Release cycles and policies, deploying code thoughts.]]></title>
+    <link href="http://mrzard.github.com/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/"/>
+    <updated>2012-02-15T21:17:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2012/02/15/release-cycles-and-policies-deploying-code-th</id>
+    <content type="html"><![CDATA[<p>In my programming experience I have worked with different ways of handling
+releases. From the old easy FTP access to other cool stuff like <a href="">phing</a>.</p>
+
+<p>What I have learned is that it does not really matter which tools you use,
+and is pretty much contained in the next points.</p>
+
+<p>0 - Prepare for the release. Write a &#8216;script&#8217; of what code has been changed/added
+and what tests it must pass (unit, integration, user&#8230;). Iterate until all
+tests have passed. Then move the release to your staging server. Always have
+100% awareness of what is going into the release.</p>
+
+<p>1 - Have a proper staging server(s). This allows for good testing, and reduces
+(hopefully eliminates) the necessity to double check stuff in the live server(s).</p>
+
+<p>3 - The release has to work. Test everything, then test it again. Then release.
+And go to 4.</p>
+
+<p>4 - Shit happens. The relese does not always work. This is pretty common, specially
+with large codebases, multiple programmers and code merging (SVN I&#8217;m looking
+at you). Or discrepancies between your live servers and your testing servers.
+Or simply someone forgot to run a test.</p>
+
+<p>5 - Your release system must work for you, not against you. It&#8217;s fine to have
+a release date / system, but fear not of changing it to fit your needs. This
+leads us to the next point.</p>
+
+<p>6 - Make it that the release system is quick and can be fired anytime. You
+never know when you&#8217;re going to need an emergency fix. Make it easy to fix
+mistakes. Also make it painful to make them. You don&#8217;t want developers feeling
+confident they can release a half cooked solution and fix it later. I must
+confess though that I prefer to release and fix than to never release.</p>
+
+<p>7 - Use of tools like phing can help you a lot automating some boring stuff,
+but again make deploying a simple procedure that has no bottlenecks and allows
+you to eliminate any serious enough bug or mistake in a heartbeat.</p>
+
+<p>8 - Do not fire your lean, quick release system for everything. That CSS fix
+can wait until the next release.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Common recruiting errors made by companies.]]></title>
+    <link href="http://mrzard.github.com/blog/2011/12/14/common-recruiting-errors-made-by-companies/"/>
+    <updated>2011-12-14T10:26:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2011/12/14/common-recruiting-errors-made-by-companies</id>
+    <content type="html"><![CDATA[<p>Lately I&#8217;ve seen a lot of posts about errors candidates make in interviews.
+Now I am going to write a list of error employers make when looking for candidates.</p>
+
+<p>1 - Adding them in LinkedIn without asking or even introducing themselves.</p>
+
+<p>Guys,we get it, you are important. Now, please, the thing is YOU came looking
+for us, not the other way around. Introduce yourself. Why are you adding me
+as a contact? Keep in mind we do not know each other. For me this is the professional
+equivalent to &#8220;hey, wanna hook up?&#8221; in a dating site.</p>
+
+<p>2 - Recruting agencies special: Not disclosing which company they are recruiting
+for</p>
+
+<p>Yes, I can understand you want to be discreet and everything, but again, you
+came looking for a candidate. Do you really expect a (hopefully) talented person
+to engage in a (possibly) lengthy selection process when they know nothing
+about their employer?</p>
+
+<p>3 - Not stating salary / compensation</p>
+
+<p>If you are out there looking for talent, that talent is most of the time already
+employed. Why waste your time and the candidate&#8217;s time by making him/her go
+to interviews just to know the salary bracket? Also, even for unemployed talent,
+they will be drawn to the offers that give the most information. Hiding this
+crucial piece of info makes no sense to me.</p>
+
+<p>4 - Keeping a <code>you're _sooooo_ lucky</code> attitude</p>
+
+<p>Yes, we are lucky because most of us love our jobs. That&#8217;s it. You came looking
+for us, not the other way around, this is a key concept.<strong> You are the lucky
+ones if we are the top-notch employees you are looking for:</strong> <strong>we make more
+money for you than from you</strong>.</p>
+
+<p>5 - Not having tech people at the interview</p>
+
+<p>Personal interviews are fine, but we usually want to discuss details. Which
+technologies are we going to use? How many users? How many people are on the
+team? Is there a lot of turnover? Do we have a VPN so we can work remotely?
+Frameworks? And these are just basic questions most of the time HR cannot answer.
+Please, please, please, have a tech person there.</p>
+
+<p>Have I left something out? (Pretty sure I have). Don&#8217;t hesitate to comment
+and expand this list :D</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Generate a valid Google Premier signature in PHP]]></title>
+    <link href="http://mrzard.github.com/blog/2011/12/12/generate-a-valid-google-premier-signature-in/"/>
+    <updated>2011-12-12T11:23:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2011/12/12/generate-a-valid-google-premier-signature-in</id>
+    <content type="html"><![CDATA[<p>Google Premier requires for you to generate a signature over the URL you&#8217;re
+going to ask for, then send that signature alongside the request. Here is how
+to do it, as there is no PHP example in the <a href="http://code.google.com/intl/es-ES/apis/maps/documentation/webservices/#URLSigning">Google Premier URL Signature documentation</a></p>
+
+<p>In this code snippet we assume:</p>
+
+<ul>
+<li><code>$request_url</code> has the url that will be using the Google Premier service (for example, Static Maps API). It also already has the client param, sensor param, etc.</li>
+<li><code>$signature_key</code> has the key provided to you by Google</li>
+<li>You are running this snippet from an authorized domain</li>
+<li>Props to <a href="http://stackoverflow.com/questions/3125410/trying-to-digitally-sign-via-hmac-sha1-with-php">ZZ Coder at StackOverflow</a></li>
+</ul>
+
+
+<figure class='code'><figcaption><span>Generate a valid Google Premier signature  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'>
+</span><span class='line'><span class="nv">$url_parts</span> <span class="o">=</span> <span class="nb">parse_url</span><span class="p">(</span><span class="nv">$request_url</span><span class="p">);</span> <span class="nv">$signable_part</span> <span class="o">=</span> <span class="nv">$url_parts</span><span class="p">[</span><span class="s1">&#39;path&#39;</span><span class="p">]</span><span class="o">.</span><span class="s1">&#39;?&#39;</span><span class="o">.</span><span class="nv">$url_parts</span><span class="p">[</span><span class="s1">&#39;query&#39;</span><span class="p">];</span>
+</span><span class='line'><span class="nv">$decoded_key</span> <span class="o">=</span> <span class="nb">base64_decode</span><span class="p">(</span><span class="nx">strtr</span><span class="p">(</span><span class="nv">$signature_key</span><span class="p">,</span> <span class="s1">&#39;-_&#39;</span><span class="p">,</span> <span class="s1">&#39;+/&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$url_signature</span> <span class="o">=</span> <span class="nb">hash_hmac</span><span class="p">(</span><span class="s1">&#39;sha1&#39;</span><span class="p">,</span> <span class="nv">$signable_part</span><span class="p">,</span> <span class="nv">$decoded_key</span><span class="p">),</span> <span class="k">true</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$base64signature</span> <span class="o">=</span> <span class="nx">strtr</span><span class="p">(</span><span class="nb">base64_encode</span><span class="p">(</span><span class="nv">$url_signature</span><span class="p">),</span> <span class="s1">&#39;+/&#39;</span><span class="p">,</span> <span class="s1">&#39;-_&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$signature_param</span> <span class="o">=</span> <span class="s1">&#39;&amp;signature=&#39;</span><span class="o">.</span><span class="nb">urlencode</span><span class="p">(</span><span class="nv">$base64signature</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>&#8216;Strange&#8217; things in this snippet:</p>
+
+<ul>
+<li>Why the strtr()? Because Google uses URL-Safe base64</li>
+<li>Why the true param at the end of hash_hmac? Because we need it the signature to be returned in binary before base64encondig it.</li>
+</ul>
+
+
+<p>Then you just have to append <code>$signature_param</code> to your original request (which
+we&#8217;ve assumed is in <code>$request_url</code>) to have a correctly signed Google Premier
+request.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[PHP namespaces simple explanation]]></title>
+    <link href="http://mrzard.github.com/blog/2011/10/25/php-namespaces-simple-explanation/"/>
+    <updated>2011-10-25T11:58:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2011/10/25/php-namespaces-simple-explanation</id>
+    <content type="html"><![CDATA[<p>This is one of the most clear and comprehensible articles on namespaces I have
+ever seen. If you&#8217;re having trouble understanding the logic behind them or
+how to use them, please do take a look at it:</p>
+
+<p><a href="http://phpmaster.com/php-namespaces/">PHP Namespaces on PHPMaster.com</a> by Moshe Teutsch (<a href="http://phpmaster.com/author/moteutsch/">http://phpmaster.com/author/moteutsch/</a>)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu: Window borders & toolbars gone.]]></title>
+    <link href="http://mrzard.github.com/blog/2011/09/26/ubuntu-window-borders-toolbars-gone/"/>
+    <updated>2011-09-26T09:01:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2011/09/26/ubuntu-window-borders-toolbars-gone</id>
+    <content type="html"><![CDATA[<p>If you happen to run into this problem (you cannot resize your windows and
+have no access to window toolbars) in Ubuntu, the solution is pretty simple.
+Just run &#8220;gtk-window-decorator&#8221; (no quotes) from a terminal (or from ALT-F2)
+and you&#8217;re redy to go.</p>
+
+<p>For Unity I read running &#8220;unity &#8211;reset&#8221; (again. no quotes) may help.</p>
+
+<p><strong>EDIT:</strong> If this happened in xfce, run &#8220;xfwm4 &amp;&#8221; from a terminal.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Dynamically activate tinyMCE on a given textarea.]]></title>
+    <link href="http://mrzard.github.com/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte/"/>
+    <updated>2011-05-24T11:05:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte</id>
+    <content type="html"><![CDATA[<p>If you are adding textareas dynamically and wish to enable tinyMCE on them,
+you just have to add this on the javascript function that adds said textarea.</p>
+
+<p><code>tinyMCE.execCommand('mceAddControl',false, id_of_addedtextarea);</code></p>
+
+<p>Where &#8216;id_of_addedtextarea&#8217; is what its name implies ;)</p>
+
+<p>More detailed and better info here: <a href="http://blog.dileno.com/archive/201102/adding-tinymce-editor-dynamically-and-get-its-value/">http://blog.dileno.com/archive/201102/adding-tinymce-editor-dynamically-and-get-its-value/</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Memcache vs Memcached (PHP): A simple explanation]]></title>
+    <link href="http://mrzard.github.com/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio/"/>
+    <updated>2011-05-06T09:19:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio</id>
+    <content type="html"><![CDATA[<p>In a nutshell:</p>
+
+<p>memcache is older, less mantained.</p>
+
+<p>memcached is newer, developed by Digg people and generally preferred. Also
+it seems it is more configurable and has more options.</p>
+
+<p>Complete explanation and opinions: <a href="http://serverfault.com/questions/63383/memcache-vs-memcached">http://serverfault.com/questions/63383/memcache-vs-memcached</a></p>
+
+<p>Client comparision: <a href="http://code.google.com/p/memcached/wiki/PHPClientComparison">http://code.google.com/p/memcached/wiki/PHPClientComparison</a></p>
+
+<p>PECL pages:<br/>
+<a href="http://pecl.php.net/package/memcache">http://pecl.php.net/package/memcache</a><br/>
+<a href="http://pecl.php.net/package/memcached">http://pecl.php.net/package/memcached</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Drag and drop interaction made easy with jQuery (and jQuery UI)]]></title>
+    <link href="http://mrzard.github.com/blog/2011/04/12/drag-and-drop-interaction-made-easy-with-jque/"/>
+    <updated>2011-04-12T10:18:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2011/04/12/drag-and-drop-interaction-made-easy-with-jque</id>
+    <content type="html"><![CDATA[<p>Last week at work I had to make a drag-and-drop configurable homepage, where
+individual news items had to had the ability to be moved and arranged in a
+grid which represented the available placeholders on the homepage.</p>
+
+<p>My work was made MUCH easier by the <a href="http://jqueryui.com/demos/draggable/">draggable</a> and <a href="http://jqueryui.com/demos/droppable/">droppable</a> plugins
+in jQuery UI. I just had to add a class which I binded the draggable plugin
+to to the news items and then add another class to the placeholders which I
+binded to the droppable plugin.</p>
+
+<p>In case it&#8217;s of help for somebody, here&#8217;s a quick &#8216;skeleton&#8217; on top of which
+you can code the drag&amp;drop interactions you want.</p>
+
+<figure class='code'><figcaption><span>Draggable-Droppable example  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'>
+</span><span class='line'>  <span class="kd">var</span> <span class="nx">draggable_options</span> <span class="o">=</span> <span class="p">{</span>
+</span><span class='line'>          <span class="nx">helper</span><span class="o">:</span> <span class="s1">&#39;clone&#39;</span><span class="p">,</span>  <span class="cm">/* makes the item &#39;move&#39; a copy of itself rather than </span>
+</span><span class='line'><span class="cm">                         &#39;   leave&#39; the original area */</span>
+</span><span class='line'>          <span class="nx">revert</span><span class="o">:</span> <span class="s1">&#39;invalid&#39;</span><span class="p">,</span>    <span class="cm">/* makes the item return to its original position </span>
+</span><span class='line'><span class="cm">                             if not dropped in a &#39;droppable&#39; area */</span>
+</span><span class='line'>          <span class="nx">cursor</span><span class="o">:</span> <span class="s1">&#39;move&#39;</span>       <span class="c1">// changes the cursor appearance on hover </span>
+</span><span class='line'>  <span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">//we give the items the draggable plugin with the options </span>
+</span><span class='line'>  <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.draggable&quot;</span><span class="p">).</span><span class="nx">draggable</span><span class="p">(</span><span class="nx">draggable_options</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.droppable&quot;</span><span class="p">).</span><span class="nx">droppable</span><span class="p">({</span>
+</span><span class='line'>      <span class="nx">drop</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">,</span> <span class="nx">ui</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>          <span class="cm">/* detect where we dropped the draggable element, </span>
+</span><span class='line'><span class="cm">         in my case, the key part was the element&#39;s id */</span>
+</span><span class='line'>          <span class="kd">var</span> <span class="nx">dropped_in</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">);</span>
+</span><span class='line'>          
+</span><span class='line'>          <span class="cm">/* here i put &#39;...&#39; in the droppable container&#39;s body to inform </span>
+</span><span class='line'><span class="cm">         the user &#39;something&#39; is happening */</span>
+</span><span class='line'>          <span class="kd">var</span> <span class="nx">context</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+</span><span class='line'>          <span class="nx">context</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;...&#39;</span><span class="p">);</span>
+</span><span class='line'>          
+</span><span class='line'>          <span class="kd">var</span> <span class="nx">dragged</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nx">ui</span><span class="p">.</span><span class="nx">draggable</span><span class="p">);</span>
+</span><span class='line'>          <span class="cm">/* ui.draggable is a reference to the dropped element. </span>
+</span><span class='line'><span class="cm">         Now you can use all jQuery functions like dragged.attr(&#39;id&#39;) to get its id, </span>
+</span><span class='line'><span class="cm">         or dragged.html(&#39;whatever&#39;) to change its innerHTML, etc... */</span>
+</span><span class='line'>
+</span><span class='line'>          <span class="cm">/* Here comes interaction, the removal of &#39;...&#39; and </span>
+</span><span class='line'><span class="cm">         display of the action results */</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>  <span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Failed to connect to socket /com/ubuntu/upstart ? Upstart Jobs Cannot be Run on chroot]]></title>
+    <link href="http://mrzard.github.com/blog/2011/02/01/failed-to-connect-to-socket-comubuntuupstart/"/>
+    <updated>2011-02-01T13:01:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2011/02/01/failed-to-connect-to-socket-comubuntuupstart</id>
+    <content type="html"><![CDATA[<p>Thanks to <a href="http://www.ashang.org/2010/10/unable-to-connect-to-upstart.html">http://www.ashang.org/2010/10/unable-to-connect-to-upstart.html</a>
+I was finally able to upgrade my system while chrooted.</p>
+
+<p>Being on chroot will cause some packages to fail when they are upgrading. Giving
+us an error message like this one:</p>
+
+<p>start: Unable to connect to Upstart: Failed to connect to socket /com/ubuntu/upstart: Connection refused<br/>
+dpkg: error processing procps (&#8211;configure):</p>
+
+<p>You can workaround this limitation by running these commands</p>
+
+<p>$dpkg-divert &#8211;local &#8211;rename &#8211;add /sbin/initctl<br/>
+Adding &#8216;local diversion of /sbin/initctl to /sbin/initctl.distrib&#8217;<br/>
+$ln -s /bin/true /sbin/initctl</p>
+
+<p>Then you can run the upgrade, or do a dpkg &#8211;configure -a to upgrade the packages
+that were previously failing.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Great post about Lambdas and Closures on PHP 5.3]]></title>
+    <link href="http://mrzard.github.com/blog/2010/12/31/great-post-about-lambdas-and-closures-on-php/"/>
+    <updated>2010-12-31T13:21:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2010/12/31/great-post-about-lambdas-and-closures-on-php</id>
+    <content type="html"><![CDATA[<p>Shameer made a great, informative and comprehensive <a href="http://www.shameerc.com/2010/12/php-53-practical-look-into-lambda.html">post about Lambdas and
+Closures</a> take a look! It&#8217;s really worth the little time it takes to read
+it.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Choosing a method to store passwords safely.]]></title>
+    <link href="http://mrzard.github.com/blog/2010/12/13/choosing-a-method-to-safely-store-passwords/"/>
+    <updated>2010-12-13T13:30:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2010/12/13/choosing-a-method-to-safely-store-passwords</id>
+    <content type="html"><![CDATA[<p>As seen in the Gawker/Gizmodo HUGE problem with having their passwords compromised,
+I found a short and excellent post about why using speed-oriented hash functions
+is a bad idea for password encryption.</p>
+
+<p>In a nutshell, MD5, SHA1 and the like are designed to work fast with large
+amounts of data, so they are most useful when calculating data integrity and
+the like, but being fast, they are also easy to attack by brute force.</p>
+
+<p>On the other hand <a href="http://bcrypt.sourceforge.net/">Bcrypt</a> is &#8216;slow&#8217; when compared with other hashing algorithms,
+which makes it strong against brute force attacks. You can find the original
+post here: <a href="http://codahale.com/how-to-safely-store-a-password/">http://codahale.com/how-to-safely-store-a-password/</a></p>
+
+<p>I do not necessarily agree with the &#8216;uselessness&#8217; of salting passwords, as
+that makes it harder to find a general pattern to attack ALL of the accounts
+protected by a single password in the system, but I see the point of it not
+being able to prevent or slow brute force attacks.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Getting a grey window in the compare editor with Eclipse Helios (w/PDT)]]></title>
+    <link href="http://mrzard.github.com/blog/2010/11/23/getting-a-grey-window-in-the-compare-editor-w/"/>
+    <updated>2010-11-23T11:58:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2010/11/23/getting-a-grey-window-in-the-compare-editor-w</id>
+    <content type="html"><![CDATA[<p>This is a very annoying bug (it really surprises me it is not already patched
+in the main update site), that makes the compare editor not work.</p>
+
+<p>The solution is pretty simple, though, just add <a href="http://download.eclipse.org/tools/pdt/updates/2.2/milestones">http://download.eclipse.org/tools/pdt/updates/2.2/milestones</a>
+as a software source and update PDT to get rid of the problem.</p>
+
+<p>You can find detailed info at <a href="http://stackoverflow.com/questions/4230865/eclipse-problem-with-subclipse">StackOverflow</a> and <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=326194">Eclipse Bugs</a></p>
+]]></content>
+  </entry>
+  
+</feed>

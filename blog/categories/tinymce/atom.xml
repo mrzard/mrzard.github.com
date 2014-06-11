@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: tinyMCE | Programming Rambling]]></title>
+  <link href="http://mrzard.github.com/blog/categories/tinymce/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.com/"/>
+  <updated>2014-05-08T13:21:56+02:00</updated>
+  <id>http://mrzard.github.com/</id>
+  <author>
+    <name><![CDATA[Gonzalo Míguez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Dynamically activate tinyMCE on a given textarea.]]></title>
+    <link href="http://mrzard.github.com/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte/"/>
+    <updated>2011-05-24T11:05:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte</id>
+    <content type="html"><![CDATA[<p>If you are adding textareas dynamically and wish to enable tinyMCE on them,
+you just have to add this on the javascript function that adds said textarea.</p>
+
+<p><code>tinyMCE.execCommand('mceAddControl',false, id_of_addedtextarea);</code></p>
+
+<p>Where 'id_of_addedtextarea' is what its name implies ;)</p>
+
+<p>More detailed and better info here: <a href="http://blog.dileno.com/archive/201102/adding-tinymce-editor-dynamically-and-get-its-value/">http://blog.dileno.com/archive/201102/adding-tinymce-editor-dynamically-and-get-its-value/</a></p>
+]]></content>
+  </entry>
+  
+</feed>

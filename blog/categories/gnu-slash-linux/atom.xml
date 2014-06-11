@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: GNU/Linux | Programming Rambling]]></title>
+  <link href="http://mrzard.github.com/blog/categories/gnu-slash-linux/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.com/"/>
+  <updated>2014-05-08T13:21:56+02:00</updated>
+  <id>http://mrzard.github.com/</id>
+  <author>
+    <name><![CDATA[Gonzalo Míguez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu: Window borders & toolbars gone.]]></title>
+    <link href="http://mrzard.github.com/blog/2011/09/26/ubuntu-window-borders-toolbars-gone/"/>
+    <updated>2011-09-26T09:01:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2011/09/26/ubuntu-window-borders-toolbars-gone</id>
+    <content type="html"><![CDATA[<p>If you happen to run into this problem (you cannot resize your windows and
+have no access to window toolbars) in Ubuntu, the solution is pretty simple.
+Just run "gtk-window-decorator" (no quotes) from a terminal (or from ALT-F2)
+and you're redy to go.</p>
+
+<p>For Unity I read running "unity --reset" (again. no quotes) may help.</p>
+
+<p><strong>EDIT:</strong> If this happened in xfce, run "xfwm4 &amp;" from a terminal.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Failed to connect to socket /com/ubuntu/upstart ? Upstart Jobs Cannot be Run on chroot]]></title>
+    <link href="http://mrzard.github.com/blog/2011/02/01/failed-to-connect-to-socket-comubuntuupstart/"/>
+    <updated>2011-02-01T13:01:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2011/02/01/failed-to-connect-to-socket-comubuntuupstart</id>
+    <content type="html"><![CDATA[<p>Thanks to <a href="http://www.ashang.org/2010/10/unable-to-connect-to-upstart.html">http://www.ashang.org/2010/10/unable-to-connect-to-upstart.html</a>
+I was finally able to upgrade my system while chrooted.</p>
+
+<p>Being on chroot will cause some packages to fail when they are upgrading. Giving
+us an error message like this one:</p>
+
+<p>start: Unable to connect to Upstart: Failed to connect to socket /com/ubuntu/upstart: Connection refused<br/>
+dpkg: error processing procps (--configure):</p>
+
+<p>You can workaround this limitation by running these commands</p>
+
+<p>$dpkg-divert --local --rename --add /sbin/initctl<br/>
+Adding 'local diversion of /sbin/initctl to /sbin/initctl.distrib'<br/>
+$ln -s /bin/true /sbin/initctl</p>
+
+<p>Then you can run the upgrade, or do a dpkg --configure -a to upgrade the packages
+that were previously failing.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cygwin + Rsync error 13 + Windows 7 problems]]></title>
+    <link href="http://mrzard.github.com/blog/2010/09/07/cygwin-rsync-error-13-windows-7-problems/"/>
+    <updated>2010-09-07T23:30:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2010/09/07/cygwin-rsync-error-13-windows-7-problems</id>
+    <content type="html"><![CDATA[<p>If you find yourself getting rsync error 13 when using it on cygwin, check
+the permissions on your source folder. For some reason, out of the box all
+directories have 400 permissions, and if your destination folder needs anything
+higher than that, rsync will fail. Make sure you execute chmod -R 755 on the
+source directory - assuming it's in your cygwin box-.</p>
+
+<p>Also, if chmod fails, make sure you ran cygwin as administrator on your Windows
+machine.</p>
+
+<p>Worked like a charm for me!</p>
+]]></content>
+  </entry>
+  
+</feed>

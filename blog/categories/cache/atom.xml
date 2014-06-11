@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: cache | Programming Rambling]]></title>
+  <link href="http://mrzard.github.com/blog/categories/cache/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.com/"/>
+  <updated>2014-05-08T13:21:56+02:00</updated>
+  <id>http://mrzard.github.com/</id>
+  <author>
+    <name><![CDATA[Gonzalo Míguez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Memcache vs Memcached (PHP): A simple explanation]]></title>
+    <link href="http://mrzard.github.com/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio/"/>
+    <updated>2011-05-06T09:19:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio</id>
+    <content type="html"><![CDATA[<p>In a nutshell:</p>
+
+<p>memcache is older, less mantained.</p>
+
+<p>memcached is newer, developed by Digg people and generally preferred. Also
+it seems it is more configurable and has more options.</p>
+
+<p>Complete explanation and opinions: <a href="http://serverfault.com/questions/63383/memcache-vs-memcached">http://serverfault.com/questions/63383/memcache-vs-memcached</a></p>
+
+<p>Client comparision: <a href="http://code.google.com/p/memcached/wiki/PHPClientComparison">http://code.google.com/p/memcached/wiki/PHPClientComparison</a></p>
+
+<p>PECL pages:<br/>
+<a href="http://pecl.php.net/package/memcache">http://pecl.php.net/package/memcache</a><br/>
+<a href="http://pecl.php.net/package/memcached">http://pecl.php.net/package/memcached</a></p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Release cycles and policies, deploying code thoughts. - Programming Rambling</title>
+  <meta name="author" content="Gonzalo Míguez">
+
+  
+  <meta name="description" content="In my programming experience I have worked with different ways of handling
+releases. From the old easy FTP access to other cool stuff like phing. &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mrzard.github.com/blog/2012/02/15/release-cycles-and-policies-deploying-code-th">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Programming Rambling" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Programming Rambling</a></h1>
+  
+    <h2>mrzard's ramblings in the wild</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mrzard.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/about-me">About me</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Release Cycles and Policies, Deploying Code Thoughts.</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-15T21:17:00+01:00" pubdate data-updated="true">Feb 15<span>th</span>, 2012</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>In my programming experience I have worked with different ways of handling
+releases. From the old easy FTP access to other cool stuff like <a href="">phing</a>.</p>
+
+<p>What I have learned is that it does not really matter which tools you use,
+and is pretty much contained in the next points.</p>
+
+<p>0 - Prepare for the release. Write a &#8216;script&#8217; of what code has been changed/added
+and what tests it must pass (unit, integration, user&#8230;). Iterate until all
+tests have passed. Then move the release to your staging server. Always have
+100% awareness of what is going into the release.</p>
+
+<p>1 - Have a proper staging server(s). This allows for good testing, and reduces
+(hopefully eliminates) the necessity to double check stuff in the live server(s).</p>
+
+<p>3 - The release has to work. Test everything, then test it again. Then release.
+And go to 4.</p>
+
+<p>4 - Shit happens. The relese does not always work. This is pretty common, specially
+with large codebases, multiple programmers and code merging (SVN I&#8217;m looking
+at you). Or discrepancies between your live servers and your testing servers.
+Or simply someone forgot to run a test.</p>
+
+<p>5 - Your release system must work for you, not against you. It&#8217;s fine to have
+a release date / system, but fear not of changing it to fit your needs. This
+leads us to the next point.</p>
+
+<p>6 - Make it that the release system is quick and can be fired anytime. You
+never know when you&#8217;re going to need an emergency fix. Make it easy to fix
+mistakes. Also make it painful to make them. You don&#8217;t want developers feeling
+confident they can release a half cooked solution and fix it later. I must
+confess though that I prefer to release and fix than to never release.</p>
+
+<p>7 - Use of tools like phing can help you a lot automating some boring stuff,
+but again make deploying a simple procedure that has no bottlenecks and allows
+you to eliminate any serious enough bug or mistake in a heartbeat.</p>
+
+<p>8 - Do not fire your lean, quick release system for everything. That CSS fix
+can wait until the next release.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Gonzalo Míguez</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-15T21:17:00+01:00" pubdate data-updated="true">Feb 15<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/programming/'>programming</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mrzard.github.com/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/" data-via="mrzard_dev" data-counturl="http://mrzard.github.com/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/12/14/common-recruiting-errors-made-by-companies/" title="Previous Post: Common recruiting errors made by companies.">&laquo; Common recruiting errors made by companies.</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/" title="Next Post: Generate CSRF token programatically in Symfony 2">Generate CSRF token programatically in Symfony 2 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/05/06/what-i-have-learnt-as-a-cto/">What I have learnt as a CTO</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/">Customize form prototype for collections in Symfony2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/">Flushing only desired entities with Doctrine</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/28/loading-cross-domain-fonts-from-firefox/">Loading cross-domain fonts from Firefox</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/26/my-experience-with-paymill/">My experience with Paymill</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/mrzard">@mrzard</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mrzard',
+            count: 0,
+            skip_forks: false,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+<section>
+<h1>Twitter</h1>
+<a class="twitter-timeline" href="https://twitter.com/mrzard_dev" data-widget-id="316573872377970688">@mrzard_dev</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Gonzalo Míguez -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'mrzardblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://mrzard.github.com/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/';
+        var disqus_url = 'http://mrzard.github.com/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

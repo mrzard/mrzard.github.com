@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: programming | Programming Rambling]]></title>
+  <link href="http://mrzard.github.com/blog/categories/programming/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.com/"/>
+  <updated>2014-05-08T13:21:56+02:00</updated>
+  <id>http://mrzard.github.com/</id>
+  <author>
+    <name><![CDATA[Gonzalo Míguez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[What I have learnt as a CTO]]></title>
+    <link href="http://mrzard.github.com/blog/2014/05/06/what-i-have-learnt-as-a-cto/"/>
+    <updated>2014-05-06T13:10:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2014/05/06/what-i-have-learnt-as-a-cto</id>
+    <content type="html"><![CDATA[<p>When May comes to and end, I will end my one and a half years journey as a CTO for <a href="http://www.chicplace.com">ChicPlace.com</a>.</p>
+
+<p>The reasons for my depature are diverse, and possibly this is not the best place to discuss them, but
+I am very grateful for the opportunity to grow and learn while developing a project that has the
+potential to be something special.</p>
+
+<p>During this time I have gained a lot of experience managing teams, and learnt a lot about myself,
+specially when it comes to working with non-technical people, and how to manage expectations, deadlines
+and organisation when working in a very fast-paced and very improvisational startup.</p>
+
+<p>I will write a list of things that I have learnt, in the form of:</p>
+
+<ul>
+<li>List item.
+
+<ul>
+<li>How it has affected me personally.</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>Things that I now know I have to improve on and play a very big role in being a good CTO:</p>
+
+<ul>
+<li>Voice disagreement and take a stand when needed
+
+<ul>
+<li>Sometimes I have voiced disagreement with decisions by just making the Product team know I was against the decision made, but not
+stating why and how I could give a better solution.</li>
+<li>When I feel a decision is plain wrong (not just a difference in opinion) I have to stand my ground and not budge.</li>
+<li>Don't be afraid of denying requests if you can back your denial with data.</li>
+</ul>
+</li>
+<li>Find a sweet spot between being hands-off and hands-on
+
+<ul>
+<li>When handing out tasks I tend to plan them, and give them to someone on my team, then just wait for them to complete it. However, if they get stuck and ask for help I tend to sweep in and almost take over development. I have to improve because this, rightfully, can enrage senior developers, as well
+as be a hindrance to junior developers' learning.</li>
+</ul>
+</li>
+<li>Be less aggressive with estimates.
+
+<ul>
+<li>Most developers underestimate how long tasks will take, or the number of interruptions that will happen, and I am one of them</li>
+<li>An estimate like '3 days if I can work full-time on this' is useless when you positively know that you will be able to put only
+40-50% of your time in it. Say 7 to 9 days right away, because all your counterparts will remember is 'you said 3 days'</li>
+</ul>
+</li>
+<li>Involve yourself in strategic decisions.
+
+<ul>
+<li>I used to see myself as the technical element for a business. Now I see myself as the technical bridge for a business. I have to take
+a more direct approach and influence on the product side, become a domain expert so I can really understand the business needs and choose the best technical solution more easily.</li>
+</ul>
+</li>
+</ul>
+
+
+<p>Things that I think I got right:</p>
+
+<ul>
+<li>Protect you team.
+
+<ul>
+<li>Your team should not be interrupted by anyone. Concentration is key.</li>
+<li>Success is result of the team being awesome, or a team member exceeding expectations.</li>
+<li>Failure comes when we as managers fail to provide the team with the right information and opportunity.</li>
+<li>Basically, as a CTO, if your team succeeds it's because they are awesome. If they fail it's because you did not do your work.</li>
+</ul>
+</li>
+<li>Install a ticket-centric culture.
+
+<ul>
+<li>No ad-hoc requests, everything has to go through a ticketing system (i.e. Redmine).</li>
+</ul>
+</li>
+<li>No premature optimization.
+
+<ul>
+<li>We did not worry about going too deep into performance until we had a decent amount of functionality and traffic going.</li>
+</ul>
+</li>
+<li>Try to find a 'good-enough' solution, and keep improving it when it's no longer good enough.
+
+<ul>
+<li>Finding the perfect and definitive solution might be tempting, but when you work tight schedules, with the possibility of last-minute-changes
+on every turn, learning to recognise good-enough solutions will save you and your team tons of frustration.</li>
+</ul>
+</li>
+<li>Trust your team.
+
+<ul>
+<li>I had immense luck in working with people like <a href="https://twitter.com/nadalsol">Nadal Soler</a>, <a href="https://twitter.com/dpcat237">Denys Pasishnyi</a>, <a href="https://twitter.com/mmoreram">Marc Morera</a>, <a href="https://twitter.com/zimage">Aldo Chiecchia</a>,
+<a href="http://es.linkedin.com/pub/tomoki-kamo-mora/17/692/584">Tomoki Kamo</a>, <a href="https://twitter.com/SantiCastells">Santi Castells</a>, <a href="http://es.linkedin.com/pub/alejandra-casal-tarr%C3%A9/53/335/450">Alejandra Casal</a>, <a href="http://justlivingcool.wordpress.com/">Mercè Fernàndez</a>, <a href="http://fr.linkedin.com/pub/audrey-maman/31/279/139">Audrey Maman</a> and Olga de Mena, among others. All of them are exceptional at their jobs, and you can just be sure that their work will be top-class. As Tina Fey says on Bossypants "In most cases, being a good boss means hiring talented people and then getting out of their way".</li>
+</ul>
+</li>
+<li>Always listen
+
+<ul>
+<li>There are no stupid questions.</li>
+<li>There are no stupid suggestions.</li>
+<li>Not everything has to be decided by the managers.</li>
+<li>The idea that makes your business might be that one you didn't want to listen to.</li>
+</ul>
+</li>
+</ul>
+
+
+<p>In a nutshell:</p>
+
+<ul>
+<li>Measure everything. Try to improve. Rinse and repeat.</li>
+<li>Build a great team. Trust them to do wonderful things. Assume they are awesome, let them prove you wrong: Most of the time they will not let you down.</li>
+<li>Lose the fear to say NO.</li>
+<li>Be kind, encourage the people around you.</li>
+<li>Be honest, especially when it's difficult. Dishonesty brings doubt and drives a wedge between team members.</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Generate CSRF token programatically in Symfony 2]]></title>
+    <link href="http://mrzard.github.com/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/"/>
+    <updated>2012-08-08T16:28:29+02:00</updated>
+    <id>http://mrzard.github.com/blog/2012/08/08/generate-csrf-token-programatically-in-symfon</id>
+    <content type="html"><![CDATA[<p>If you find yourself in the need of generating a CSRF token for a 'built' Request
+or something in that fashion, you can do it rather easily:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Generate CSRF token programatically  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$csrfProvider</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">container</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;form.csrf_provider&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$csrfToken</span> <span class="o">=</span> <span class="nv">$csrfProvider</span><span class="o">-&gt;</span><span class="na">generateCsrfToken</span><span class="p">(</span><span class="s1">&#39;unknown&#39;</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><em>'unknown'</em> is the default 'intention' of CSRF tokens in Symfony2, change 'unknown'
+for the correct intention if you are using that option.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Release cycles and policies, deploying code thoughts.]]></title>
+    <link href="http://mrzard.github.com/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/"/>
+    <updated>2012-02-15T21:17:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2012/02/15/release-cycles-and-policies-deploying-code-th</id>
+    <content type="html"><![CDATA[<p>In my programming experience I have worked with different ways of handling
+releases. From the old easy FTP access to other cool stuff like <a href="">phing</a>.</p>
+
+<p>What I have learned is that it does not really matter which tools you use,
+and is pretty much contained in the next points.</p>
+
+<p>0 - Prepare for the release. Write a 'script' of what code has been changed/added
+and what tests it must pass (unit, integration, user...). Iterate until all
+tests have passed. Then move the release to your staging server. Always have
+100% awareness of what is going into the release.</p>
+
+<p>1 - Have a proper staging server(s). This allows for good testing, and reduces
+(hopefully eliminates) the necessity to double check stuff in the live server(s).</p>
+
+<p>3 - The release has to work. Test everything, then test it again. Then release.
+And go to 4.</p>
+
+<p>4 - Shit happens. The relese does not always work. This is pretty common, specially
+with large codebases, multiple programmers and code merging (SVN I'm looking
+at you). Or discrepancies between your live servers and your testing servers.
+Or simply someone forgot to run a test.</p>
+
+<p>5 - Your release system must work for you, not against you. It's fine to have
+a release date / system, but fear not of changing it to fit your needs. This
+leads us to the next point.</p>
+
+<p>6 - Make it that the release system is quick and can be fired anytime. You
+never know when you're going to need an emergency fix. Make it easy to fix
+mistakes. Also make it painful to make them. You don't want developers feeling
+confident they can release a half cooked solution and fix it later. I must
+confess though that I prefer to release and fix than to never release.</p>
+
+<p>7 - Use of tools like phing can help you a lot automating some boring stuff,
+but again make deploying a simple procedure that has no bottlenecks and allows
+you to eliminate any serious enough bug or mistake in a heartbeat.</p>
+
+<p>8 - Do not fire your lean, quick release system for everything. That CSS fix
+can wait until the next release.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Generate a valid Google Premier signature in PHP]]></title>
+    <link href="http://mrzard.github.com/blog/2011/12/12/generate-a-valid-google-premier-signature-in/"/>
+    <updated>2011-12-12T11:23:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2011/12/12/generate-a-valid-google-premier-signature-in</id>
+    <content type="html"><![CDATA[<p>Google Premier requires for you to generate a signature over the URL you're
+going to ask for, then send that signature alongside the request. Here is how
+to do it, as there is no PHP example in the <a href="http://code.google.com/intl/es-ES/apis/maps/documentation/webservices/#URLSigning">Google Premier URL Signature documentation</a></p>
+
+<p>In this code snippet we assume:</p>
+
+<ul>
+<li><code>$request_url</code> has the url that will be using the Google Premier service (for example, Static Maps API). It also already has the client param, sensor param, etc.</li>
+<li><code>$signature_key</code> has the key provided to you by Google</li>
+<li>You are running this snippet from an authorized domain</li>
+<li>Props to <a href="http://stackoverflow.com/questions/3125410/trying-to-digitally-sign-via-hmac-sha1-with-php">ZZ Coder at StackOverflow</a></li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Generate a valid Google Premier signature  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$url_parts</span> <span class="o">=</span> <span class="nb">parse_url</span><span class="p">(</span><span class="nv">$request_url</span><span class="p">);</span> <span class="nv">$signable_part</span> <span class="o">=</span> <span class="nv">$url_parts</span><span class="p">[</span><span class="s1">&#39;path&#39;</span><span class="p">]</span><span class="o">.</span><span class="s1">&#39;?&#39;</span><span class="o">.</span><span class="nv">$url_parts</span><span class="p">[</span><span class="s1">&#39;query&#39;</span><span class="p">];</span>
+</span><span class='line'><span class="nv">$decoded_key</span> <span class="o">=</span> <span class="nb">base64_decode</span><span class="p">(</span><span class="nx">strtr</span><span class="p">(</span><span class="nv">$signature_key</span><span class="p">,</span> <span class="s1">&#39;-&lt;em&gt;&#39;</span><span class="p">,</span> <span class="s1">&#39;+/&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$url_signature</span> <span class="o">=</span> <span class="nb">hash_hmac</span><span class="p">(</span><span class="s1">&#39;sha1&#39;</span><span class="p">,</span> <span class="nv">$signable_part</span><span class="p">,</span> <span class="nv">$decoded_key</span><span class="p">),</span> <span class="k">true</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$base64signature</span> <span class="o">=</span> <span class="nx">strtr</span><span class="p">(</span><span class="nb">base64_encode</span><span class="p">(</span><span class="nv">$url_signature</span><span class="p">),</span> <span class="s1">&#39;+/&#39;</span><span class="p">,</span> <span class="s1">&#39;-&lt;/em&gt;&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$signature_param</span> <span class="o">=</span> <span class="s1">&#39;&amp;amp;signature=&#39;</span><span class="o">.</span><span class="nb">urlencode</span><span class="p">(</span><span class="nv">$base64signature</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>'Strange' things in this snippet:</p>
+
+<ul>
+<li>Why the strtr()? Because Google uses URL-Safe base64</li>
+<li>Why the true param at the end of hash_hmac? Because we need it the signature to be returned in binary before base64encondig it.</li>
+</ul>
+
+
+<p>Then you just have to append <code>$signature_param</code> to your original request (which
+we've assumed is in <code>$request_url</code>) to have a correctly signed Google Premier
+request.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[PHP namespaces simple explanation]]></title>
+    <link href="http://mrzard.github.com/blog/2011/10/25/php-namespaces-simple-explanation/"/>
+    <updated>2011-10-25T11:58:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2011/10/25/php-namespaces-simple-explanation</id>
+    <content type="html"><![CDATA[<p>This is one of the most clear and comprehensible articles on namespaces I have
+ever seen. If you're having trouble understanding the logic behind them or
+how to use them, please do take a look at it:</p>
+
+<p><a href="http://phpmaster.com/php-namespaces/">PHP Namespaces on PHPMaster.com</a> by Moshe Teutsch (<a href="http://phpmaster.com/author/moteutsch/">http://phpmaster.com/author/moteutsch/</a>)</p>
+]]></content>
+  </entry>
+  
+</feed>

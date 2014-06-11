@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: other ramblings | Programming Rambling]]></title>
+  <link href="http://mrzard.github.com/blog/categories/other-ramblings/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.com/"/>
+  <updated>2014-05-08T13:21:56+02:00</updated>
+  <id>http://mrzard.github.com/</id>
+  <author>
+    <name><![CDATA[Gonzalo Míguez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[What I have learnt as a CTO]]></title>
+    <link href="http://mrzard.github.com/blog/2014/05/06/what-i-have-learnt-as-a-cto/"/>
+    <updated>2014-05-06T13:10:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2014/05/06/what-i-have-learnt-as-a-cto</id>
+    <content type="html"><![CDATA[<p>When May comes to and end, I will end my one and a half years journey as a CTO for <a href="http://www.chicplace.com">ChicPlace.com</a>.</p>
+
+<p>The reasons for my depature are diverse, and possibly this is not the best place to discuss them, but
+I am very grateful for the opportunity to grow and learn while developing a project that has the
+potential to be something special.</p>
+
+<p>During this time I have gained a lot of experience managing teams, and learnt a lot about myself,
+specially when it comes to working with non-technical people, and how to manage expectations, deadlines
+and organisation when working in a very fast-paced and very improvisational startup.</p>
+
+<p>I will write a list of things that I have learnt, in the form of:</p>
+
+<ul>
+<li>List item.
+
+<ul>
+<li>How it has affected me personally.</li>
+</ul>
+</li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>Things that I now know I have to improve on and play a very big role in being a good CTO:</p>
+
+<ul>
+<li>Voice disagreement and take a stand when needed
+
+<ul>
+<li>Sometimes I have voiced disagreement with decisions by just making the Product team know I was against the decision made, but not
+stating why and how I could give a better solution.</li>
+<li>When I feel a decision is plain wrong (not just a difference in opinion) I have to stand my ground and not budge.</li>
+<li>Don't be afraid of denying requests if you can back your denial with data.</li>
+</ul>
+</li>
+<li>Find a sweet spot between being hands-off and hands-on
+
+<ul>
+<li>When handing out tasks I tend to plan them, and give them to someone on my team, then just wait for them to complete it. However, if they get stuck and ask for help I tend to sweep in and almost take over development. I have to improve because this, rightfully, can enrage senior developers, as well
+as be a hindrance to junior developers' learning.</li>
+</ul>
+</li>
+<li>Be less aggressive with estimates.
+
+<ul>
+<li>Most developers underestimate how long tasks will take, or the number of interruptions that will happen, and I am one of them</li>
+<li>An estimate like '3 days if I can work full-time on this' is useless when you positively know that you will be able to put only
+40-50% of your time in it. Say 7 to 9 days right away, because all your counterparts will remember is 'you said 3 days'</li>
+</ul>
+</li>
+<li>Involve yourself in strategic decisions.
+
+<ul>
+<li>I used to see myself as the technical element for a business. Now I see myself as the technical bridge for a business. I have to take
+a more direct approach and influence on the product side, become a domain expert so I can really understand the business needs and choose the best technical solution more easily.</li>
+</ul>
+</li>
+</ul>
+
+
+<p>Things that I think I got right:</p>
+
+<ul>
+<li>Protect you team.
+
+<ul>
+<li>Your team should not be interrupted by anyone. Concentration is key.</li>
+<li>Success is result of the team being awesome, or a team member exceeding expectations.</li>
+<li>Failure comes when we as managers fail to provide the team with the right information and opportunity.</li>
+<li>Basically, as a CTO, if your team succeeds it's because they are awesome. If they fail it's because you did not do your work.</li>
+</ul>
+</li>
+<li>Install a ticket-centric culture.
+
+<ul>
+<li>No ad-hoc requests, everything has to go through a ticketing system (i.e. Redmine).</li>
+</ul>
+</li>
+<li>No premature optimization.
+
+<ul>
+<li>We did not worry about going too deep into performance until we had a decent amount of functionality and traffic going.</li>
+</ul>
+</li>
+<li>Try to find a 'good-enough' solution, and keep improving it when it's no longer good enough.
+
+<ul>
+<li>Finding the perfect and definitive solution might be tempting, but when you work tight schedules, with the possibility of last-minute-changes
+on every turn, learning to recognise good-enough solutions will save you and your team tons of frustration.</li>
+</ul>
+</li>
+<li>Trust your team.
+
+<ul>
+<li>I had immense luck in working with people like <a href="https://twitter.com/nadalsol">Nadal Soler</a>, <a href="https://twitter.com/dpcat237">Denys Pasishnyi</a>, <a href="https://twitter.com/mmoreram">Marc Morera</a>, <a href="https://twitter.com/zimage">Aldo Chiecchia</a>,
+<a href="http://es.linkedin.com/pub/tomoki-kamo-mora/17/692/584">Tomoki Kamo</a>, <a href="https://twitter.com/SantiCastells">Santi Castells</a>, <a href="http://es.linkedin.com/pub/alejandra-casal-tarr%C3%A9/53/335/450">Alejandra Casal</a>, <a href="http://justlivingcool.wordpress.com/">Mercè Fernàndez</a>, <a href="http://fr.linkedin.com/pub/audrey-maman/31/279/139">Audrey Maman</a> and Olga de Mena, among others. All of them are exceptional at their jobs, and you can just be sure that their work will be top-class. As Tina Fey says on Bossypants "In most cases, being a good boss means hiring talented people and then getting out of their way".</li>
+</ul>
+</li>
+<li>Always listen
+
+<ul>
+<li>There are no stupid questions.</li>
+<li>There are no stupid suggestions.</li>
+<li>Not everything has to be decided by the managers.</li>
+<li>The idea that makes your business might be that one you didn't want to listen to.</li>
+</ul>
+</li>
+</ul>
+
+
+<p>In a nutshell:</p>
+
+<ul>
+<li>Measure everything. Try to improve. Rinse and repeat.</li>
+<li>Build a great team. Trust them to do wonderful things. Assume they are awesome, let them prove you wrong: Most of the time they will not let you down.</li>
+<li>Lose the fear to say NO.</li>
+<li>Be kind, encourage the people around you.</li>
+<li>Be honest, especially when it's difficult. Dishonesty brings doubt and drives a wedge between team members.</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Common recruiting errors made by companies.]]></title>
+    <link href="http://mrzard.github.com/blog/2011/12/14/common-recruiting-errors-made-by-companies/"/>
+    <updated>2011-12-14T10:26:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2011/12/14/common-recruiting-errors-made-by-companies</id>
+    <content type="html"><![CDATA[<p>Lately I've seen a lot of posts about errors candidates make in interviews.
+Now I am going to write a list of error employers make when looking for candidates.</p>
+
+<p>1 - Adding them in LinkedIn without asking or even introducing themselves.</p>
+
+<p>Guys,we get it, you are important. Now, please, the thing is YOU came looking
+for us, not the other way around. Introduce yourself. Why are you adding me
+as a contact? Keep in mind we do not know each other. For me this is the professional
+equivalent to "hey, wanna hook up?" in a dating site.</p>
+
+<p>2 - Recruting agencies special: Not disclosing which company they are recruiting
+for</p>
+
+<p>Yes, I can understand you want to be discreet and everything, but again, you
+came looking for a candidate. Do you really expect a (hopefully) talented person
+to engage in a (possibly) lengthy selection process when they know nothing
+about their employer?</p>
+
+<p>3 - Not stating salary / compensation</p>
+
+<p>If you are out there looking for talent, that talent is most of the time already
+employed. Why waste your time and the candidate's time by making him/her go
+to interviews just to know the salary bracket? Also, even for unemployed talent,
+they will be drawn to the offers that give the most information. Hiding this
+crucial piece of info makes no sense to me.</p>
+
+<p>4 - Keeping a <code>you're _sooooo_ lucky</code> attitude</p>
+
+<p>Yes, we are lucky because most of us love our jobs. That's it. You came looking
+for us, not the other way around, this is a key concept.<strong> You are the lucky
+ones if we are the top-notch employees you are looking for:</strong> <strong>we make more
+money for you than from you</strong>.</p>
+
+<p>5 - Not having tech people at the interview</p>
+
+<p>Personal interviews are fine, but we usually want to discuss details. Which
+technologies are we going to use? How many users? How many people are on the
+team? Is there a lot of turnover? Do we have a VPN so we can work remotely?
+Frameworks? And these are just basic questions most of the time HR cannot answer.
+Please, please, please, have a tech person there.</p>
+
+<p>Have I left something out? (Pretty sure I have). Don't hesitate to comment
+and expand this list :D</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Two Things about Computer Programming (by Charles Miller)]]></title>
+    <link href="http://mrzard.github.com/blog/2010/11/14/the-two-things-about-computer-programming-by/"/>
+    <updated>2010-11-14T16:30:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2010/11/14/the-two-things-about-computer-programming-by</id>
+    <content type="html"><![CDATA[<p><a href="http://fishbowl.pastiche.org/2007/04/15/the_two_things_about_computer_programming/">This article</a> by Charles Miller says there are only two things that are
+<strong>really important</strong> to any discipline. This may or may not be true, but I
+really think he nailed it when it comes to programming.</p>
+
+<blockquote><p><strong>Computer Programming:</strong></p>
+
+<ol>
+<li>Every problem can be solved by breaking it up into a series of smaller problems.</li>
+<li>The computer will always do exactly what you tell it to.</li>
+</ol>
+
+
+<p><strong>Software Engineering:</strong></p>
+
+<ol>
+<li>Writing the code is the easy part. Writing it so someone else can understand it later is the important part.</li>
+<li>Make it work, then make it elegant, then make it fast.</li>
+</ol>
+</blockquote>
+
+<p>It's very nice to see there are people out there who can summarize things in
+such a comprehensive and spot-on manner.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[WebP, The New Google Image Format]]></title>
+    <link href="http://mrzard.github.com/blog/2010/10/01/webp-the-new-google-image-format/"/>
+    <updated>2010-10-01T09:44:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2010/10/01/webp-the-new-google-image-format</id>
+    <content type="html"><![CDATA[<p>WebP is the new format Google is pushing to come to the rescue of broadband
+usage and get the place now JPEG holds. Tests seem to put WebP ahead of JPEG
+by a 39% file size margin, while holding at least as much quality as an equivalent
+JPEG. The format is lossy, as JPEG is, but seems to achieve better quality
+with less file size.</p>
+
+<p>Google says they expect to get better compression percentages when starting
+from an uncompressed file rather than an already compressed one. I really want
+to see this at work, but again, people are VERY used to JPEGs by now, and in
+a broadband world, 100kB vs 61kB is not a big deal. Now, if you're downloading
+100's of images, that could very well make a big impact, but that's not the
+case with a very big portion of users.</p>
+
+<p>Nevertheless, Google again shows they are concerned with making the web lighter,
+faster and easier, and I will be keeping an eye out for this new format.</p>
+
+<p>More info at Google Code Blog on: <a href="http://googlecode.blogspot.com/2010/09/webp-new-image-format-for-web.html">WebP, a new image format for the web</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Lagoa, a breathtaking physics engine]]></title>
+    <link href="http://mrzard.github.com/blog/2010/07/21/lagoa-a-breathtaking-physics-engine/"/>
+    <updated>2010-07-21T12:52:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2010/07/21/lagoa-a-breathtaking-physics-engine</id>
+    <content type="html"><![CDATA[<p><a href="http://vimeo.com/moogaloop.swf?clip_id=13457383&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1"></a></p>
+
+<p><a href="http://vimeo.com/13457383">Lagoa Multiphysics 1.0 - Teaser</a> from <a href="http://vimeo.com/thiagocosta">Thiago Costa</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+
+<p>There's little information about this physics engine, other than it looks awesome.
+Original website: <a href="http://lagoatechnologies.com/">http://lagoatechnologies.com/</a></p>
+]]></content>
+  </entry>
+  
+</feed>
