@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Symfony2 | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/symfony2/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2014-05-08T13:21:56+02:00</updated>
+  <updated>2014-06-11T13:57:35+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -14,45 +14,6 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Customize form prototype for collections in Symfony2]]></title>
-    <link href="http://mrzard.github.com/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/"/>
-    <updated>2013-10-30T15:57:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2</id>
-    <content type="html"><![CDATA[<p>When working with complex forms, sometimes you will be in need of creating a collection field type to manage relations. When this is the case, you may find yourself in the need of tweaking how the 'add' form shows.</p>
-
-<p>It's pretty simple. In twig the protoype can be found under form.collection.vars.prototype and can be used as a regular form (i.e. if your form.collection member form has a 'name', it will also be available in form.collection.vars.protoype.name).</p>
-
-<p>With this information now you can create a twig that recieves an 'item', which can be either a form.collection member or a prototype, and it will be rendered the same.</p>
-
-<p>Finally, wherever you hold the collection html, you will have to output something like this:
-<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;pre>&lt;code>data-prototype="{% filter escape %}{% include 'prototype.twig' with { 'item': form.collection.vars.prototype } %}{% endfilter %}"
-</span><span class='line'>&lt;/code>&lt;/pre>
-</span><span class='line'>
-</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<p>And your <code>prototype.twig</code> should look like
-<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>{{ form_row(item.field0) }}
-</span><span class='line'>{{ form_row(item.field1) }}
-</span><span class='line'>{{ form_row(item.field2) }}</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<p>This way, you will have access to the prototype as if it were a regular form, and you can apply all the customization you want (you can user form_widget and the other functions, or access the vars directly, etc...)</p>
-
-<p>Creating the helper twig is optional though, but handy because you have to use the escape filter to the twig so you can put it in the correct data-attribute.</p>
-]]></content>
-  </entry>
-  
-  <entry>
     <title type="html"><![CDATA[Generate CSRF token programatically in Symfony 2]]></title>
     <link href="http://mrzard.github.com/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/"/>
     <updated>2012-08-08T16:28:29+02:00</updated>
@@ -60,12 +21,10 @@
     <content type="html"><![CDATA[<p>If you find yourself in the need of generating a CSRF token for a 'built' Request
 or something in that fashion, you can do it rather easily:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Generate CSRF token programatically  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$csrfProvider</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">container</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;form.csrf_provider&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="nv">$csrfToken</span> <span class="o">=</span> <span class="nv">$csrfProvider</span><span class="o">-&gt;</span><span class="na">generateCsrfToken</span><span class="p">(</span><span class="s1">&#39;unknown&#39;</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock Generate CSRF token programatically lang:phpinline %}
+$csrfProvider = $this->container->get('form.csrf_provider');
+$csrfToken = $csrfProvider->generateCsrfToken('unknown');
+{% endcodeblock %}</p>
 
 <p><em>'unknown'</em> is the default 'intention' of CSRF tokens in Symfony2, change 'unknown'
 for the correct intention if you are using that option.</p>
