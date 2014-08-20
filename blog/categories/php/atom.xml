@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: PHP | Programming Rambling]]></title>
+  <link href="http://mrzard.github.com/blog/categories/php/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.com/"/>
+  <updated>2014-06-11T13:57:35+02:00</updated>
+  <id>http://mrzard.github.com/</id>
+  <author>
+    <name><![CDATA[Gonzalo Míguez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My experience with Paymill]]></title>
+    <link href="http://mrzard.github.com/blog/2013/03/26/my-experience-with-paymill/"/>
+    <updated>2013-03-26T12:30:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2013/03/26/my-experience-with-paymill</id>
+    <content type="html"><![CDATA[<p>I have been using <a href="https://www.paymill.com">Paymill</a> at work for some time now, and this is what I think of it thus far:</p>
+
+<p>PROS:</p>
+
+<ul>
+<li>Easy to implement. As in dumb-proof easy.</li>
+<li>Commission (2.95% + 0.28€) is reasonable against time of implementation.</li>
+<li>No other fees. No setup fee, no base usage fee, nothing, only their commission.</li>
+<li>They only charge for successful transactions.</li>
+<li>Pays every 7 days, directly to your bank account.</li>
+<li>Removes lots of man-hours in payment-gateway related stuff.</li>
+<li>Removes the need to be PCI-compliant.</li>
+<li>They have <a href="https://github.com/Paymill">libraries</a> for lots of languages and software packages.</li>
+</ul>
+
+
+<p>CONS:</p>
+
+<ul>
+<li>Test mode and live mode do <em>not</em> behave the same in some instances.
+
+<ul>
+<li>Have not checked recently, but at a point the test mode worked with a deprecated parameter that resulted in an error if used in live mode.</li>
+<li>As of now, the amount sent to the bridge and the backend do NOT have to match in test mode for a successful transaction</li>
+</ul>
+</li>
+<li>Error messages are not that clear, although they have improved in that area.
+
+<ul>
+<li><code>40000 RESPONSE_DATA: general problem with data</code> or <code>40100 RESPONSE_DATA_CARD: problem with creditcard data</code> are not very telling. I got a 40100 for a client who did not have 3D-Secure enabled.</li>
+</ul>
+</li>
+<li>Sometimes they take a long time to answer to support tickets.</li>
+</ul>
+
+
+<p>BOTTOMLINE:</p>
+
+<p>Paymill is a great tool and I recommend it if you need a payment gateway FAST and cannot / do not want to spend time going PCI-compliant. Only thing that worries me is the discrepancy in behaviour between test mode and live mode which makes it necessary to run some 'live' tests that would not be necessary otherwise. Anyway, once you have detected these little things you can work around them with your own tests and assertions.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MySQL Query to Export Prestashop Data to a Shopify CSV]]></title>
+    <link href="http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/"/>
+    <updated>2013-02-13T18:19:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv</id>
+    <content type="html"><![CDATA[<p>If you find yourself migrating your shop from Prestashop to Shopify, you can
+use this query. It was written for an old version of Prestashop, but you probably
+won't have much trouble adapting it to newer versions.</p>
+
+<p>Also, take in consideration this query only outputs basic data, no variants,
+colors, etc. Also check which values do you need for 'variant requires shipping',
+ID_LANG, etc.</p>
+
+<pre><code>SELECT pl.link_rewrite as `Handle`, pl.name as `Title`, 
+pl.description as `Body (HTML)`, 'VENDORNAME' as `Vendor`, pcl.`name` as `Type`, 
+t.`name` as Tags, '' as `Option1 Name`, '' as `Option1 Value`, '' as `Option2 Name`, 
+'' as `Option2 Value`, '' as `Option3 Name`, '' as `Option3 Value`, '' as `Variant SKU`, 
+p.weight * 1000 as `Variant Grams`, '' as `Variant Inventory Tracker`, p.`quantity` 
+as `Variant Inventory Qty`, 'deny' as `Variant Inventory Policy`, 'manual' 
+as `Variant Fulfillment Service`, p.price as `Variant Price`, p.price_before 
+as `Variant Compare At Price`, 'true' as `Variant Requires Shipping`, 'true' 
+as `Variant Taxable`, '' as `Image Src` 
+FROM 
+    `ps_product` p 
+    INNER JOIN `ps_product_lang` pl ON pl.`id_product` = p.`id_product` 
+    LEFT JOIN `ps_product_tag` pt ON pt.`id_product` = p.`id_product` 
+    LEFT JOIN `ps_tag` t ON t.`id_tag` = pt.`id_tag` 
+    INNER JOIN `ps_image` pi ON pi.`id_product` = p.`id_product` 
+    INNER JOIN `ps_category_lang` pcl ON pcl.`id_category` = p.`id_category_default` 
+WHERE 
+    pl.`id_lang` = ID_LANG 
+    AND pcl.`id_lang` = ID_LANG 
+    AND p.`id_category_default` IN (
+        SELECT `id_category` 
+        FROM `ps_category` WHERE `active` = 1
+    ) 
+    AND p.`active` = 1 GROUP BY p.`id_product`; 
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Generate CSRF token programatically in Symfony 2]]></title>
+    <link href="http://mrzard.github.com/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/"/>
+    <updated>2012-08-08T16:28:29+02:00</updated>
+    <id>http://mrzard.github.com/blog/2012/08/08/generate-csrf-token-programatically-in-symfon</id>
+    <content type="html"><![CDATA[<p>If you find yourself in the need of generating a CSRF token for a 'built' Request
+or something in that fashion, you can do it rather easily:</p>
+
+<p>{% codeblock Generate CSRF token programatically lang:phpinline %}
+$csrfProvider = $this->container->get('form.csrf_provider');
+$csrfToken = $csrfProvider->generateCsrfToken('unknown');
+{% endcodeblock %}</p>
+
+<p><em>'unknown'</em> is the default 'intention' of CSRF tokens in Symfony2, change 'unknown'
+for the correct intention if you are using that option.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Generate a valid Google Premier signature in PHP]]></title>
+    <link href="http://mrzard.github.com/blog/2011/12/12/generate-a-valid-google-premier-signature-in/"/>
+    <updated>2011-12-12T11:23:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2011/12/12/generate-a-valid-google-premier-signature-in</id>
+    <content type="html"><![CDATA[<p>Google Premier requires for you to generate a signature over the URL you're
+going to ask for, then send that signature alongside the request. Here is how
+to do it, as there is no PHP example in the <a href="http://code.google.com/intl/es-ES/apis/maps/documentation/webservices/#URLSigning">Google Premier URL Signature documentation</a></p>
+
+<p>In this code snippet we assume:</p>
+
+<ul>
+<li><code>$request_url</code> has the url that will be using the Google Premier service (for example, Static Maps API). It also already has the client param, sensor param, etc.</li>
+<li><code>$signature_key</code> has the key provided to you by Google</li>
+<li>You are running this snippet from an authorized domain</li>
+<li>Props to <a href="http://stackoverflow.com/questions/3125410/trying-to-digitally-sign-via-hmac-sha1-with-php">ZZ Coder at StackOverflow</a></li>
+</ul>
+
+
+<p>{% codeblock Generate a valid Google Premier signature lang:phpinline %}
+$url_parts = parse_url($request_url); $signable_part = $url_parts['path'].'?'.$url_parts['query'];
+$decoded_key = base64_decode(strtr($signature_key, '-<em>', '+/');
+$url_signature = hash_hmac('sha1', $signable_part, $decoded_key), true);
+$base64signature = strtr(base64_encode($url_signature), '+/', '-</em>');
+$signature_param = '&amp;signature='.urlencode($base64signature);
+{% endcodeblock %}</p>
+
+<p>'Strange' things in this snippet:</p>
+
+<ul>
+<li>Why the strtr()? Because Google uses URL-Safe base64</li>
+<li>Why the true param at the end of hash_hmac? Because we need it the signature to be returned in binary before base64encondig it.</li>
+</ul>
+
+
+<p>Then you just have to append <code>$signature_param</code> to your original request (which
+we've assumed is in <code>$request_url</code>) to have a correctly signed Google Premier
+request.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[PHP namespaces simple explanation]]></title>
+    <link href="http://mrzard.github.com/blog/2011/10/25/php-namespaces-simple-explanation/"/>
+    <updated>2011-10-25T11:58:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2011/10/25/php-namespaces-simple-explanation</id>
+    <content type="html"><![CDATA[<p>This is one of the most clear and comprehensible articles on namespaces I have
+ever seen. If you're having trouble understanding the logic behind them or
+how to use them, please do take a look at it:</p>
+
+<p><a href="http://phpmaster.com/php-namespaces/">PHP Namespaces on PHPMaster.com</a> by Moshe Teutsch (<a href="http://phpmaster.com/author/moteutsch/">http://phpmaster.com/author/moteutsch/</a>)</p>
+]]></content>
+  </entry>
+  
+</feed>

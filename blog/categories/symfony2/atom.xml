@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Symfony2 | Programming Rambling]]></title>
+  <link href="http://mrzard.github.com/blog/categories/symfony2/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.com/"/>
+  <updated>2014-06-11T13:57:35+02:00</updated>
+  <id>http://mrzard.github.com/</id>
+  <author>
+    <name><![CDATA[Gonzalo Míguez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Generate CSRF token programatically in Symfony 2]]></title>
+    <link href="http://mrzard.github.com/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/"/>
+    <updated>2012-08-08T16:28:29+02:00</updated>
+    <id>http://mrzard.github.com/blog/2012/08/08/generate-csrf-token-programatically-in-symfon</id>
+    <content type="html"><![CDATA[<p>If you find yourself in the need of generating a CSRF token for a 'built' Request
+or something in that fashion, you can do it rather easily:</p>
+
+<p>{% codeblock Generate CSRF token programatically lang:phpinline %}
+$csrfProvider = $this->container->get('form.csrf_provider');
+$csrfToken = $csrfProvider->generateCsrfToken('unknown');
+{% endcodeblock %}</p>
+
+<p><em>'unknown'</em> is the default 'intention' of CSRF tokens in Symfony2, change 'unknown'
+for the correct intention if you are using that option.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: security | Programming Rambling]]></title>
+  <link href="http://mrzard.github.com/blog/categories/security/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.com/"/>
+  <updated>2014-06-11T13:57:35+02:00</updated>
+  <id>http://mrzard.github.com/</id>
+  <author>
+    <name><![CDATA[Gonzalo Míguez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Choosing a method to store passwords safely.]]></title>
+    <link href="http://mrzard.github.com/blog/2010/12/13/choosing-a-method-to-safely-store-passwords/"/>
+    <updated>2010-12-13T13:30:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2010/12/13/choosing-a-method-to-safely-store-passwords</id>
+    <content type="html"><![CDATA[<p>As seen in the Gawker/Gizmodo HUGE problem with having their passwords compromised,
+I found a short and excellent post about why using speed-oriented hash functions
+is a bad idea for password encryption.</p>
+
+<p>In a nutshell, MD5, SHA1 and the like are designed to work fast with large
+amounts of data, so they are most useful when calculating data integrity and
+the like, but being fast, they are also easy to attack by brute force.</p>
+
+<p>On the other hand <a href="http://bcrypt.sourceforge.net/">Bcrypt</a> is 'slow' when compared with other hashing algorithms,
+which makes it strong against brute force attacks. You can find the original
+post here: <a href="http://codahale.com/how-to-safely-store-a-password/">http://codahale.com/how-to-safely-store-a-password/</a></p>
+
+<p>I do not necessarily agree with the 'uselessness' of salting passwords, as
+that makes it harder to find a general pattern to attack ALL of the accounts
+protected by a single password in the system, but I see the point of it not
+being able to prevent or slow brute force attacks.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Programming | Programming Rambling]]></title>
+  <link href="http://mrzard.github.com/blog/categories/programming/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.com/"/>
+  <updated>2014-06-11T13:57:35+02:00</updated>
+  <id>http://mrzard.github.com/</id>
+  <author>
+    <name><![CDATA[Gonzalo Míguez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[MySQL Query to Export Prestashop Data to a Shopify CSV]]></title>
+    <link href="http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/"/>
+    <updated>2013-02-13T18:19:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv</id>
+    <content type="html"><![CDATA[<p>If you find yourself migrating your shop from Prestashop to Shopify, you can
+use this query. It was written for an old version of Prestashop, but you probably
+won't have much trouble adapting it to newer versions.</p>
+
+<p>Also, take in consideration this query only outputs basic data, no variants,
+colors, etc. Also check which values do you need for 'variant requires shipping',
+ID_LANG, etc.</p>
+
+<pre><code>SELECT pl.link_rewrite as `Handle`, pl.name as `Title`, 
+pl.description as `Body (HTML)`, 'VENDORNAME' as `Vendor`, pcl.`name` as `Type`, 
+t.`name` as Tags, '' as `Option1 Name`, '' as `Option1 Value`, '' as `Option2 Name`, 
+'' as `Option2 Value`, '' as `Option3 Name`, '' as `Option3 Value`, '' as `Variant SKU`, 
+p.weight * 1000 as `Variant Grams`, '' as `Variant Inventory Tracker`, p.`quantity` 
+as `Variant Inventory Qty`, 'deny' as `Variant Inventory Policy`, 'manual' 
+as `Variant Fulfillment Service`, p.price as `Variant Price`, p.price_before 
+as `Variant Compare At Price`, 'true' as `Variant Requires Shipping`, 'true' 
+as `Variant Taxable`, '' as `Image Src` 
+FROM 
+    `ps_product` p 
+    INNER JOIN `ps_product_lang` pl ON pl.`id_product` = p.`id_product` 
+    LEFT JOIN `ps_product_tag` pt ON pt.`id_product` = p.`id_product` 
+    LEFT JOIN `ps_tag` t ON t.`id_tag` = pt.`id_tag` 
+    INNER JOIN `ps_image` pi ON pi.`id_product` = p.`id_product` 
+    INNER JOIN `ps_category_lang` pcl ON pcl.`id_category` = p.`id_category_default` 
+WHERE 
+    pl.`id_lang` = ID_LANG 
+    AND pcl.`id_lang` = ID_LANG 
+    AND p.`id_category_default` IN (
+        SELECT `id_category` 
+        FROM `ps_category` WHERE `active` = 1
+    ) 
+    AND p.`active` = 1 GROUP BY p.`id_product`; 
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A new take on PHP Object Oriented Programming]]></title>
+    <link href="http://mrzard.github.com/blog/2010/09/24/a-new-take-on-php-object-oriented-programming/"/>
+    <updated>2010-09-24T17:20:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2010/09/24/a-new-take-on-php-object-oriented-programming</id>
+    <content type="html"><![CDATA[<p>I think this is an interesting idea, check it out!</p>
+
+<p><a href="http://dhotson.tumblr.com/post/1167021666/php-object-oriented-programming-reinvented">Antipodean - PHP OO Programming reinvented</a></p>
+
+<p>Author Dennis Hotson says about it:</p>
+
+<blockquote><p>There are some interesting implications of this:</p>
+
+<ul>
+<li>Classes can be hacked / patched / cloned. Methods can be added to classes at
+any time</li>
+<li>Classes can be scoped. They’re not global, unless you want them to be.</li>
+<li>Classes can be temporary (and garbage collected).</li>
+</ul>
+</blockquote>
+
+<p>Although I don't think it's that useful or advisable, it's a great example
+of how far you can push PHP's limits.</p>
+]]></content>
+  </entry>
+  
+</feed>

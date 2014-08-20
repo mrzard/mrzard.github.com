@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Failed to connect to socket /com/ubuntu/upstart ? Upstart Jobs Cannot be Run on chroot - Programming Rambling</title>
+  <meta name="author" content="Gonzalo Míguez">
+
+  
+  <meta name="description" content="Thanks to http://www.ashang.org/2010/10/unable-to-connect-to-upstart.html
+I was finally able to upgrade my system while chrooted. Being on chroot &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mrzard.github.com/blog/2011/02/01/failed-to-connect-to-socket-comubuntuupstart">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Programming Rambling" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Programming Rambling</a></h1>
+  
+    <h2>mrzard's ramblings in the wild</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mrzard.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/about-me">About me</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Failed to Connect to Socket /com/ubuntu/upstart ? Upstart Jobs Cannot Be Run on Chroot</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-02-01T13:01:00+01:00" pubdate data-updated="true">Feb 1<span>st</span>, 2011</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Thanks to <a href="http://www.ashang.org/2010/10/unable-to-connect-to-upstart.html">http://www.ashang.org/2010/10/unable-to-connect-to-upstart.html</a>
+I was finally able to upgrade my system while chrooted.</p>
+
+<p>Being on chroot will cause some packages to fail when they are upgrading. Giving
+us an error message like this one:</p>
+
+<p>start: Unable to connect to Upstart: Failed to connect to socket /com/ubuntu/upstart: Connection refused<br/>
+dpkg: error processing procps (&#8211;configure):</p>
+
+<p>You can workaround this limitation by running these commands</p>
+
+<p>$dpkg-divert &#8211;local &#8211;rename &#8211;add /sbin/initctl<br/>
+Adding &#8216;local diversion of /sbin/initctl to /sbin/initctl.distrib&#8217;<br/>
+$ln -s /bin/true /sbin/initctl</p>
+
+<p>Then you can run the upgrade, or do a dpkg &#8211;configure -a to upgrade the packages
+that were previously failing.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Gonzalo Míguez</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-02-01T13:01:00+01:00" pubdate data-updated="true">Feb 1<span>st</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/gnu-slash-linux/'>GNU/Linux</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mrzard.github.com/blog/2011/02/01/failed-to-connect-to-socket-comubuntuupstart/" data-via="mrzard_dev" data-counturl="http://mrzard.github.com/blog/2011/02/01/failed-to-connect-to-socket-comubuntuupstart/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2010/12/31/great-post-about-lambdas-and-closures-on-php/" title="Previous Post: Great post about Lambdas and Closures on PHP 5.3">&laquo; Great post about Lambdas and Closures on PHP 5.3</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2011/04/12/drag-and-drop-interaction-made-easy-with-jque/" title="Next Post: Drag and drop interaction made easy with jQuery (and jQuery UI)">Drag and drop interaction made easy with jQuery (and jQuery UI) &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/05/06/what-i-have-learnt-as-a-cto/">What I have learnt as a CTO</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/">Customize form prototype for collections in Symfony2</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/">Flushing only desired entities with Doctrine</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/28/loading-cross-domain-fonts-from-firefox/">Loading cross-domain fonts from Firefox</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/26/my-experience-with-paymill/">My experience with Paymill</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/mrzard">@mrzard</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mrzard',
+            count: 0,
+            skip_forks: false,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+<section>
+<h1>Twitter</h1>
+<a class="twitter-timeline" href="https://twitter.com/mrzard_dev" data-widget-id="316573872377970688">@mrzard_dev</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Gonzalo Míguez -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'mrzardblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://mrzard.github.com/blog/2011/02/01/failed-to-connect-to-socket-comubuntuupstart/';
+        var disqus_url = 'http://mrzard.github.com/blog/2011/02/01/failed-to-connect-to-socket-comubuntuupstart/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

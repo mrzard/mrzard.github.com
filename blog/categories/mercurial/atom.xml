@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Mercurial | Programming Rambling]]></title>
+  <link href="http://mrzard.github.com/blog/categories/mercurial/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.com/"/>
+  <updated>2014-06-11T13:57:35+02:00</updated>
+  <id>http://mrzard.github.com/</id>
+  <author>
+    <name><![CDATA[Gonzalo Míguez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Very nice video about DVCS - Kiln - Mercurial]]></title>
+    <link href="http://mrzard.github.com/blog/2010/11/16/very-nice-video-about-dvcs-kiln-mercurial/"/>
+    <updated>2010-11-16T16:52:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2010/11/16/very-nice-video-about-dvcs-kiln-mercurial</id>
+    <content type="html"><![CDATA[<p>I'd like to give this a try, SVN's merges are really very painful sometimes.</p>
+
+<p><a href="http://www.youtube.com/v/1BbK9o5fQD4?fs=1&amp;hl=es_ES"></a></p>
+]]></content>
+  </entry>
+  
+</feed>

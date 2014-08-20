@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: PayPal | Programming Rambling]]></title>
+  <link href="http://mrzard.github.com/blog/categories/paypal/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.com/"/>
+  <updated>2014-06-11T13:57:35+02:00</updated>
+  <id>http://mrzard.github.com/</id>
+  <author>
+    <name><![CDATA[Gonzalo Míguez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Setting Shipping Costs For A Whole Third Party Shopping Cart With Paypal]]></title>
+    <link href="http://mrzard.github.com/blog/2010/09/21/setting-shipping-costs-for-a-whole-shopping-t/"/>
+    <updated>2010-09-21T16:26:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2010/09/21/setting-shipping-costs-for-a-whole-shopping-t</id>
+    <content type="html"><![CDATA[<p>Today I found that paypal just ignores the 'shipping' parameter when dealing
+with a third party cart.</p>
+
+<p>If you find yourself with this problem the <a href="https://www.x.com/thread/39507">workaround posted on the X forums
+by PayPal themselves</a> is to calculate shipping costs on your side and send
+them using the 'handling_cart' parameter.</p>
+
+<p>It's just dumb to have to use a parameter that is not referred to shipping
+to include the shipping, but until this is resolved, this workaround should
+do the trick. At least if worked for me!</p>
+
+<p><strong>UPDATE: </strong>Looks like it's not just a workaround, but the expected behaviour, it's just that the documentation is poorly written, leading the developer to think that 'shipping' will apply to a cart, when in fact it will not, everything is expected to be sent using the 'handling_cart' param<strong><br/>
+</strong></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Nice quick reference for Paypal HTML Variables for Website Payments]]></title>
+    <link href="http://mrzard.github.com/blog/2010/09/14/nice-quick-reference-for-paypal-html-variable/"/>
+    <updated>2010-09-14T08:02:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2010/09/14/nice-quick-reference-for-paypal-html-variable</id>
+    <content type="html"><![CDATA[<p>I found this appendix to be a lot clearer than the standard reference guide
+at paypal.</p>
+
+<p>Hope it's useful for someone out there!</p>
+
+<p><a href="https://www.paypalobjects.com/en_US/ebook/PP_WebsitePaymentsStandard_IntegrationGuide/Appx_websitestandard_htmlvariables.html#1205539">https://www.paypalobjects.com/en_US/ebook/PP_WebsitePaymentsStandard_IntegrationGuide/Appx_websitestandard_htmlvariables.html#1205539</a></p>
+]]></content>
+  </entry>
+  
+</feed>
