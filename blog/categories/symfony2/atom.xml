@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Symfony2 | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/symfony2/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2014-08-20T10:42:22+02:00</updated>
+  <updated>2014-08-20T11:11:09+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Billy is hiring! Middleweight PHP developer needed]]></title>
+    <link href="http://mrzard.github.com/blog/2014/08/20/billy-is-hiring-middleweight-php-developer-needed/"/>
+    <updated>2014-08-20T10:52:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2014/08/20/billy-is-hiring-middleweight-php-developer-needed</id>
+    <content type="html"><![CDATA[<p>As most of you know, since June 2nd I've taken the position of MVAS IT Manager at <a href="http://www.billymob.com">Billy Mobile</a>.</p>
+
+<p>Well, the family is growing, and I need a pair of hands on my side.</p>
+
+<p>We are looking for:</p>
+
+<ul>
+<li><p> A fun person to be around</p></li>
+<li><p> All-around nice person</p></li>
+<li><p> Middleweight PHP developer. You have some experience, but want to improve and / or take on new challenges. Or baybe you have a ton of experience, and you like this job posting!</p></li>
+<li><p> Comfortable with MySQL (queries, indexes, joins...)</p></li>
+<li><p> Comfortable with the Mediator pattern specially and design patterns in general</p></li>
+<li><p> Understands Dependency Injection</p></li>
+<li><p> Can document code, or writes code so beautiful it's auto-commented (if this is you please teach me).</p></li>
+<li><p> Maybe has a bit (or a lot) of experience with testing.</p></li>
+<li><p> <em>Strong english skills required</em> - this a must, as we are an international company that need to communicate clearly in English with both coworkers and partners.</p></li>
+</ul>
+
+
+<p>We are offering:</p>
+
+<ul>
+<li><p> Good salary and company perks</p></li>
+<li><p> An environment were prototyping, putting your ideas out there and trying new stuff is encouraged</p></li>
+<li><p> Lots of growth opportunities</p></li>
+<li><p> The chance to impact a working business model</p></li>
+<li><p> Working with yours truly which is AWESOME</p></li>
+<li><p> Free coffee and soft drinks</p></li>
+<li><p> Great coworkers</p></li>
+</ul>
+
+
+<p>Right now we are using some Symfony components (HttpFoundation, DependencyInjection, Configuration, Router, EventDispatcher, Console and Templating) and we are creating a lot of libraries for our own use which we control with Composer / Satis. We also are going to possibly include node.js in some of our apps.</p>
+
+<p>Your job will be <del>bringing me coffee</del> one of connectiong our apps with 3rd party APIs, creating new libraries that connect us to different services, thinking of how to improve our metrics and having fun while doing so.</p>
+
+<p>Do you think you want this job? Then drop me an email at my name at billymob.com or <a href="http://es.linkedin.com/in/gonzalomiguez">add me on LinkedIn</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Customize Form Prototype for Collections in Symfony2]]></title>
