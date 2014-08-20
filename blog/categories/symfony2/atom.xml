@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Symfony2 | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/symfony2/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2014-08-20T11:11:09+02:00</updated>
+  <updated>2014-08-20T11:14:01+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -27,7 +27,7 @@
 <ul>
 <li><p> A fun person to be around</p></li>
 <li><p> All-around nice person</p></li>
-<li><p> Middleweight PHP developer. You have some experience, but want to improve and / or take on new challenges. Or baybe you have a ton of experience, and you like this job posting!</p></li>
+<li><p> Middleweight PHP developer. You have some experience, but want to improve and / or take on new challenges. Or maybe you have a ton of experience, and you like this job posting!</p></li>
 <li><p> Comfortable with MySQL (queries, indexes, joins...)</p></li>
 <li><p> Comfortable with the Mediator pattern specially and design patterns in general</p></li>
 <li><p> Understands Dependency Injection</p></li>
@@ -52,7 +52,7 @@
 
 <p>Right now we are using some Symfony components (HttpFoundation, DependencyInjection, Configuration, Router, EventDispatcher, Console and Templating) and we are creating a lot of libraries for our own use which we control with Composer / Satis. We also are going to possibly include node.js in some of our apps.</p>
 
-<p>Your job will be <del>bringing me coffee</del> one of connectiong our apps with 3rd party APIs, creating new libraries that connect us to different services, thinking of how to improve our metrics and having fun while doing so.</p>
+<p>Your job will be <del>bringing me coffee</del> connecting our apps with 3rd party APIs, creating new libraries that connect us to different services, thinking of how to improve our metrics and having fun while doing so. We have three different areas were you can make impact (mobile web apps, a very custom adserver and a REST-ish API for native mobile apps).</p>
 
 <p>Do you think you want this job? Then drop me an email at my name at billymob.com or <a href="http://es.linkedin.com/in/gonzalomiguez">add me on LinkedIn</a>.</p>
 ]]></content>
