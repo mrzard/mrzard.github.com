@@ -5,11 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Loading cross-domain fonts from Firefox - Programming Rambling</title>
+  <title>Loading Cross-domain Fonts From Firefox - Programming Rambling</title>
   <meta name="author" content="Gonzalo Míguez">
 
   
-  <meta name="description" content="When requiring a font from an external CSS file (assets domain, CDN, etc), you may see that Firefox refuses to display the font. This is because &hellip;">
+  <meta name="description" content="When requiring a font from an external CSS file (assets domain, CDN,
+etc), you may see that Firefox refuses to display the font. This is
+because &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -56,9 +58,9 @@
 </form>
   
 <ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/about-me">About me</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
+ 	<li><a href="/">Blog</a></li>
+ 	<li><a href="/about-me/">About me</a></li>
+  	<li><a href="/blog/archives">Archives</a></li>
 </ul>
 
 </nav>
@@ -85,7 +87,7 @@
   
 
 
-<time datetime="2013-03-28T14:00:00+01:00" pubdate data-updated="true">Mar 28<span>th</span>, 2013</time>
+<time datetime="2013-03-28T15:45:00+01:00" pubdate data-updated="true">Mar 28<span>th</span>, 2013</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -94,20 +96,26 @@
   </header>
 
 
-<div class="entry-content"><p>When requiring a font from an external CSS file (assets domain, CDN, etc), you may see that Firefox refuses to display the font. This is because Firefox, by default, disables cross-domain fonts. To solve this you have to add a header to the response with the font file. The header is <code>Access-Control-Allow-Origin: *</code></p>
+<div class="entry-content"><p>When requiring a font from an external CSS file (assets domain, CDN,
+etc), you may see that Firefox refuses to display the font. This is
+because Firefox, by default, disables cross-domain fonts. To solve this
+you have to add a header to the response with the font file. The header
+is <code>Access-Control-Allow-Origin: *</code></p>
 
 <p>In a typical <code>nginx</code> setup, this is achieved with this snippet:</p>
 
-<figure class='code'><figcaption><span>nginx add header </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p>nginx add header</p>
+
+<figure class='code'><figcaption><span>nginx add header</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>location ~* \.(eot|ttf|woff)$ {
 </span><span class='line'>  add_header Access-Control-Allow-Origin *;
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>}   </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Once you have that in place, the fonts will be loaded correctly from Firefox.</p>
+<p>Once you have that in place, the fonts will be loaded correctly from
+Firefox.</p>
 </div>
 
 
@@ -130,12 +138,12 @@
   
 
 
-<time datetime="2013-03-28T14:00:00+01:00" pubdate data-updated="true">Mar 28<span>th</span>, 2013</time>
+<time datetime="2013-03-28T15:45:00+01:00" pubdate data-updated="true">Mar 28<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/http/'>HTTP</a>, <a class='category' href='/blog/categories/fonts/'>fonts</a>, <a class='category' href='/blog/categories/headers/'>headers</a>, <a class='category' href='/blog/categories/webfonts/'>webfonts</a>
+    <a class='category' href='/blog/categories/http/'>HTTP</a>, <a class='category' href='/blog/categories/firefox/'>firefox</a>, <a class='category' href='/blog/categories/fonts/'>fonts</a>, <a class='category' href='/blog/categories/headers/'>headers</a>, <a class='category' href='/blog/categories/nginx/'>nginx</a>, <a class='category' href='/blog/categories/webfonts/'>webfonts</a>
   
 </span>
 
@@ -160,7 +168,7 @@
         <a class="basic-alignment left" href="/blog/2013/03/26/my-experience-with-paymill/" title="Previous Post: My experience with Paymill">&laquo; My experience with Paymill</a>
       
       
-        <a class="basic-alignment right" href="/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/" title="Next Post: Flushing only desired entities with Doctrine">Flushing only desired entities with Doctrine &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/" title="Next Post: Fluhsing only desired entities with Doctrine">Fluhsing only desired entities with Doctrine &raquo;</a>
       
     </p>
   </footer>
@@ -181,19 +189,19 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2014/05/06/what-i-have-learnt-as-a-cto/">What I have learnt as a CTO</a>
+        <a href="/blog/2014/05/06/what-i-have-learnt-as-a-cto/">What I Have Learnt as a CTO </a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/">Customize form prototype for collections in Symfony2</a>
+        <a href="/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/">Customize Form Prototype for Collections in Symfony2</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/">Flushing only desired entities with Doctrine</a>
+        <a href="/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/">Fluhsing only desired entities with Doctrine</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/03/28/loading-cross-domain-fonts-from-firefox/">Loading cross-domain fonts from Firefox</a>
+        <a href="/blog/2013/03/28/loading-cross-domain-fonts-from-firefox/">Loading Cross-domain Fonts From Firefox</a>
       </li>
     
       <li class="post">

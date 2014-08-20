@@ -4,7 +4,7 @@
   <title><![CDATA[Category: jQuery | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/jquery/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2014-06-11T13:57:35+02:00</updated>
+  <updated>2014-08-20T10:42:22+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -30,42 +30,80 @@ binded to the droppable plugin.</p>
 <p>In case it's of help for somebody, here's a quick 'skeleton' on top of which
 you can code the drag&amp;drop interactions you want.</p>
 
-<p>{% codeblock Draggable-Droppable example lang:javascript %}</p>
-
-<pre><code>var draggable_options = { 
-        helper: 'clone',    /* makes the item 'move' a copy of itself rather than 
-                        '   leave' the original area */ 
-        revert: 'invalid',  /* makes the item return to its original position 
-                            if not dropped in a 'droppable' area */ 
-        cursor: 'move'      // changes the cursor appearance on hover 
-}; 
-
-//we give the items the draggable plugin with the options 
-$(".draggable").draggable(draggable_options); 
-
-$(".droppable").droppable({
-    drop: function(event, ui) { 
-        /* detect where we dropped the draggable element, 
-        in my case, the key part was the element's id */ 
-        var dropped_in = $(this).attr('id'); 
-
-        /* here i put '...' in the droppable container's body to inform 
-        the user 'something' is happening */ 
-        var context = $(this); 
-        context.html('...'); 
-
-        var dragged = $(ui.draggable); 
-        /* ui.draggable is a reference to the dropped element. 
-        Now you can use all jQuery functions like dragged.attr('id') to get its id, 
-        or dragged.html('whatever') to change its innerHTML, etc... */ 
-
-        /* Here comes interaction, the removal of '...' and 
-        display of the action results */ 
-    } 
-});
-</code></pre>
-
-<p>{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Draggable-Droppable example  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="kd">var</span> <span class="nx">draggable_options</span> <span class="o">=</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">helper</span><span class="o">:</span> <span class="s1">&#39;clone&#39;</span><span class="p">,</span>    <span class="cm">/* makes the item &#39;move&#39; a copy of itself rather than </span>
+</span><span class='line'><span class="cm">                        &#39;   leave&#39; the original area */</span>
+</span><span class='line'>        <span class="nx">revert</span><span class="o">:</span> <span class="s1">&#39;invalid&#39;</span><span class="p">,</span>  <span class="cm">/* makes the item return to its original position </span>
+</span><span class='line'><span class="cm">                            if not dropped in a &#39;droppable&#39; area */</span>
+</span><span class='line'>        <span class="nx">cursor</span><span class="o">:</span> <span class="s1">&#39;move&#39;</span>      <span class="c1">// changes the cursor appearance on hover </span>
+</span><span class='line'><span class="p">};</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//we give the items the draggable plugin with the options </span>
+</span><span class='line'><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.draggable&quot;</span><span class="p">).</span><span class="nx">draggable</span><span class="p">(</span><span class="nx">draggable_options</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.droppable&quot;</span><span class="p">).</span><span class="nx">droppable</span><span class="p">({</span>
+</span><span class='line'>    <span class="nx">drop</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">,</span> <span class="nx">ui</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="cm">/* detect where we dropped the draggable element, </span>
+</span><span class='line'><span class="cm">        in my case, the key part was the element&#39;s id */</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">dropped_in</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="cm">/* here i put &#39;...&#39; in the droppable container&#39;s body to inform </span>
+</span><span class='line'><span class="cm">        the user &#39;something&#39; is happening */</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">context</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+</span><span class='line'>        <span class="nx">context</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="s1">&#39;...&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">dragged</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nx">ui</span><span class="p">.</span><span class="nx">draggable</span><span class="p">);</span>
+</span><span class='line'>        <span class="cm">/* ui.draggable is a reference to the dropped element. </span>
+</span><span class='line'><span class="cm">        Now you can use all jQuery functions like dragged.attr(&#39;id&#39;) to get its id, </span>
+</span><span class='line'><span class="cm">        or dragged.html(&#39;whatever&#39;) to change its innerHTML, etc... */</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="cm">/* Here comes interaction, the removal of &#39;...&#39; and </span>
+</span><span class='line'><span class="cm">        display of the action results */</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">});</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 ]]></content>
   </entry>
   

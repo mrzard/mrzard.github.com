@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
 <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
@@ -8,7 +9,8 @@
   <meta name="author" content="Gonzalo Míguez">
 
   
-  <meta name="description" content="When May comes to and end, I will end my one and a half years journey as a CTO for ChicPlace.com. The reasons for my depature are diverse, and &hellip;">
+  <meta name="description" content="When May comes to and end, I will end my one and a half years journey as
+a CTO for ChicPlace.com. The reasons for my depature are diverse, and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -55,9 +57,9 @@
 </form>
   
 <ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/about-me">About me</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
+ 	<li><a href="/">Blog</a></li>
+ 	<li><a href="/about-me/">About me</a></li>
+  	<li><a href="/blog/archives">Archives</a></li>
 </ul>
 
 </nav>
@@ -87,7 +89,7 @@
   
 
 
-<time datetime="2014-05-06T13:10:00+02:00" pubdate data-updated="true">May 6<span>th</span>, 2014</time>
+<time datetime="2014-05-06T16:45:00+02:00" pubdate data-updated="true">May 6<span>th</span>, 2014</time>
         
          | <a href="/blog/2014/05/06/what-i-have-learnt-as-a-cto/#disqus_thread">Comments</a>
         
@@ -96,15 +98,19 @@
   </header>
 
 
-  <div class="entry-content"><p>When May comes to and end, I will end my one and a half years journey as a CTO for <a href="http://www.chicplace.com">ChicPlace.com</a>.</p>
+  <div class="entry-content"><p>When May comes to and end, I will end my one and a half years journey as
+a CTO for <a href="http://www.chicplace.com">ChicPlace.com</a>.</p>
 
-<p>The reasons for my depature are diverse, and possibly this is not the best place to discuss them, but
-I am very grateful for the opportunity to grow and learn while developing a project that has the
-potential to be something special.</p>
+<p>The reasons for my depature are diverse, and possibly this is not the
+best place to discuss them, but I am very grateful for the opportunity
+to grow and learn while developing a project that has the potential to
+be something special.</p>
 
-<p>During this time I have gained a lot of experience managing teams, and learnt a lot about myself,
-specially when it comes to working with non-technical people, and how to manage expectations, deadlines
-and organisation when working in a very fast-paced and very improvisational startup.</p>
+<p>During this time I have gained a lot of experience managing teams, and
+learnt a lot about myself, specially when it comes to working with
+non-technical people, and how to manage expectations, deadlines and
+organisation when working in a very fast-paced and very improvisational
+startup.</p>
 
 <p>I will write a list of things that I have learnt, in the form of:</p>
 
@@ -150,7 +156,7 @@ and organisation when working in a very fast-paced and very improvisational star
   
 
 
-<time datetime="2013-10-30T15:57:00+01:00" pubdate data-updated="true">Oct 30<span>th</span>, 2013</time>
+<time datetime="2013-10-30T15:45:00+01:00" pubdate data-updated="true">Oct 30<span>th</span>, 2013</time>
         
          | <a href="/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/#disqus_thread">Comments</a>
         
@@ -159,13 +165,22 @@ and organisation when working in a very fast-paced and very improvisational star
   </header>
 
 
-  <div class="entry-content"><p>When working with complex forms, sometimes you will be in need of creating a collection field type to manage relations. When this is the case, you may find yourself in the need of tweaking how the &#8216;add&#8217; form shows.</p>
+  <div class="entry-content"><p>When working with complex forms, sometimes you will be in need of
+creating a collection field type to manage relations. When this is the
+case, you may find yourself in the need of tweaking how the ‘add’ form
+shows.</p>
 
-<p>It&#8217;s pretty simple. In twig the protoype can be found under form.collection.vars.prototype and can be used as a regular form (i.e. if your form.collection member form has a &#8216;name&#8217;, it will also be available in form.collection.vars.protoype.name).</p>
+<p>It’s pretty simple. In twig the protoype can be found under
+form.collection.vars.prototype and can be used as a regular form (i.e.
+if your form.collection member form has a ‘name’, it will also be
+available in form.collection.vars.protoype.name).</p>
 
-<p>With this information now you can create a twig that recieves an &#8216;item&#8217;, which can be either a form.collection member or a prototype, and it will be rendered the same.</p>
+<p>With this information now you can create a twig that recieves an ‘item’,
+which can be either a form.collection member or a prototype, and it will
+be rendered the same.</p>
 
-<p>Finally, wherever you hold the collection html, you will have to output something like this:</p>
+<p>Finally, wherever you hold the collection html, you will have to output
+something like this:</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>data-prototype="{% filter escape %}{% include 'prototype.twig' with { 'item': form.collection.vars.prototype } %}{% endfilter %}"</span></code></pre></td></tr></table></div></figure>
@@ -177,13 +192,17 @@ and organisation when working in a very fast-paced and very improvisational star
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>{{ form_row(item.field0) }}
-</span><span class='line'>{{ form_row(item.field1) }}
-</span><span class='line'>{{ form_row(item.field2) }}</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>  {{ form_row(item.field1) }}
+</span><span class='line'>  {{ form_row(item.field2) }}</span></code></pre></td></tr></table></div></figure>
 
 
-<p>This way, you will have access to the prototype as if it were a regular form, and you can apply all the customization you want (you can user form_widget and the other functions, or access the vars directly, etc&#8230;)</p>
+<p>This way, you will have access to the prototype as if it were a regular
+form, and you can apply all the customization you want (you can user
+form_widget and the other functions, or access the vars directly, etc&#8230;)</p>
 
-<p>Creating the helper twig is optional though, but handy because you have to use the escape filter to the twig so you can put it in the correct data-attribute.</p>
+<p>Creating the helper twig is optional though, but handy because you have
+to use the escape filter to the twig so you can put it in the correct
+data-attribute.</p>
 </div>
   
   
@@ -196,7 +215,7 @@ and organisation when working in a very fast-paced and very improvisational star
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/">Flushing Only Desired Entities With Doctrine</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/">Fluhsing Only Desired Entities With Doctrine</a></h1>
     
     
       <p class="meta">
@@ -212,7 +231,7 @@ and organisation when working in a very fast-paced and very improvisational star
   
 
 
-<time datetime="2013-10-10T11:10:00+02:00" pubdate data-updated="true">Oct 10<span>th</span>, 2013</time>
+<time datetime="2013-10-10T16:45:00+02:00" pubdate data-updated="true">Oct 10<span>th</span>, 2013</time>
         
          | <a href="/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/#disqus_thread">Comments</a>
         
@@ -221,7 +240,11 @@ and organisation when working in a very fast-paced and very improvisational star
   </header>
 
 
-  <div class="entry-content"><p>Sometimes, you may be working with several entities at the same time. If this entities are managed by Doctrine, you may find yourself in the situation where you want to flush only some of them. If you want to do so, you can pass an array of entities to the flush(), so it only affects the entities you explicitly pass to the function.</p>
+  <div class="entry-content"><p>Sometimes, you may be working with several entities at the same time. If
+this entities are managed by Doctrine, you may find yourself in the
+situation where you want to flush only some of them. If you want to do
+so, you can pass an array of entities to the flush(), so it only affects
+the entities you explicitly pass to the function.</p>
 
 <p>This is very useful to avoid side-effects in some instances.</p>
 </div>
@@ -252,7 +275,7 @@ and organisation when working in a very fast-paced and very improvisational star
   
 
 
-<time datetime="2013-03-28T14:00:00+01:00" pubdate data-updated="true">Mar 28<span>th</span>, 2013</time>
+<time datetime="2013-03-28T15:45:00+01:00" pubdate data-updated="true">Mar 28<span>th</span>, 2013</time>
         
          | <a href="/blog/2013/03/28/loading-cross-domain-fonts-from-firefox/#disqus_thread">Comments</a>
         
@@ -261,20 +284,26 @@ and organisation when working in a very fast-paced and very improvisational star
   </header>
 
 
-  <div class="entry-content"><p>When requiring a font from an external CSS file (assets domain, CDN, etc), you may see that Firefox refuses to display the font. This is because Firefox, by default, disables cross-domain fonts. To solve this you have to add a header to the response with the font file. The header is <code>Access-Control-Allow-Origin: *</code></p>
+  <div class="entry-content"><p>When requiring a font from an external CSS file (assets domain, CDN,
+etc), you may see that Firefox refuses to display the font. This is
+because Firefox, by default, disables cross-domain fonts. To solve this
+you have to add a header to the response with the font file. The header
+is <code>Access-Control-Allow-Origin: *</code></p>
 
 <p>In a typical <code>nginx</code> setup, this is achieved with this snippet:</p>
 
-<figure class='code'><figcaption><span>nginx add header </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p>nginx add header</p>
+
+<figure class='code'><figcaption><span>nginx add header</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>location ~* \.(eot|ttf|woff)$ {
 </span><span class='line'>  add_header Access-Control-Allow-Origin *;
-</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>}   </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Once you have that in place, the fonts will be loaded correctly from Firefox.</p>
+<p>Once you have that in place, the fonts will be loaded correctly from
+Firefox.</p>
 </div>
   
   
@@ -690,19 +719,19 @@ and expand this list :D</p>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2014/05/06/what-i-have-learnt-as-a-cto/">What I have learnt as a CTO</a>
+        <a href="/blog/2014/05/06/what-i-have-learnt-as-a-cto/">What I Have Learnt as a CTO </a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/">Customize form prototype for collections in Symfony2</a>
+        <a href="/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/">Customize Form Prototype for Collections in Symfony2</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/">Flushing only desired entities with Doctrine</a>
+        <a href="/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/">Fluhsing only desired entities with Doctrine</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/03/28/loading-cross-domain-fonts-from-firefox/">Loading cross-domain fonts from Firefox</a>
+        <a href="/blog/2013/03/28/loading-cross-domain-fonts-from-firefox/">Loading Cross-domain Fonts From Firefox</a>
       </li>
     
       <li class="post">
@@ -814,4 +843,3 @@ and expand this list :D</p>
 
 </body>
 </html>
->>>>>>> e462bf9e6333f8d0676404ff28679023a767f127

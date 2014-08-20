@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: webfonts | Programming Rambling]]></title>
-  <link href="http://mrzard.github.com/blog/categories/webfonts/atom.xml" rel="self"/>
+  <title><![CDATA[Category: firefox | Programming Rambling]]></title>
+  <link href="http://mrzard.github.com/blog/categories/firefox/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
   <updated>2014-08-20T10:42:22+02:00</updated>
   <id>http://mrzard.github.com/</id>
