@@ -20,13 +20,17 @@ We are looking for:
 
    - Comfortable with MySQL (queries, indexes, joins...)
 
-   - Comfortable with the Mediator pattern specially and design patterns in general
+   - Comfortable with the Mediator pattern and design patterns in general
+
+   - Comfortable with git and composer
 
    - Understands Dependency Injection 
 
    - Can document code, or writes code so beautiful it's auto-commented (if this is you please teach me).
 
    - Maybe has a bit (or a lot) of experience with testing.
+
+   - Maybe has experience with key-value stores (Reidis, Memcached or other), and NoSQL solutions (MongoDB, CouchDB, ElasticSearch or other...)
 
    - *Strong english skills required* - this a must, as we are an international company that need to communicate clearly in English with both coworkers and partners.
 
