@@ -4,7 +4,7 @@
   <title><![CDATA[Programming Rambling]]></title>
   <link href="http://mrzard.github.com/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2014-08-20T13:59:03+02:00</updated>
+  <updated>2014-08-28T17:39:26+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -29,10 +29,12 @@
 <li><p> All-around nice person</p></li>
 <li><p> Middleweight PHP developer. You have some experience, but want to improve and / or take on new challenges. Or maybe you have a ton of experience, and you like this job posting!</p></li>
 <li><p> Comfortable with MySQL (queries, indexes, joins&#8230;)</p></li>
-<li><p> Comfortable with the Mediator pattern specially and design patterns in general</p></li>
+<li><p> Comfortable with the Mediator pattern and design patterns in general</p></li>
+<li><p> Comfortable with git and composer</p></li>
 <li><p> Understands Dependency Injection</p></li>
 <li><p> Can document code, or writes code so beautiful it&#8217;s auto-commented (if this is you please teach me).</p></li>
 <li><p> Maybe has a bit (or a lot) of experience with testing.</p></li>
+<li><p> Maybe has experience with key-value stores (Reidis, Memcached or other), and NoSQL solutions (MongoDB, CouchDB, ElasticSearch or other&#8230;)</p></li>
 <li><p> <em>Strong english skills required</em> - this a must, as we are an international company that need to communicate clearly in English with both coworkers and partners.</p></li>
 </ul>
 
