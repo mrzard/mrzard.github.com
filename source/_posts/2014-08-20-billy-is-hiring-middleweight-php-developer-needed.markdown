@@ -10,6 +10,10 @@ As most of you know, since June 2nd I've taken the position of MVAS IT Manager a
 
 Well, the family is growing, and I need a pair of hands on my side. 
 
+Right now we are using some Symfony components (HttpFoundation, DependencyInjection, Configuration, Router, EventDispatcher, Console and Templating) and we are creating a lot of libraries for our own use which we control with Composer / Satis. We also are going to possibly include node.js in some of our apps.
+
+Your job will be connecting our apps with 3rd party APIs, creating new libraries that connect us to different services, thinking of how to improve our metrics and having fun while doing so. We have three different areas were you can make impact (mobile web apps, a very custom adserver and a REST-ish API for native mobile apps).
+
 We are looking for: 
 
    - A fun person to be around
@@ -51,9 +55,4 @@ We are offering:
 
    - Great coworkers
 
-
-Right now we are using some Symfony components (HttpFoundation, DependencyInjection, Configuration, Router, EventDispatcher, Console and Templating) and we are creating a lot of libraries for our own use which we control with Composer / Satis. We also are going to possibly include node.js in some of our apps.
-
-Your job will be <del>bringing me coffee</del> connecting our apps with 3rd party APIs, creating new libraries that connect us to different services, thinking of how to improve our metrics and having fun while doing so. We have three different areas were you can make impact (mobile web apps, a very custom adserver and a REST-ish API for native mobile apps).
-
-Do you think you want this job? Then drop me an email at my name at billymob.com or [add me on LinkedIn](http://es.linkedin.com/in/gonzalomiguez).
+Do you think you want this job? Then drop me an email at my name at billymob.com or [apply on LinkedIn](https://www.linkedin.com/jobs2/view/11081010?trk=biz-overview-job-post).
