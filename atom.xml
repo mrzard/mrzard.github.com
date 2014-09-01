@@ -4,7 +4,7 @@
   <title><![CDATA[Programming Rambling]]></title>
   <link href="http://mrzard.github.com/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2014-09-01T09:13:40+02:00</updated>
+  <updated>2014-09-01T09:16:29+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -21,6 +21,10 @@
     <content type="html"><![CDATA[<p>As most of you know, since June 2nd I&#8217;ve taken the position of MVAS IT Manager at <a href="http://www.billymob.com">Billy Mobile</a>.</p>
 
 <p>Well, the family is growing, and I need a pair of hands on my side.</p>
+
+<p>Right now we are using some Symfony components (HttpFoundation, DependencyInjection, Configuration, Router, EventDispatcher, Console and Templating) and we are creating a lot of libraries for our own use which we control with Composer / Satis. We also are going to possibly include node.js in some of our apps.</p>
+
+<p>Your job will be connecting our apps with 3rd party APIs, creating new libraries that connect us to different services, thinking of how to improve our metrics and having fun while doing so. We have three different areas were you can make impact (mobile web apps, a very custom adserver and a REST-ish API for native mobile apps).</p>
 
 <p>We are looking for:</p>
 
@@ -52,11 +56,7 @@
 </ul>
 
 
-<p>Right now we are using some Symfony components (HttpFoundation, DependencyInjection, Configuration, Router, EventDispatcher, Console and Templating) and we are creating a lot of libraries for our own use which we control with Composer / Satis. We also are going to possibly include node.js in some of our apps.</p>
-
-<p>Your job will be <del>bringing me coffee</del> connecting our apps with 3rd party APIs, creating new libraries that connect us to different services, thinking of how to improve our metrics and having fun while doing so. We have three different areas were you can make impact (mobile web apps, a very custom adserver and a REST-ish API for native mobile apps).</p>
-
-<p>Do you think you want this job? Then drop me an email at my name at billymob.com or <a href="http://es.linkedin.com/in/gonzalomiguez">add me on LinkedIn</a>.</p>
+<p>Do you think you want this job? Then drop me an email at my name at billymob.com or <a href="https://www.linkedin.com/jobs2/view/11081010?trk=biz-overview-job-post">apply on LinkedIn</a>.</p>
 ]]></content>
   </entry>
   
