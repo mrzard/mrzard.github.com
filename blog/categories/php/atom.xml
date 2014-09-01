@@ -4,7 +4,7 @@
   <title><![CDATA[Category: PHP | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/php/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2014-09-01T09:16:29+02:00</updated>
+  <updated>2014-09-01T09:18:02+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -38,7 +38,7 @@
 <li><p> Understands Dependency Injection</p></li>
 <li><p> Can document code, or writes code so beautiful it's auto-commented (if this is you please teach me).</p></li>
 <li><p> Maybe has a bit (or a lot) of experience with testing.</p></li>
-<li><p> Maybe has experience with key-value stores (Reidis, Memcached or other), and NoSQL solutions (MongoDB, CouchDB, ElasticSearch or other...)</p></li>
+<li><p> Maybe has experience with key-value stores (Redis, Memcached or other), and NoSQL solutions (MongoDB, CouchDB, ElasticSearch or other...)</p></li>
 <li><p> <em>Strong english skills required</em> - this a must, as we are an international company that need to communicate clearly in English with both coworkers and partners.</p></li>
 </ul>
 
