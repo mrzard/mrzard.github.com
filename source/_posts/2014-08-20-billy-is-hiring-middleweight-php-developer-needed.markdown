@@ -34,7 +34,7 @@ We are looking for:
 
    - Maybe has a bit (or a lot) of experience with testing.
 
-   - Maybe has experience with key-value stores (Reidis, Memcached or other), and NoSQL solutions (MongoDB, CouchDB, ElasticSearch or other...)
+   - Maybe has experience with key-value stores (Redis, Memcached or other), and NoSQL solutions (MongoDB, CouchDB, ElasticSearch or other...)
 
    - *Strong english skills required* - this a must, as we are an international company that need to communicate clearly in English with both coworkers and partners.
 
