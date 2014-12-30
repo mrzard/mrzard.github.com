@@ -9,8 +9,8 @@
   <meta name="author" content="Gonzalo Míguez">
 
   
-  <meta name="description" content="This is a very annoying bug (it really surprises me it is not already patched
-in the main update site), that makes the compare editor not work. The &hellip;">
+  <meta name="description" content="As seen in the Gawker/Gizmodo HUGE problem with having their passwords compromised,
+I found a short and excellent post about why using speed-oriented &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +67,59 @@ in the main update site), that makes the compare editor not work. The &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/12/13/choosing-a-method-to-safely-store-passwords/">Choosing a Method to Store Passwords Safely.</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-12-13T13:30:00+01:00" pubdate data-updated="true">Dec 13<span>th</span>, 2010</time>
+        
+         | <a href="/blog/2010/12/13/choosing-a-method-to-safely-store-passwords/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>As seen in the Gawker/Gizmodo HUGE problem with having their passwords compromised,
+I found a short and excellent post about why using speed-oriented hash functions
+is a bad idea for password encryption.</p>
+
+<p>In a nutshell, MD5, SHA1 and the like are designed to work fast with large
+amounts of data, so they are most useful when calculating data integrity and
+the like, but being fast, they are also easy to attack by brute force.</p>
+
+<p>On the other hand <a href="http://bcrypt.sourceforge.net/">Bcrypt</a> is &#8216;slow&#8217; when compared with other hashing algorithms,
+which makes it strong against brute force attacks. You can find the original
+post here: <a href="http://codahale.com/how-to-safely-store-a-password/">http://codahale.com/how-to-safely-store-a-password/</a></p>
+
+<p>I do not necessarily agree with the &#8216;uselessness&#8217; of salting passwords, as
+that makes it harder to find a general pattern to attack ALL of the accounts
+protected by a single password in the system, but I see the point of it not
+being able to prevent or slow brute force attacks.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -517,53 +570,6 @@ at paypal.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/09/07/cygwin-rsync-error-13-windows-7-problems/">Cygwin + Rsync Error 13 + Windows 7 Problems</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-09-07T23:30:00+02:00" pubdate data-updated="true">Sep 7<span>th</span>, 2010</time>
-        
-         | <a href="/blog/2010/09/07/cygwin-rsync-error-13-windows-7-problems/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>If you find yourself getting rsync error 13 when using it on cygwin, check
-the permissions on your source folder. For some reason, out of the box all
-directories have 400 permissions, and if your destination folder needs anything
-higher than that, rsync will fail. Make sure you execute chmod -R 755 on the
-source directory - assuming it&#8217;s in your cygwin box-.</p>
-
-<p>Also, if chmod fails, make sure you ran cygwin as administrator on your Windows
-machine.</p>
-
-<p>Worked like a charm for me!</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -581,6 +587,10 @@ machine.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/12/29/farewell-2014-welcome-2015/">Farewell 2014, Welcome 2015</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/08/20/billy-is-hiring-middleweight-php-developer-needed/">Billy is hiring! Middleweight PHP developer needed</a>
       </li>
     
@@ -594,10 +604,6 @@ machine.</p>
     
       <li class="post">
         <a href="/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/">Fluhsing only desired entities with Doctrine</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/03/28/loading-cross-domain-fonts-from-firefox/">Loading Cross-domain Fonts From Firefox</a>
       </li>
     
   </ul>

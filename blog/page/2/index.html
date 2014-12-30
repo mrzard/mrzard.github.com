@@ -9,8 +9,8 @@
   <meta name="author" content="Gonzalo Míguez">
 
   
-  <meta name="description" content="Lately I&#8217;ve seen a lot of posts about errors candidates make in interviews.
-Now I am going to write a list of error employers make when looking &hellip;">
+  <meta name="description" content="In my programming experience I have worked with different ways of handling
+releases. From the old easy FTP access to other cool stuff like phing. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +67,81 @@ Now I am going to write a list of error employers make when looking &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/">Release Cycles and Policies, Deploying Code Thoughts.</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-15T21:17:00+01:00" pubdate data-updated="true">Feb 15<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>In my programming experience I have worked with different ways of handling
+releases. From the old easy FTP access to other cool stuff like <a href="">phing</a>.</p>
+
+<p>What I have learned is that it does not really matter which tools you use,
+and is pretty much contained in the next points.</p>
+
+<p>0 - Prepare for the release. Write a &#8216;script&#8217; of what code has been changed/added
+and what tests it must pass (unit, integration, user&#8230;). Iterate until all
+tests have passed. Then move the release to your staging server. Always have
+100% awareness of what is going into the release.</p>
+
+<p>1 - Have a proper staging server(s). This allows for good testing, and reduces
+(hopefully eliminates) the necessity to double check stuff in the live server(s).</p>
+
+<p>3 - The release has to work. Test everything, then test it again. Then release.
+And go to 4.</p>
+
+<p>4 - Shit happens. The relese does not always work. This is pretty common, specially
+with large codebases, multiple programmers and code merging (SVN I&#8217;m looking
+at you). Or discrepancies between your live servers and your testing servers.
+Or simply someone forgot to run a test.</p>
+
+<p>5 - Your release system must work for you, not against you. It&#8217;s fine to have
+a release date / system, but fear not of changing it to fit your needs. This
+leads us to the next point.</p>
+
+<p>6 - Make it that the release system is quick and can be fired anytime. You
+never know when you&#8217;re going to need an emergency fix. Make it easy to fix
+mistakes. Also make it painful to make them. You don&#8217;t want developers feeling
+confident they can release a half cooked solution and fix it later. I must
+confess though that I prefer to release and fix than to never release.</p>
+
+<p>7 - Use of tools like phing can help you a lot automating some boring stuff,
+but again make deploying a simple procedure that has no bottlenecks and allows
+you to eliminate any serious enough bug or mistake in a heartbeat.</p>
+
+<p>8 - Do not fire your lean, quick release system for everything. That CSS fix
+can wait until the next release.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -621,59 +696,6 @@ it.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/12/13/choosing-a-method-to-safely-store-passwords/">Choosing a Method to Store Passwords Safely.</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-12-13T13:30:00+01:00" pubdate data-updated="true">Dec 13<span>th</span>, 2010</time>
-        
-         | <a href="/blog/2010/12/13/choosing-a-method-to-safely-store-passwords/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>As seen in the Gawker/Gizmodo HUGE problem with having their passwords compromised,
-I found a short and excellent post about why using speed-oriented hash functions
-is a bad idea for password encryption.</p>
-
-<p>In a nutshell, MD5, SHA1 and the like are designed to work fast with large
-amounts of data, so they are most useful when calculating data integrity and
-the like, but being fast, they are also easy to attack by brute force.</p>
-
-<p>On the other hand <a href="http://bcrypt.sourceforge.net/">Bcrypt</a> is &#8216;slow&#8217; when compared with other hashing algorithms,
-which makes it strong against brute force attacks. You can find the original
-post here: <a href="http://codahale.com/how-to-safely-store-a-password/">http://codahale.com/how-to-safely-store-a-password/</a></p>
-
-<p>I do not necessarily agree with the &#8216;uselessness&#8217; of salting passwords, as
-that makes it harder to find a general pattern to attack ALL of the accounts
-protected by a single password in the system, but I see the point of it not
-being able to prevent or slow brute force attacks.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -691,6 +713,10 @@ being able to prevent or slow brute force attacks.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/12/29/farewell-2014-welcome-2015/">Farewell 2014, Welcome 2015</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/08/20/billy-is-hiring-middleweight-php-developer-needed/">Billy is hiring! Middleweight PHP developer needed</a>
       </li>
     
@@ -704,10 +730,6 @@ being able to prevent or slow brute force attacks.</p>
     
       <li class="post">
         <a href="/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/">Fluhsing only desired entities with Doctrine</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/03/28/loading-cross-domain-fonts-from-firefox/">Loading Cross-domain Fonts From Firefox</a>
       </li>
     
   </ul>
