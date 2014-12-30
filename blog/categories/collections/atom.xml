@@ -4,7 +4,7 @@
   <title><![CDATA[Category: collections | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/collections/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2014-12-30T08:21:33+01:00</updated>
+  <updated>2014-12-30T08:41:09+01:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -35,37 +35,27 @@ be rendered the same.</p>
 <p>Finally, wherever you hold the collection html, you will have to output
 something like this:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;pre>&lt;code>data-prototype="{% filter escape %}{% include 'prototype.twig' with { 'item': form.collection.vars.prototype } %}{% endfilter %}"
-</span><span class='line'>&lt;/code>&lt;/pre>
-</span><span class='line'>
-</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+{% raw %}</p>
+
+<pre><code>data-prototype="{% filter escape %}{% include 'prototype.twig' with { 'item': form.collection.vars.prototype } %}{% endfilter %}"
+</code></pre>
+
+<p>{% endraw %}
+{% endcodeblock %}</p>
 
 <p>And your <code>prototype.twig</code> should look like</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;pre>&lt;code>{{ form_row(item.field0) }}
-</span><span class='line'>{{ form_row(item.field1) }}
-</span><span class='line'>{{ form_row(item.field2) }}
-</span><span class='line'>&lt;/code>&lt;/pre>
-</span><span class='line'>
-</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+{% raw %}</p>
+
+<pre><code>{{ form_row(item.field0) }}
+{{ form_row(item.field1) }}
+{{ form_row(item.field2) }}
+</code></pre>
+
+<p>{% endraw %}
+{% endcodeblock %}</p>
 
 <p>This way, you will have access to the prototype as if it were a regular
 form, and you can apply all the customization you want (you can user

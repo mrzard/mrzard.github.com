@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Symfony2 | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/symfony2/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2014-12-30T08:21:33+01:00</updated>
+  <updated>2014-12-30T08:41:09+01:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -82,37 +82,27 @@ be rendered the same.</p>
 <p>Finally, wherever you hold the collection html, you will have to output
 something like this:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;pre>&lt;code>data-prototype="{% filter escape %}{% include 'prototype.twig' with { 'item': form.collection.vars.prototype } %}{% endfilter %}"
-</span><span class='line'>&lt;/code>&lt;/pre>
-</span><span class='line'>
-</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+{% raw %}</p>
+
+<pre><code>data-prototype="{% filter escape %}{% include 'prototype.twig' with { 'item': form.collection.vars.prototype } %}{% endfilter %}"
+</code></pre>
+
+<p>{% endraw %}
+{% endcodeblock %}</p>
 
 <p>And your <code>prototype.twig</code> should look like</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;pre>&lt;code>{{ form_row(item.field0) }}
-</span><span class='line'>{{ form_row(item.field1) }}
-</span><span class='line'>{{ form_row(item.field2) }}
-</span><span class='line'>&lt;/code>&lt;/pre>
-</span><span class='line'>
-</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+{% raw %}</p>
+
+<pre><code>{{ form_row(item.field0) }}
+{{ form_row(item.field1) }}
+{{ form_row(item.field2) }}
+</code></pre>
+
+<p>{% endraw %}
+{% endcodeblock %}</p>
 
 <p>This way, you will have access to the prototype as if it were a regular
 form, and you can apply all the customization you want (you can user
@@ -132,12 +122,10 @@ data-attribute.</p>
     <content type="html"><![CDATA[<p>If you find yourself in the need of generating a CSRF token for a 'built' Request
 or something in that fashion, you can do it rather easily:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Generate CSRF token programatically  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="nv">$csrfProvider</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">container</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;form.csrf_provider&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="nv">$csrfToken</span> <span class="o">=</span> <span class="nv">$csrfProvider</span><span class="o">-&gt;</span><span class="na">generateCsrfToken</span><span class="p">(</span><span class="s1">&#39;unknown&#39;</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock Generate CSRF token programatically lang:phpinline %}
+$csrfProvider = $this->container->get('form.csrf_provider');
+$csrfToken = $csrfProvider->generateCsrfToken('unknown');
+{% endcodeblock %}</p>
 
 <p><em>'unknown'</em> is the default 'intention' of CSRF tokens in Symfony2, change 'unknown'
 for the correct intention if you are using that option.</p>
