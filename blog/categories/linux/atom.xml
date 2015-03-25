@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: linux | Programming Rambling]]></title>
+  <link href="http://mrzard.github.com/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.com/"/>
+  <updated>2015-03-25T15:28:57+01:00</updated>
+  <id>http://mrzard.github.com/</id>
+  <author>
+    <name><![CDATA[Gonzalo Míguez]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[ElasticSearch: Enable mlockall in CentOS 7]]></title>
+    <link href="http://mrzard.github.com/blog/2015/03/25/elasticsearch-enable-mlockall-in-centos-7/"/>
+    <updated>2015-03-25T14:50:00+01:00</updated>
+    <id>http://mrzard.github.com/blog/2015/03/25/elasticsearch-enable-mlockall-in-centos-7</id>
+    <content type="html"><![CDATA[<p>I have recently been wrestling with ElasticSearch/Elastic and how to finally enable mlockall under
+CentOS 7. You usually will get the "Unable to lock JVM memory (ENOMEM). This can result in part of
+the JVM being swapped out. Increase RLIMIT_MEMLOCK (ulimit)`."</p>
+
+<p>These are all the places I made changes to get it to work. Now, I don't know if some of these
+steps are skippable (my guess is some of them are), but I got it working i nthe end, and my nodes
+are now happily showing `mlockall: true``</p>
+
+<ul>
+<li><p>Make sure <code>bootstrap.mlockall: true</code> is uncommented in <code>/etc/elasticsearch/elasticsearch.yml</code> or
+the appropiate config file for your configuration.</p></li>
+<li><p>Edit <code>/etc/security/limits.conf</code> and add these lines (or edit them if applicable). You usually
+will want to add them at the very end of the file.</p></li>
+</ul>
+
+
+<p>``` vim /etc/security/limits.conf</p>
+
+<pre><code>elasticsearch - nofile 65535
+elasticsearch - memlock unlimited
+root - memlock unlimited
+</code></pre>
+
+<p>```</p>
+
+<ul>
+<li><p>Edit <code>/etc/sysconfig/elasticsearch</code>. You will find these values commented, and possibly without
+values. Change them to these:
+``` vim /etc/sysconfig/elasticsearch
+  # ES_HEAP_SIZE; 30g for my nodes - look up a good value for yours
+  ES_HEAP_SIZE=30g</p>
+
+<p>  MAX_OPEN_FILES=65535
+  MAX_LOCKED_MEMORY=unlimited
+  ...
+  # WORK_DIR: Make sure /tmp is not mounted as
+  # noexec OR put a regular directory here
+  WORK_DIR=/tmp/elasticsearch
+```</p></li>
+<li><p>Edit <code>/usr/lib/systemd/system/elasticsearch.service</code> and make sure <code>LimitMEMLOCK</code> is uncommented
+and set to infinity
+``` vim /usr/lib/systemd/system/elasticsearch.service</p>
+
+<h1>See MAX_LOCKED_MEMORY in sysconfig, use "infinity"</h1>
+
+<h1>when MAX_LOCKED_MEMORY=unlimited</h1>
+
+<h1>and using bootstrap.mlockall: true</h1>
+
+<p>LimitMEMLOCK=infinity
+```</p></li>
+<li><p>Edit <code>/etc/init.d/elasticsearch</code> and add <code>su $ES_USER --shell /bin/bash -c "ulimit -l unlimited"</code>
+before the actual start of ES, this is more or less how it looks in mine:
+``` vim /etc/init.d/elasticsearch
+echo -n $"Starting $prog: "</p>
+
+<h1>if not running, start it up here, usually something like "daemon $exec"</h1>
+
+<p>su $ES_USER --shell /bin/bash -c "ulimit -l unlimited"
+daemon --user $ES_USER --pidfile $pidfile $exec -p $pidfile -d -Des.default.path.home=$ES_HOME -Des.default.path.logs=$LOG_DIR -Des.default.path.data=$DATA_DIR -Des.default.path.work=$WORK_DIR -Des.default.path.conf=$CONF_DIR
+```</p></li>
+</ul>
+
+
+<p>After I had everything in place, I restared my nodes and now they all show <code>mlockall: true</code> when
+checked with <code>curl http://localhost:9200/_nodes/process?pretty</code></p>
+
+<p>Also, make sure that the working</p>
+
+<p>Hope this helps someone!</p>
+]]></content>
+  </entry>
+  
+</feed>

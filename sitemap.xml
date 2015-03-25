@@ -191,16 +191,22 @@
         <lastmod>2014-12-30T08:41:09+01:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://mrzard.github.com/blog/2015/03/25/elasticsearch-enable-mlockall-in-centos-7/
+        </loc>
+        <lastmod>2015-03-25T15:26:43+01:00</lastmod>
+    </url>
+    <url>
         <loc>http://mrzard.github.com/about-me/</loc>
         <lastmod>2014-10-02T15:55:18+02:00</lastmod>
     </url>
     <url>
         <loc>http://mrzard.github.com/blog/archives/</loc>
-        <lastmod>2014-12-30T08:41:09+01:00</lastmod>
+        <lastmod>2015-03-25T15:26:43+01:00</lastmod>
     </url>
     <url>
         <loc>http://mrzard.github.com/</loc>
-        <lastmod>2014-12-30T08:41:09+01:00</lastmod>
+        <lastmod>2015-03-25T15:26:43+01:00</lastmod>
     </url>
     <url>
         <loc>http://mrzard.github.com/robots.txt</loc>

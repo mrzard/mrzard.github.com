@@ -9,8 +9,8 @@
   <meta name="author" content="Gonzalo Míguez">
 
   
-  <meta name="description" content="In my programming experience I have worked with different ways of handling
-releases. From the old easy FTP access to other cool stuff like phing. &hellip;">
+  <meta name="description" content="If you find yourself in the need of generating a CSRF token for a &#8216;built&#8217; Request
+or something in that fashion, you can do it rather &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -67,6 +67,58 @@ releases. From the old easy FTP access to other cool stuff like phing. &hellip;"
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/">Generate CSRF Token Programatically in Symfony 2</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-08T16:28:29+02:00" pubdate data-updated="true">Aug 8<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>If you find yourself in the need of generating a CSRF token for a &#8216;built&#8217; Request
+or something in that fashion, you can do it rather easily:</p>
+
+<figure class='code'><figcaption><span>Generate CSRF token programatically  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'>
+</span><span class='line'><span class="nv">$csrfProvider</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">container</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;form.csrf_provider&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$csrfToken</span> <span class="o">=</span> <span class="nv">$csrfProvider</span><span class="o">-&gt;</span><span class="na">generateCsrfToken</span><span class="p">(</span><span class="s1">&#39;unknown&#39;</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>&#8216;unknown&#8217;</em> is the default &#8216;intention&#8217; of CSRF tokens in Symfony2, change &#8216;unknown&#8217;
+for the correct intention if you are using that option.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -656,46 +708,6 @@ that were previously failing.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/12/31/great-post-about-lambdas-and-closures-on-php/">Great Post About Lambdas and Closures on PHP 5.3</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-12-31T13:21:00+01:00" pubdate data-updated="true">Dec 31<span>st</span>, 2010</time>
-        
-         | <a href="/blog/2010/12/31/great-post-about-lambdas-and-closures-on-php/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Shameer made a great, informative and comprehensive <a href="http://www.shameerc.com/2010/12/php-53-practical-look-into-lambda.html">post about Lambdas and
-Closures</a> take a look! It&#8217;s really worth the little time it takes to read
-it.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -713,6 +725,10 @@ it.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/03/25/elasticsearch-enable-mlockall-in-centos-7/">ElasticSearch: Enable mlockall in CentOS 7</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/12/30/farewell-2014-welcome-2015/">Farewell 2014, Welcome 2015</a>
       </li>
     
@@ -726,10 +742,6 @@ it.</p>
     
       <li class="post">
         <a href="/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/">Customize Form Prototype for Collections in Symfony2</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/">Fluhsing only desired entities with Doctrine</a>
       </li>
     
   </ul>
@@ -778,7 +790,7 @@ it.</p>
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - Gonzalo Míguez -
+  Copyright &copy; 2015 - Gonzalo Míguez -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

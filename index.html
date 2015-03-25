@@ -9,7 +9,8 @@
   <meta name="author" content="Gonzalo Míguez">
 
   
-  <meta name="description" content="So we are closing another year&#8230; And I see this is just my fourth post of the year. Pretty bad, but at least is a good starting point, because &hellip;">
+  <meta name="description" content="I have recently been wrestling with ElasticSearch/Elastic and how to finally enable mlockall under
+CentOS 7. You usually will get the &#8220;Unable &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +67,135 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2015/03/25/elasticsearch-enable-mlockall-in-centos-7/">ElasticSearch: Enable Mlockall in CentOS 7</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-03-25T14:50:00+01:00" pubdate data-updated="true">Mar 25<span>th</span>, 2015</time>
+        
+         | <a href="/blog/2015/03/25/elasticsearch-enable-mlockall-in-centos-7/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I have recently been wrestling with ElasticSearch/Elastic and how to finally enable mlockall under
+CentOS 7. You usually will get the &#8220;Unable to lock JVM memory (ENOMEM). This can result in part of
+the JVM being swapped out. Increase RLIMIT_MEMLOCK (ulimit)`.&#8221;</p>
+
+<p>These are all the places I made changes to get it to work. Now, I don&#8217;t know if some of these
+steps are skippable (my guess is some of them are), but I got it working i nthe end, and my nodes
+are now happily showing `mlockall: true&#8220;</p>
+
+<ul>
+<li><p>Make sure <code>bootstrap.mlockall: true</code> is uncommented in <code>/etc/elasticsearch/elasticsearch.yml</code> or
+the appropiate config file for your configuration.</p></li>
+<li><p>Edit <code>/etc/security/limits.conf</code> and add these lines (or edit them if applicable). You usually
+will want to add them at the very end of the file.</p></li>
+</ul>
+
+
+<figure class='code'><figcaption><span>/etc/security/limits.conf</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='vim'><span class='line'>elasticsearch <span class="p">-</span> nofile <span class="m">65535</span>
+</span><span class='line'>elasticsearch <span class="p">-</span> memlock unlimited
+</span><span class='line'>root <span class="p">-</span> memlock unlimited
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Edit <code>/etc/sysconfig/elasticsearch</code>. You will find these values commented, and possibly without
+values. Change them to these:</li>
+</ul>
+
+
+<figure class='code'><figcaption><span>/etc/sysconfig/elasticsearch</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='vim'><span class='line'># ES_HEAP_SIZE; <span class="m">30</span>g <span class="k">for</span> my nodes <span class="p">-</span> look <span class="k">up</span> <span class="k">a</span> good value <span class="k">for</span> yours
+</span><span class='line'>ES_HEAP_SIZE<span class="p">=</span><span class="m">30</span>g
+</span><span class='line'>
+</span><span class='line'>MAX_OPEN_FILES<span class="p">=</span><span class="m">65535</span>
+</span><span class='line'>MAX_LOCKED_MEMORY<span class="p">=</span>unlimited
+</span><span class='line'>...
+</span><span class='line'># WORK_DIR: Make sure /tmp <span class="k">is</span> not mounted <span class="k">as</span>
+</span><span class='line'># noexec OR <span class="k">put</span> <span class="k">a</span> regular <span class="nb">directory</span> here
+</span><span class='line'>WORK_DIR<span class="p">=</span><span class="sr">/tmp/</span>elasticsearch
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Edit <code>/usr/lib/systemd/system/elasticsearch.service</code> and make sure <code>LimitMEMLOCK</code> is uncommented
+and set to infinity</li>
+</ul>
+
+
+<figure class='code'><figcaption><span>/usr/lib/systemd/system/elasticsearch.service</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='vim'><span class='line'># See MAX_LOCKED_MEMORY <span class="k">in</span> sysconfig<span class="p">,</span> use <span class="s2">&quot;infinity&quot;</span>
+</span><span class='line'># when MAX_LOCKED_MEMORY<span class="p">=</span>unlimited
+</span><span class='line'># and using bootstrap.mlockall: true
+</span><span class='line'>LimitMEMLOCK<span class="p">=</span>infinity
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Edit <code>/etc/init.d/elasticsearch</code> and add <code>su $ES_USER --shell /bin/bash -c "ulimit -l unlimited"</code>
+before the actual start of ES, this is more or less how it looks in mine:</li>
+</ul>
+
+
+<figure class='code'><figcaption><span>/etc/init.d/elasticsearch</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='vim'><span class='line'>echo <span class="p">-</span><span class="k">n</span> $<span class="s2">&quot;Starting $prog: &quot;</span>
+</span><span class='line'># <span class="k">if</span> not running<span class="p">,</span> <span class="k">start</span> it <span class="k">up</span> here<span class="p">,</span> usually something like <span class="s2">&quot;daemon $exec&quot;</span>
+</span><span class='line'><span class="nb">su</span> $ES_USER <span class="p">--</span><span class="k">shell</span> <span class="sr">/bin/</span>bash <span class="p">-</span><span class="k">c</span> <span class="s2">&quot;ulimit -l unlimited&quot;</span>
+</span><span class='line'>daemon <span class="p">--</span>user $ES_USER <span class="p">--</span>pidfile $pidfile $exec <span class="p">-</span><span class="k">p</span> $pidfile <span class="p">-</span><span class="k">d</span> <span class="p">-</span>Des.default.<span class="nb">path</span>.home<span class="p">=</span>$ES_HOME <span class="p">-</span>Des.default.<span class="nb">path</span>.logs<span class="p">=</span>$LOG_DIR <span class="p">-</span>Des.default.<span class="nb">path</span>.data<span class="p">=</span>$DATA_DIR <span class="p">-</span>Des.default.<span class="nb">path</span>.work<span class="p">=</span>$WORK_DIR <span class="p">-</span>Des.default.<span class="nb">path</span>.<span class="k">conf</span><span class="p">=</span>$CONF_DIR
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>After I had everything in place, I restared my nodes and now they all show <code>mlockall: true</code> when
+checked with <code>curl http://localhost:9200/_nodes/process?pretty</code></p>
+
+<p>Also, make sure that the working</p>
+
+<p>Hope this helps someone!</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -617,58 +747,6 @@ WHERE
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/">Generate CSRF Token Programatically in Symfony 2</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-08-08T16:28:29+02:00" pubdate data-updated="true">Aug 8<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>If you find yourself in the need of generating a CSRF token for a &#8216;built&#8217; Request
-or something in that fashion, you can do it rather easily:</p>
-
-<figure class='code'><figcaption><span>Generate CSRF token programatically  </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'>
-</span><span class='line'><span class="nv">$csrfProvider</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">container</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;form.csrf_provider&#39;</span><span class="p">);</span>
-</span><span class='line'><span class="nv">$csrfToken</span> <span class="o">=</span> <span class="nv">$csrfProvider</span><span class="o">-&gt;</span><span class="na">generateCsrfToken</span><span class="p">(</span><span class="s1">&#39;unknown&#39;</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><em>&#8216;unknown&#8217;</em> is the default &#8216;intention&#8217; of CSRF tokens in Symfony2, change &#8216;unknown&#8217;
-for the correct intention if you are using that option.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -684,6 +762,10 @@ for the correct intention if you are using that option.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2015/03/25/elasticsearch-enable-mlockall-in-centos-7/">ElasticSearch: Enable mlockall in CentOS 7</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/12/30/farewell-2014-welcome-2015/">Farewell 2014, Welcome 2015</a>
       </li>
     
@@ -697,10 +779,6 @@ for the correct intention if you are using that option.</p>
     
       <li class="post">
         <a href="/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/">Customize Form Prototype for Collections in Symfony2</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/">Fluhsing only desired entities with Doctrine</a>
       </li>
     
   </ul>
@@ -749,7 +827,7 @@ for the correct intention if you are using that option.</p>
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - Gonzalo Míguez -
+  Copyright &copy; 2015 - Gonzalo Míguez -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
