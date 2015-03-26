@@ -4,7 +4,7 @@
   <title><![CDATA[Category: mlockall | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/mlockall/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2015-03-25T15:28:57+01:00</updated>
+  <updated>2015-03-26T12:21:48+01:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -84,8 +84,6 @@ daemon --user $ES_USER --pidfile $pidfile $exec -p $pidfile -d -Des.default.path
 
 <p>After I had everything in place, I restared my nodes and now they all show <code>mlockall: true</code> when
 checked with <code>curl http://localhost:9200/_nodes/process?pretty</code></p>
-
-<p>Also, make sure that the working</p>
 
 <p>Hope this helps someone!</p>
 ]]></content>
