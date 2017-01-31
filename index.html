@@ -9,8 +9,7 @@
   <meta name="author" content="Gonzalo Míguez">
 
   
-  <meta name="description" content="I have recently been wrestling with ElasticSearch/Elastic and how to finally enable mlockall under
-CentOS 7. You usually will get the &#8220;Unable &hellip;">
+  <meta name="description" content="I have recently been wrestling with ElasticSearch/Elastic and how to finally enable mlockall under CentOS 7. You usually will get the “Unable to lock &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -89,7 +88,7 @@ CentOS 7. You usually will get the &#8220;Unable &hellip;">
   
 
 
-<time datetime="2015-03-25T14:50:00+01:00" pubdate data-updated="true">Mar 25<span>th</span>, 2015</time>
+<time datetime="2015-03-25T10:52:00+01:00" pubdate data-updated="true">Mar 25<span>th</span>, 2015</time>
         
          | <a href="/blog/2015/03/25/elasticsearch-enable-mlockall-in-centos-7/#disqus_thread">Comments</a>
         
@@ -98,38 +97,30 @@ CentOS 7. You usually will get the &#8220;Unable &hellip;">
   </header>
 
 
-  <div class="entry-content"><p>I have recently been wrestling with ElasticSearch/Elastic and how to finally enable mlockall under
-CentOS 7. You usually will get the &#8220;Unable to lock JVM memory (ENOMEM). This can result in part of
-the JVM being swapped out. Increase RLIMIT_MEMLOCK (ulimit)`.&#8221;</p>
+  <div class="entry-content"><p>I have recently been wrestling with ElasticSearch/Elastic and how to finally enable mlockall under CentOS 7. You usually will get the “Unable to lock JVM memory (ENOMEM). This can result in part of the JVM being swapped out. Increase RLIMIT_MEMLOCK (ulimit)`.”</p>
 
-<p>These are all the places I made changes to get it to work. Now, I don&#8217;t know if some of these
-steps are skippable (my guess is some of them are), but I got it working i nthe end, and my nodes
-are now happily showing `mlockall: true&#8220;</p>
+<p>These are all the places I made changes to get it to work. Now, I don’t know if some of these steps are skippable (my guess is some of them are), but I got it working i nthe end, and my nodes are now happily showing `mlockall: true“</p>
 
 <ul>
-<li><p>Make sure <code>bootstrap.mlockall: true</code> is uncommented in <code>/etc/elasticsearch/elasticsearch.yml</code> or
-the appropiate config file for your configuration.</p></li>
-<li><p>Edit <code>/etc/security/limits.conf</code> and add these lines (or edit them if applicable). You usually
-will want to add them at the very end of the file.</p></li>
+<li><p>Make sure <code>bootstrap.mlockall: true</code> is uncommented in <code>/etc/elasticsearch/elasticsearch.yml</code> or the appropiate config file for your configuration.</p></li>
+<li><p>Edit <code>/etc/security/limits.conf</code> and add these lines (or edit them if applicable). You usually will want to add them at the very end of the file.</p></li>
 </ul>
 
 
-<figure class='code'><figcaption><span>/etc/security/limits.conf</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='vim'><span class='line'>elasticsearch <span class="p">-</span> nofile <span class="m">65535</span>
-</span><span class='line'>elasticsearch <span class="p">-</span> memlock unlimited
-</span><span class='line'>root <span class="p">-</span> memlock unlimited
-</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>elasticsearch - nofile 65535
+</span><span class='line'>elasticsearch - memlock unlimited
+</span><span class='line'>root - memlock unlimited</span></code></pre></td></tr></table></div></figure>
 
 
 <ul>
-<li>Edit <code>/etc/sysconfig/elasticsearch</code>. You will find these values commented, and possibly without
-values. Change them to these:</li>
+<li>Edit <code>/etc/sysconfig/elasticsearch</code>. You will find these values commented, and possibly without values. Change them to these:</li>
 </ul>
 
 
-<figure class='code'><figcaption><span>/etc/sysconfig/elasticsearch</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -138,54 +129,48 @@ values. Change them to these:</li>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='vim'><span class='line'># ES_HEAP_SIZE; <span class="m">30</span>g <span class="k">for</span> my nodes <span class="p">-</span> look <span class="k">up</span> <span class="k">a</span> good value <span class="k">for</span> yours
-</span><span class='line'>ES_HEAP_SIZE<span class="p">=</span><span class="m">30</span>g
+</pre></td><td class='code'><pre><code class=''><span class='line'># ES_HEAP_SIZE; 30g for my nodes - look up a good value for yours
+</span><span class='line'>ES_HEAP_SIZE=30g
 </span><span class='line'>
-</span><span class='line'>MAX_OPEN_FILES<span class="p">=</span><span class="m">65535</span>
-</span><span class='line'>MAX_LOCKED_MEMORY<span class="p">=</span>unlimited
+</span><span class='line'>MAX_OPEN_FILES=65535
+</span><span class='line'>MAX_LOCKED_MEMORY=unlimited
 </span><span class='line'>...
-</span><span class='line'># WORK_DIR: Make sure /tmp <span class="k">is</span> not mounted <span class="k">as</span>
-</span><span class='line'># noexec OR <span class="k">put</span> <span class="k">a</span> regular <span class="nb">directory</span> here
-</span><span class='line'>WORK_DIR<span class="p">=</span><span class="sr">/tmp/</span>elasticsearch
-</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'># WORK_DIR: Make sure /tmp is not mounted as
+</span><span class='line'># noexec OR put a regular directory here
+</span><span class='line'>WORK_DIR=/tmp/elasticsearch</span></code></pre></td></tr></table></div></figure>
 
 
 <ul>
-<li>Edit <code>/usr/lib/systemd/system/elasticsearch.service</code> and make sure <code>LimitMEMLOCK</code> is uncommented
-and set to infinity</li>
+<li>Edit <code>/usr/lib/systemd/system/elasticsearch.service</code> and make sure <code>LimitMEMLOCK</code> is uncommented and set to infinity</li>
 </ul>
 
 
-<figure class='code'><figcaption><span>/usr/lib/systemd/system/elasticsearch.service</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='vim'><span class='line'># See MAX_LOCKED_MEMORY <span class="k">in</span> sysconfig<span class="p">,</span> use <span class="s2">&quot;infinity&quot;</span>
-</span><span class='line'># when MAX_LOCKED_MEMORY<span class="p">=</span>unlimited
+</pre></td><td class='code'><pre><code class=''><span class='line'># See MAX_LOCKED_MEMORY in sysconfig, use "infinity"
+</span><span class='line'># when MAX_LOCKED_MEMORY=unlimited
 </span><span class='line'># and using bootstrap.mlockall: true
-</span><span class='line'>LimitMEMLOCK<span class="p">=</span>infinity
-</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>LimitMEMLOCK=infinity</span></code></pre></td></tr></table></div></figure>
 
 
 <ul>
-<li>Edit <code>/etc/init.d/elasticsearch</code> and add <code>su $ES_USER --shell /bin/bash -c "ulimit -l unlimited"</code>
-before the actual start of ES, this is more or less how it looks in mine:</li>
+<li>Edit <code>/etc/init.d/elasticsearch</code> and add <code>su $ES_USER --shell /bin/bash -c "ulimit -l unlimited"</code> before the actual start of ES, this is more or less how it looks in mine:</li>
 </ul>
 
 
-<figure class='code'><figcaption><span>/etc/init.d/elasticsearch</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='vim'><span class='line'>echo <span class="p">-</span><span class="k">n</span> $<span class="s2">&quot;Starting $prog: &quot;</span>
-</span><span class='line'># <span class="k">if</span> not running<span class="p">,</span> <span class="k">start</span> it <span class="k">up</span> here<span class="p">,</span> usually something like <span class="s2">&quot;daemon $exec&quot;</span>
-</span><span class='line'><span class="nb">su</span> $ES_USER <span class="p">--</span><span class="k">shell</span> <span class="sr">/bin/</span>bash <span class="p">-</span><span class="k">c</span> <span class="s2">&quot;ulimit -l unlimited&quot;</span>
-</span><span class='line'>daemon <span class="p">--</span>user $ES_USER <span class="p">--</span>pidfile $pidfile $exec <span class="p">-</span><span class="k">p</span> $pidfile <span class="p">-</span><span class="k">d</span> <span class="p">-</span>Des.default.<span class="nb">path</span>.home<span class="p">=</span>$ES_HOME <span class="p">-</span>Des.default.<span class="nb">path</span>.logs<span class="p">=</span>$LOG_DIR <span class="p">-</span>Des.default.<span class="nb">path</span>.data<span class="p">=</span>$DATA_DIR <span class="p">-</span>Des.default.<span class="nb">path</span>.work<span class="p">=</span>$WORK_DIR <span class="p">-</span>Des.default.<span class="nb">path</span>.<span class="k">conf</span><span class="p">=</span>$CONF_DIR
-</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>echo -n $"Starting $prog: "
+</span><span class='line'># if not running, start it up here, usually something like "daemon $exec"
+</span><span class='line'>su $ES_USER --shell /bin/bash -c "ulimit -l unlimited"
+</span><span class='line'>daemon --user $ES_USER --pidfile $pidfile $exec -p $pidfile -d -Des.default.path.home=$ES_HOME -Des.default.path.logs=$LOG_DIR -Des.default.path.data=$DATA_DIR -Des.default.path.work=$WORK_DIR -Des.default.path.conf=$CONF_DIR</span></code></pre></td></tr></table></div></figure>
 
 
-<p>After I had everything in place, I restared my nodes and now they all show <code>mlockall: true</code> when
-checked with <code>curl http://localhost:9200/_nodes/process?pretty</code></p>
+<p>After I had everything in place, I restared my nodes and now they all show <code>mlockall: true</code> when checked with <code>curl http://localhost:9200/_nodes/process?pretty</code></p>
 
 <p>Hope this helps someone!</p>
 </div>
@@ -216,7 +201,7 @@ checked with <code>curl http://localhost:9200/_nodes/process?pretty</code></p>
   
 
 
-<time datetime="2014-12-30T09:00:00+01:00" pubdate data-updated="true">Dec 30<span>th</span>, 2014</time>
+<time datetime="2014-12-30T10:52:00+01:00" pubdate data-updated="true">Dec 30<span>th</span>, 2014</time>
         
          | <a href="/blog/2014/12/30/farewell-2014-welcome-2015/#disqus_thread">Comments</a>
         
@@ -225,16 +210,29 @@ checked with <code>curl http://localhost:9200/_nodes/process?pretty</code></p>
   </header>
 
 
-  <div class="entry-content"><p>So we are closing another year&#8230; And I see this is just my fourth post of the year. Pretty bad, but at least is a good starting point, because it&#8217;s easy to improve on it.</p>
+  <div class="entry-content"><p>So we are closing another year… And I see this is just my fourth post of the year. Pretty bad, but at least is a good starting point, because it’s easy to improve on it.</p>
 
-<p>This will be a long post, so let&#8217;s stop it here, and you can proceed to the full wall of text if you feel like it :)</p>
+<p>This will be a long post, so let’s stop it here, and you can proceed to the full wall of text if you feel like it :)</p>
 
+<p>2014 has been a ver eventful year for me. I started the year as the CTO of <a href="http://www.chicplace.com">ChicPlace.com</a>. I had already been there from October 2012, building a custom e-commerce platform over PrestaShop as a prototype. The idea worked pretty well, so, with the help of Denys Pasishnyi and Aldo Chiecchia, we set our sights into building a ‘real’ app in 2013. We started looking for someone dynamic who would help us deliver a full Symfony2 e-commerce website in little to no time. After some search we found <a href="http://mmoreram.com">Marc Morera</a> and enlisted him. We worked our asses off (Aldo, Denys, Marc, Nadal Soler and myself) and we put out a complete solution in August 2013. From then on we tried to build the business and keep improving.</p>
+
+<p>In 2014, ChicPlace was facing interesting challenges (growth, opening a branch in Latin America…), but we had already lost Marc due to budget cuts (luckily he stayed close, in the incubator) and I was growing tired of the non-technical dynamics in ChicPlace, so I in April I came to the conclusion that I had to move forward and wish my pals at ChicPlace good luck. Before I left, though, I was fortunate enough to be around for the birth of <a href="http://www.elcodi.io">ElCodi</a> which came into beign by giving steroids and improving a lot over the idea I had of building an e-commerce web app for the incubator. Marc took the idea to the next level by envisioning an e-commerce components system that is being built now, and not only for the incubator, but for everyone. ElCodi is OSS, and always happy to welcome contributors, so if you have the time, <a href="http://www.github.com/elcodi">go take a look</a> and help some very nice people out!</p>
+
+<p>As I said, in April I announced that I would be leaving ChicPlace on May 30th, and started weighing my options. Came to the conclusion that there are some very nice projects out there. I had some interviews with <a href="http://www.skyscanner.es">SkyScanner</a>, <a href="http://www.schibsted.com">Schibsted</a> and <a href="http://www.adsmurai.com">Adsmurai</a>. Adsmurai is a very interesting project with an awesome team behind and I really wanted to be a part of it, but there were some personal issues I could not resolve and had to recommend them a great programmer (<a href="https://www.linkedin.com/in/monitotxi">Jordi Creus</a>) and keep looking myself. I am happy to say that Jordi is still with Adsmurai and it looks like they are growing very quickly! SkyScanner had a very long selection process, and while I made close to 10 hours of technical tests with them, and a Skype interview, they were still trying to piece the team together and took more than a month to give me feedback. I guess they were trying to make sure they were getting the right people, but the process became too long for me, for reasons I will detail now.</p>
+
+<p>I was still in the processes with Schibsted and SkyScanner when I landed an interview with <a href="http://www.billymob.com">Billy Mobile</a> through ex-teammate and Frontend Developer <a href="https://www.linkedin.com/in/hherrerag">Horacio Herrera</a>. I had a very nice chat with <a href="https://twitter.com/_ascandroli">Alejandro Scandroli</a>, <a href="https://www.linkedin.com/in/jorditamargo">Jordi Tamargo</a> and <a href="https://www.linkedin.com/in/gemmallobet">Gemma Llobet</a> and they made an offer that was very much aligned with what I was looking for both in a business and personally. So, with some doubts in my head about the ‘lost’ opportunities with Schibsted and SkyScanner, both established and strong companies, I took the MVAS IT Manager spot at Billy, yet another startup in my resume (since 2008 I’ve almost exclusively worked for startups, except for consulting and training).</p>
+
+<p>At first, Billy was just what I expected. We were shooting from the hip, pushing code to the live servers like maniacs and generally doing tons of work to keep a working business model working. But as the weeks went by, we started to refine ourselves. We introduced the use of composer, some process that resembles a deployment tool, we started using the Symfony components, made a development VM ready with Vagrant, started using ElasticSearch and Symfony2 for some of the projects, started using Redis beyond GET / SET… So basically, while the core business in Billy was (and should be) technically easier than the challenges I had at ChicPlace, we were starting to make it look like a decent technical challenge too. So in this vein, in August we started looking for a developer to join me, as the amount of work surpassed the hours I could put in. The search was very difficult, and made me realize that there are a LOT of outdated developers out there. One thing is not knowing something, but to me, it’s very important that you know that you don’t know it. Let me explain it better. If I am looking for a junior developer, I don’t give a rat’s ass that you cannot explain to me Factory pattern. That’s in a book, you can go look at it anytime you need it. But it’s VERY important that you know it exists, and that you know that you can go look at it anytime you need it. Basically, I need you to be able to find an answer to my questions with 5 minutes and access to Google and StackOverflow. You won’t be able to do that if you do not know what you do not know.</p>
+
+<p>I interviewed people with 4, 5, 6 years of experience that had no idea what Dependency Injection was. They had never used any of the ‘new features’ - I put that in quotes as some of these features are more than some years old - of PHP (no namespaces, no closures, no traits), they had never TRIED to use composer. But after a lot of searching we found <a href="https://www.linkedin.com/in/oriolorellana">Oriol Orellana</a>, a senior developer who had a very good background and was a very good fit for us. We were lucky that he was open to join Billy and he has been with use since November. Oriol has brought with him a lot of order and process to the chaos put in place by beign in a one-man band. And I really hope we can build on that to keep making our technical processes and outputs better, and hopefully keep growing the team.</p>
+
+<p>So, in the professional side, that brings us to December! It has been a very very good year for me professionally. There have been ups and lows, but I am very happy that I have the opportunity to keep working with awesome people and interesting problems.</p>
+
+<p>On the personal side, it’s been pretty eventful too! Not only changing jobs, but I started 2014 with a very BIG news headline: My girlfriend was pregnant! She had a very nice pregnancy and delivered a healthy, beautiful and smiling baby girl on September 21st. Her name is Ada, and all the sleepless nights, the smelly diapers… are more than worth it. My girlfriend and I like challenges so, when Ada was about 5 weeks old we went to Sabadell to check a flat to rent… And we loved it. So my girlfriend organized the moving of a complete family by herself while I kept working and since December 1st we are living in Sabadell.</p>
+
+<p>All in all, as always I have to be grateful to all of the awesome people I keep finding in my path. I am very fortunate to have the family I have, to be in the industry I am in and to have had the opportunities I have had. I hope 2015 is at least as awesome as 2014. And also hope I will be putting some more content here too!</p>
 </div>
   
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/12/30/farewell-2014-welcome-2015/">Read on &rarr;</a>
-    </footer>
   
 
 
@@ -760,7 +758,7 @@ WHERE
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2015/03/25/elasticsearch-enable-mlockall-in-centos-7/">ElasticSearch: Enable mlockall in CentOS 7</a>
+        <a href="/blog/2015/03/25/elasticsearch-enable-mlockall-in-centos-7/">ElasticSearch: Enable Mlockall in CentOS 7</a>
       </li>
     
       <li class="post">
@@ -825,7 +823,7 @@ WHERE
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2015 - Gonzalo Míguez -
+  Copyright &copy; 2017 - Gonzalo Míguez -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
