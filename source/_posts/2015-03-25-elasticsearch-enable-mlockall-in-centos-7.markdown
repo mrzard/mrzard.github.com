@@ -17,11 +17,9 @@ These are all the places I made changes to get it to work. Now, I don’t know i
     elasticsearch - nofile 65535
     elasticsearch - memlock unlimited
     root - memlock unlimited
-
 ```
 
 *   Edit `/etc/sysconfig/elasticsearch`. You will find these values commented, and possibly without values. Change them to these:
-
 ```
     # ES_HEAP_SIZE; 30g for my nodes - look up a good value for yours
     ES_HEAP_SIZE=30g
@@ -35,17 +33,14 @@ These are all the places I made changes to get it to work. Now, I don’t know i
 ```
 
 *   Edit `/usr/lib/systemd/system/elasticsearch.service` and make sure `LimitMEMLOCK` is uncommented and set to infinity
-
-
-``
+```
     # See MAX_LOCKED_MEMORY in sysconfig, use "infinity"
     # when MAX_LOCKED_MEMORY=unlimited
     # and using bootstrap.mlockall: true
     LimitMEMLOCK=infinity
-``
+```
 
 *   Edit `/etc/init.d/elasticsearch` and add `su $ES_USER --shell /bin/bash -c "ulimit -l unlimited"` before the actual start of ES, this is more or less how it looks in mine:
-
 ```
     echo -n $"Starting $prog: "
     # if not running, start it up here, usually something like "daemon $exec"
