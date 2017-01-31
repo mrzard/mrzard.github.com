@@ -8,9 +8,9 @@ footer: true
 Professional side
 -----------------
 
-Currently I hold the MVAS IT Manager position at [Billy Mobile](http://www.billymob.com)
+Currently I work as a software engineer for [DealDash.com](https://www.dealdash.com),
 
-In the past, I have been a part of other projects, such as [ChicPlace.com](http://www.chicplace.com/en), [PinRoom.com](http://www.pinroom.com), [Budgetplaces.com](http://www.budgetplaces.com), [Motofan.com](http://www.motofan.com), [InfoElder.com](http://www.infoelder.com) and [TodoAncianos.com](http://www.todoancianos.com).
+In the past, I have been a part of other projects, such as [Billy Mobile](http://www.billymob.com), [ChicPlace.com](http://www.chicplace.com/en), [PinRoom.com](http://www.pinroom.com), [Budgetplaces.com](http://www.budgetplaces.com), [Motofan.com](http://www.motofan.com), [InfoElder.com](http://www.infoelder.com) and [TodoAncianos.com](http://www.todoancianos.com).
 
 If you’re curious about my professional side, you can check [my profile at LinkedIn](http://es.linkedin.com/in/gonzalomiguez).
 
@@ -27,6 +27,6 @@ I play the bass guitar (badly).
 
 I also read lots of books. One of my distinctive traits is to have a LOT of random data stored in my brain. Things like “Genghis Khan name was Temuyin. His wife’s: Borte”
 
-I am expecting my first child, a girl, for mid-september 2014. She will be named Ada, part because my wife loves the name, and part as a homage to [Ada Lovelace](http://en.wikipedia.org/wiki/Ada_Lovelace)
+My first child, Ada, was born on the 21st of September 2014. She is named Ada, part because my wife loves the name, and part as a homage to [Ada Lovelace](http://en.wikipedia.org/wiki/Ada_Lovelace)
 
-Been with the same wonderful girl for the last 10 years, and enjoying every minute of it.
+Been with the same wonderful woman for the last 12 years, and enjoying every minute of it.
