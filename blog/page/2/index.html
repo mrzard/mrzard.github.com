@@ -9,8 +9,8 @@
   <meta name="author" content="Gonzalo Míguez">
 
   
-  <meta name="description" content="If you find yourself in the need of generating a CSRF token for a &#8216;built&#8217; Request
-or something in that fashion, you can do it rather &hellip;">
+  <meta name="description" content="If you find yourself migrating your shop from Prestashop to Shopify, you can
+use this query. It was written for an old version of Prestashop, but you &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -73,6 +73,76 @@ or something in that fashion, you can do it rather &hellip;">
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/">MySQL Query to Export Prestashop Data to a Shopify CSV</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-13T19:19:00+02:00" pubdate data-updated="true">Feb 13<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>If you find yourself migrating your shop from Prestashop to Shopify, you can
+use this query. It was written for an old version of Prestashop, but you probably
+won&#8217;t have much trouble adapting it to newer versions.</p>
+
+<p>Also, take in consideration this query only outputs basic data, no variants,
+colors, etc. Also check which values do you need for &#8216;variant requires shipping&#8217;,
+ID_LANG, etc.</p>
+
+<pre><code>SELECT pl.link_rewrite as `Handle`, pl.name as `Title`, 
+pl.description as `Body (HTML)`, 'VENDORNAME' as `Vendor`, pcl.`name` as `Type`, 
+t.`name` as Tags, '' as `Option1 Name`, '' as `Option1 Value`, '' as `Option2 Name`, 
+'' as `Option2 Value`, '' as `Option3 Name`, '' as `Option3 Value`, '' as `Variant SKU`, 
+p.weight * 1000 as `Variant Grams`, '' as `Variant Inventory Tracker`, p.`quantity` 
+as `Variant Inventory Qty`, 'deny' as `Variant Inventory Policy`, 'manual' 
+as `Variant Fulfillment Service`, p.price as `Variant Price`, p.price_before 
+as `Variant Compare At Price`, 'true' as `Variant Requires Shipping`, 'true' 
+as `Variant Taxable`, '' as `Image Src` 
+FROM 
+    `ps_product` p 
+    INNER JOIN `ps_product_lang` pl ON pl.`id_product` = p.`id_product` 
+    LEFT JOIN `ps_product_tag` pt ON pt.`id_product` = p.`id_product` 
+    LEFT JOIN `ps_tag` t ON t.`id_tag` = pt.`id_tag` 
+    INNER JOIN `ps_image` pi ON pi.`id_product` = p.`id_product` 
+    INNER JOIN `ps_category_lang` pcl ON pcl.`id_category` = p.`id_category_default` 
+WHERE 
+    pl.`id_lang` = ID_LANG 
+    AND pcl.`id_lang` = ID_LANG 
+    AND p.`id_category_default` IN (
+        SELECT `id_category` 
+        FROM `ps_category` WHERE `active` = 1
+    ) 
+    AND p.`active` = 1 GROUP BY p.`id_product`; 
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/">Generate CSRF Token Programatically in Symfony 2</a></h1>
     
     
@@ -89,7 +159,7 @@ or something in that fashion, you can do it rather &hellip;">
   
 
 
-<time datetime="2012-08-08T16:28:29+02:00" pubdate data-updated="true">Aug 8<span>th</span>, 2012</time>
+<time datetime="2012-08-08T17:28:29+03:00" pubdate data-updated="true">Aug 8<span>th</span>, 2012</time>
         
          | <a href="/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/#disqus_thread">Comments</a>
         
@@ -141,7 +211,7 @@ for the correct intention if you are using that option.</p>
   
 
 
-<time datetime="2012-02-15T21:17:00+01:00" pubdate data-updated="true">Feb 15<span>th</span>, 2012</time>
+<time datetime="2012-02-15T22:17:00+02:00" pubdate data-updated="true">Feb 15<span>th</span>, 2012</time>
         
          | <a href="/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/#disqus_thread">Comments</a>
         
@@ -216,7 +286,7 @@ can wait until the next release.</p>
   
 
 
-<time datetime="2011-12-14T10:26:00+01:00" pubdate data-updated="true">Dec 14<span>th</span>, 2011</time>
+<time datetime="2011-12-14T11:26:00+02:00" pubdate data-updated="true">Dec 14<span>th</span>, 2011</time>
         
          | <a href="/blog/2011/12/14/common-recruiting-errors-made-by-companies/#disqus_thread">Comments</a>
         
@@ -296,7 +366,7 @@ and expand this list :D</p>
   
 
 
-<time datetime="2011-12-12T11:23:00+01:00" pubdate data-updated="true">Dec 12<span>th</span>, 2011</time>
+<time datetime="2011-12-12T12:23:00+02:00" pubdate data-updated="true">Dec 12<span>th</span>, 2011</time>
         
          | <a href="/blog/2011/12/12/generate-a-valid-google-premier-signature-in/#disqus_thread">Comments</a>
         
@@ -374,7 +444,7 @@ request.</p>
   
 
 
-<time datetime="2011-10-25T11:58:00+02:00" pubdate data-updated="true">Oct 25<span>th</span>, 2011</time>
+<time datetime="2011-10-25T12:58:00+03:00" pubdate data-updated="true">Oct 25<span>th</span>, 2011</time>
         
          | <a href="/blog/2011/10/25/php-namespaces-simple-explanation/#disqus_thread">Comments</a>
         
@@ -416,7 +486,7 @@ how to use them, please do take a look at it:</p>
   
 
 
-<time datetime="2011-09-26T09:01:00+02:00" pubdate data-updated="true">Sep 26<span>th</span>, 2011</time>
+<time datetime="2011-09-26T10:01:00+03:00" pubdate data-updated="true">Sep 26<span>th</span>, 2011</time>
         
          | <a href="/blog/2011/09/26/ubuntu-window-borders-toolbars-gone/#disqus_thread">Comments</a>
         
@@ -461,7 +531,7 @@ and you&#8217;re redy to go.</p>
   
 
 
-<time datetime="2011-05-24T11:05:00+02:00" pubdate data-updated="true">May 24<span>th</span>, 2011</time>
+<time datetime="2011-05-24T12:05:00+03:00" pubdate data-updated="true">May 24<span>th</span>, 2011</time>
         
          | <a href="/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte/#disqus_thread">Comments</a>
         
@@ -506,7 +576,7 @@ you just have to add this on the javascript function that adds said textarea.</p
   
 
 
-<time datetime="2011-05-06T09:19:00+02:00" pubdate data-updated="true">May 6<span>th</span>, 2011</time>
+<time datetime="2011-05-06T10:19:00+03:00" pubdate data-updated="true">May 6<span>th</span>, 2011</time>
         
          | <a href="/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio/#disqus_thread">Comments</a>
         
@@ -557,7 +627,7 @@ it seems it is more configurable and has more options.</p>
   
 
 
-<time datetime="2011-04-12T10:18:00+02:00" pubdate data-updated="true">Apr 12<span>th</span>, 2011</time>
+<time datetime="2011-04-12T11:18:00+03:00" pubdate data-updated="true">Apr 12<span>th</span>, 2011</time>
         
          | <a href="/blog/2011/04/12/drag-and-drop-interaction-made-easy-with-jque/#disqus_thread">Comments</a>
         
@@ -654,60 +724,6 @@ you can code the drag&amp;drop interactions you want.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/02/01/failed-to-connect-to-socket-comubuntuupstart/">Failed to Connect to Socket /com/ubuntu/upstart ? Upstart Jobs Cannot Be Run on Chroot</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-02-01T13:01:00+01:00" pubdate data-updated="true">Feb 1<span>st</span>, 2011</time>
-        
-         | <a href="/blog/2011/02/01/failed-to-connect-to-socket-comubuntuupstart/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Thanks to <a href="http://www.ashang.org/2010/10/unable-to-connect-to-upstart.html">http://www.ashang.org/2010/10/unable-to-connect-to-upstart.html</a>
-I was finally able to upgrade my system while chrooted.</p>
-
-<p>Being on chroot will cause some packages to fail when they are upgrading. Giving
-us an error message like this one:</p>
-
-<p>start: Unable to connect to Upstart: Failed to connect to socket /com/ubuntu/upstart: Connection refused<br/>
-dpkg: error processing procps (&#8211;configure):</p>
-
-<p>You can workaround this limitation by running these commands</p>
-
-<p>$dpkg-divert &#8211;local &#8211;rename &#8211;add /sbin/initctl<br/>
-Adding &#8216;local diversion of /sbin/initctl to /sbin/initctl.distrib&#8217;<br/>
-$ln -s /bin/true /sbin/initctl</p>
-
-<p>Then you can run the upgrade, or do a dpkg &#8211;configure -a to upgrade the packages
-that were previously failing.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -725,6 +741,10 @@ that were previously failing.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2017/03/01/becoming-a-dadveloper/">Becoming a dadveloper</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/03/25/elasticsearch-enable-mlockall-in-centos-7/">ElasticSearch: Enable Mlockall in CentOS 7</a>
       </li>
     
@@ -738,10 +758,6 @@ that were previously failing.</p>
     
       <li class="post">
         <a href="/blog/2014/05/06/what-i-have-learnt-as-a-cto/">What I Have Learnt as a CTO </a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/">Customize Form Prototype for Collections in Symfony2</a>
       </li>
     
   </ul>

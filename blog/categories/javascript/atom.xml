@@ -4,7 +4,7 @@
   <title><![CDATA[Category: JavaScript | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2017-01-31T15:23:53+01:00</updated>
+  <updated>2017-03-01T19:49:38+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Dynamically activate tinyMCE on a given textarea.]]></title>
     <link href="http://mrzard.github.com/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte/"/>
-    <updated>2011-05-24T11:05:00+02:00</updated>
+    <updated>2011-05-24T12:05:00+03:00</updated>
     <id>http://mrzard.github.com/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte</id>
     <content type="html"><![CDATA[<p>If you are adding textareas dynamically and wish to enable tinyMCE on them,
 you just have to add this on the javascript function that adds said textarea.</p>
@@ -32,7 +32,7 @@ you just have to add this on the javascript function that adds said textarea.</p
   <entry>
     <title type="html"><![CDATA[Drag and drop interaction made easy with jQuery (and jQuery UI)]]></title>
     <link href="http://mrzard.github.com/blog/2011/04/12/drag-and-drop-interaction-made-easy-with-jque/"/>
-    <updated>2011-04-12T10:18:00+02:00</updated>
+    <updated>2011-04-12T11:18:00+03:00</updated>
     <id>http://mrzard.github.com/blog/2011/04/12/drag-and-drop-interaction-made-easy-with-jque</id>
     <content type="html"><![CDATA[<p>Last week at work I had to make a drag-and-drop configurable homepage, where
 individual news items had to had the ability to be moved and arranged in a

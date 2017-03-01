@@ -4,7 +4,7 @@
   <title><![CDATA[Category: security | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/security/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2017-01-31T15:23:53+01:00</updated>
+  <updated>2017-03-01T19:49:38+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Choosing a method to store passwords safely.]]></title>
     <link href="http://mrzard.github.com/blog/2010/12/13/choosing-a-method-to-safely-store-passwords/"/>
-    <updated>2010-12-13T13:30:00+01:00</updated>
+    <updated>2010-12-13T14:30:00+02:00</updated>
     <id>http://mrzard.github.com/blog/2010/12/13/choosing-a-method-to-safely-store-passwords</id>
     <content type="html"><![CDATA[<p>As seen in the Gawker/Gizmodo HUGE problem with having their passwords compromised,
 I found a short and excellent post about why using speed-oriented hash functions

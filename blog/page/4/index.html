@@ -9,8 +9,8 @@
   <meta name="author" content="Gonzalo Míguez">
 
   
-  <meta name="description" content="I found this appendix to be a lot clearer than the standard reference guide
-at paypal. Hope it&#8217;s useful for someone out there! https://www. &hellip;">
+  <meta name="description" content="Today I found that paypal just ignores the &#8216;shipping&#8217; parameter when dealing
+with a third party cart. If you find yourself with this &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -73,6 +73,56 @@ at paypal. Hope it&#8217;s useful for someone out there! https://www. &hellip;">
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2010/09/21/setting-shipping-costs-for-a-whole-shopping-t/">Setting Shipping Costs for a Whole Third Party Shopping Cart With Paypal</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-21T17:26:00+03:00" pubdate data-updated="true">Sep 21<span>st</span>, 2010</time>
+        
+         | <a href="/blog/2010/09/21/setting-shipping-costs-for-a-whole-shopping-t/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Today I found that paypal just ignores the &#8216;shipping&#8217; parameter when dealing
+with a third party cart.</p>
+
+<p>If you find yourself with this problem the <a href="https://www.x.com/thread/39507">workaround posted on the X forums
+by PayPal themselves</a> is to calculate shipping costs on your side and send
+them using the &#8216;handling_cart&#8217; parameter.</p>
+
+<p>It&#8217;s just dumb to have to use a parameter that is not referred to shipping
+to include the shipping, but until this is resolved, this workaround should
+do the trick. At least if worked for me!</p>
+
+<p><strong>UPDATE: </strong>Looks like it&#8217;s not just a workaround, but the expected behaviour, it&#8217;s just that the documentation is poorly written, leading the developer to think that &#8216;shipping&#8217; will apply to a cart, when in fact it will not, everything is expected to be sent using the &#8216;handling_cart&#8217; param<strong><br/>
+</strong></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2010/09/14/nice-quick-reference-for-paypal-html-variable/">Nice Quick Reference for Paypal HTML Variables for Website Payments</a></h1>
     
     
@@ -89,7 +139,7 @@ at paypal. Hope it&#8217;s useful for someone out there! https://www. &hellip;">
   
 
 
-<time datetime="2010-09-14T08:02:00+02:00" pubdate data-updated="true">Sep 14<span>th</span>, 2010</time>
+<time datetime="2010-09-14T09:02:00+03:00" pubdate data-updated="true">Sep 14<span>th</span>, 2010</time>
         
          | <a href="/blog/2010/09/14/nice-quick-reference-for-paypal-html-variable/#disqus_thread">Comments</a>
         
@@ -116,7 +166,7 @@ at paypal.</p>
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2010/09/07/cygwin-rsync-error-13-windows-7-problems/">Cygwin + Rsync Error 13 + Windows 7 Problems</a></h1>
+      <h1 class="entry-title"><a href="/blog/2010/09/08/cygwin-rsync-error-13-windows-7-problems/">Cygwin + Rsync Error 13 + Windows 7 Problems</a></h1>
     
     
       <p class="meta">
@@ -132,9 +182,9 @@ at paypal.</p>
   
 
 
-<time datetime="2010-09-07T23:30:00+02:00" pubdate data-updated="true">Sep 7<span>th</span>, 2010</time>
+<time datetime="2010-09-08T00:30:00+03:00" pubdate data-updated="true">Sep 8<span>th</span>, 2010</time>
         
-         | <a href="/blog/2010/09/07/cygwin-rsync-error-13-windows-7-problems/#disqus_thread">Comments</a>
+         | <a href="/blog/2010/09/08/cygwin-rsync-error-13-windows-7-problems/#disqus_thread">Comments</a>
         
       </p>
     
@@ -179,7 +229,7 @@ machine.</p>
   
 
 
-<time datetime="2010-07-27T10:35:00+02:00" pubdate data-updated="true">Jul 27<span>th</span>, 2010</time>
+<time datetime="2010-07-27T11:35:00+03:00" pubdate data-updated="true">Jul 27<span>th</span>, 2010</time>
         
          | <a href="/blog/2010/07/27/mysql-what-are-you-smoking/#disqus_thread">Comments</a>
         
@@ -221,7 +271,7 @@ the title is funny.</p>
   
 
 
-<time datetime="2010-07-21T12:52:00+02:00" pubdate data-updated="true">Jul 21<span>st</span>, 2010</time>
+<time datetime="2010-07-21T13:52:00+03:00" pubdate data-updated="true">Jul 21<span>st</span>, 2010</time>
         
          | <a href="/blog/2010/07/21/lagoa-a-breathtaking-physics-engine/#disqus_thread">Comments</a>
         
@@ -264,7 +314,7 @@ Original website: <a href="http://lagoatechnologies.com/">http://lagoatechnologi
   
 
 
-<time datetime="2010-07-21T12:40:00+02:00" pubdate data-updated="true">Jul 21<span>st</span>, 2010</time>
+<time datetime="2010-07-21T13:40:00+03:00" pubdate data-updated="true">Jul 21<span>st</span>, 2010</time>
         
          | <a href="/blog/2010/07/21/tumblr-6m-users-1500m-monthly-pageviews-from/#disqus_thread">Comments</a>
         
@@ -305,7 +355,7 @@ had.</p>
   
 
 
-<time datetime="2010-07-16T12:06:00+02:00" pubdate data-updated="true">Jul 16<span>th</span>, 2010</time>
+<time datetime="2010-07-16T13:06:00+03:00" pubdate data-updated="true">Jul 16<span>th</span>, 2010</time>
         
          | <a href="/blog/2010/07/16/big-o-notation-english-0/#disqus_thread">Comments</a>
         
@@ -530,6 +580,10 @@ If it wasn&#8217;t, we couldn&#8217;t use the public key systems we use.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2017/03/01/becoming-a-dadveloper/">Becoming a dadveloper</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2015/03/25/elasticsearch-enable-mlockall-in-centos-7/">ElasticSearch: Enable Mlockall in CentOS 7</a>
       </li>
     
@@ -543,10 +597,6 @@ If it wasn&#8217;t, we couldn&#8217;t use the public key systems we use.</p>
     
       <li class="post">
         <a href="/blog/2014/05/06/what-i-have-learnt-as-a-cto/">What I Have Learnt as a CTO </a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/">Customize Form Prototype for Collections in Symfony2</a>
       </li>
     
   </ul>

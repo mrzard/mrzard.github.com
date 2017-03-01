@@ -4,7 +4,7 @@
   <title><![CDATA[Programming Rambling]]></title>
   <link href="http://mrzard.github.com/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2017-01-31T15:23:53+01:00</updated>
+  <updated>2017-03-01T19:49:38+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -14,9 +14,97 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Becoming a dadveloper]]></title>
+    <link href="http://mrzard.github.com/blog/2017/03/01/becoming-a-dadveloper/"/>
+    <updated>2017-03-01T18:54:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2017/03/01/becoming-a-dadveloper</id>
+    <content type="html"><![CDATA[<p>So&#8230; this is awkward&#8230; It&#8217;s been almost two years without any new content on
+this blog. I will do something useful in this 4 hour flight from Helsinki to
+Barcelona, and I will try to write some things about what has been going on
+with me for those two years.</p>
+
+<p>2015-2016 at <a href="http://www.billymob.com">Billy Mobile</a> were intense and
+exciting years . I had the immense luck to start working with some amazing
+people like <a href="Dfrison%20LinkedIn">Diego Frisón</a>,
+<a href="Joan%20Viladrosa%20linkedin">Joan Viladrosa</a>, <a href="RR%20linkedin">Roger Rafanell</a>,
+<a href="Aday%20LIN">Aday Robaina</a>, <a href="Davide%20Ferrari">Davide Ferrari</a>,
+<a href="Esardina%20linkedin">Enric Sardina</a>, <a href="gortiz">Ginés Ortiz</a>,
+<a href="Oriol%20Blanc">Oriol Blanc</a>, <a href="mrubia">Marc Rubia</a>, <a href="dllorente">David Llorente</a>,
+<a href="jona">Jonatan Fernández</a> or <a href="Alex%20Serra">Alex Serra</a>. And that is only
+counting people on the Tech Team at Billy. They are all top shelf talent, and
+only great things are ahead of them.</p>
+
+<p>With Joan&#8217;s leadership, the PHP-MySQL-Redis-ElasticSearch Billy adserver
+prototype was ported to Java-Kafka-HBase-Spark-Redis-HDFS which made a lot more
+sense as to deal with the concurrency and speed needed. He even introduced some
+very cool and cutting edge technology like Apache Kylin. At the same time all
+of these cool changes were happening, I started realizing that my daughter
+needed for me to devote more time to her. And I also started realizing that <em>I</em>
+needed to devote more time to her. The fine people at Billy Mobile tried to
+work out a semi-remote schedule with me, but it was not the best fit to have
+one of the Tech Leads away for a big part of the day, which shifted a lot of
+work onto Joan&#8217;s shoulders, and ended up making obvious that a change had to
+be made. So after having the luck of being contacted by
+<a href="http://www.dealdash.com">DealDash</a>, it was a golden opportunity for me and
+I decided to say goodbye to Billy. I will always be grateful for their support
+and effort to help me out, and for the chance to work and learn with so many
+amazing people.</p>
+
+<p><a href="http://www.dealdash.com">DealDash</a> offered me the opportunity to get back into
+a developer position and also start working remotely. The company is based in
+Helsinki, and the remote philosophy allows me to do these kinds of things:</p>
+
+<ul>
+<li><p>Take a couple of hours off to bring Ada to the park, or dancing, or to the
+&#8220;ludoteca&#8221;. Then either wake up early and work before the daily meeting, or
+do it before going to bed at night.</p></li>
+<li><p>Stop worrying about the added commute time to and from the office, specially
+if I also happened to have to bring Ada to the doctor&#8217;s. That used to mean
+almost a &#8220;lost&#8221; day when I was working in the office, now it&#8217;s just a minor
+adjustment and no work is lost.</p></li>
+<li><p>When I sit to work I just check Slack and the GitHub issues to see what
+progress has been made so I can pick up like I were there when it happened.</p></li>
+<li><p>If Ada&#8217;s mom needs to go to the doctor or run any errands, it&#8217;s a lot easier
+for her as she can just leave Ada with me. I just pick up smaller stuff or
+bring her to a cafe that has toys where she can play in a new environment
+while I keep working.</p></li>
+</ul>
+
+
+<p>I think I break most of the &#8216;rules&#8217; of working remotely, as other than fixed
+meetings (Grooming, Retrospectives, Sprint Planning, Daily standup), I tend to
+bend my hours to whichever happens that day. It&#8217;s working out for me, and at
+the same time I can see that it&#8217;s not for everyone.
+But there is a method to my chaos.</p>
+
+<p>At DealDash I have found another amazing team and while I am still learning a
+lot about the business of penny auctions, we have already started on the path
+of improving and refactoring a lot of functionality. I have been with them for
+a little bit over 4 months now and I already have had the chance to try some
+new things (for me) like Docker, provisioning machines with Salt, some NodeJS,
+using Gherkin to describe the behavior of functionalities and couple that with
+unit and/or functional tests and also pick up Symfony again.</p>
+
+<p>DealDash is also teaching me a great deal on how to make a remote team work,
+how to keep your team in touch with your users&#8217; needs and how to encourage and
+foster an open communication style where everyone knows their voices matter.</p>
+
+<p>So what more can I ask for? I am working with once again on an amazing team, on
+interesting problems, I am learning new stuff AND I have all the time I need to
+devote to my daughter: right now I am heading back to Barcelona from the first
+team offsite with DealDash, which I had to cut short because Ada had an
+accident. And they were again supportive and understanding.</p>
+
+<p>So this is my new life. I have become a <em>dadveloper</em>.</p>
+
+<p><em>And I could not be happier</em>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[ElasticSearch: Enable Mlockall in CentOS 7]]></title>
     <link href="http://mrzard.github.com/blog/2015/03/25/elasticsearch-enable-mlockall-in-centos-7/"/>
-    <updated>2015-03-25T10:52:00+01:00</updated>
+    <updated>2015-03-25T10:52:00+02:00</updated>
     <id>http://mrzard.github.com/blog/2015/03/25/elasticsearch-enable-mlockall-in-centos-7</id>
     <content type="html"><![CDATA[<p>I have recently been wrestling with ElasticSearch/Elastic and how to finally enable mlockall under CentOS 7. You usually will get the “Unable to lock JVM memory (ENOMEM). This can result in part of the JVM being swapped out. Increase RLIMIT_MEMLOCK (ulimit)`.”</p>
 
@@ -100,7 +188,7 @@
   <entry>
     <title type="html"><![CDATA[Farewell 2014, Welcome 2015]]></title>
     <link href="http://mrzard.github.com/blog/2014/12/30/farewell-2014-welcome-2015/"/>
-    <updated>2014-12-30T10:52:00+01:00</updated>
+    <updated>2014-12-30T10:52:00+02:00</updated>
     <id>http://mrzard.github.com/blog/2014/12/30/farewell-2014-welcome-2015</id>
     <content type="html"><![CDATA[<p>So we are closing another year… And I see this is just my fourth post of the year. Pretty bad, but at least is a good starting point, because it’s easy to improve on it.</p>
 
@@ -129,7 +217,7 @@
   <entry>
     <title type="html"><![CDATA[Billy is hiring! Middleweight PHP developer needed]]></title>
     <link href="http://mrzard.github.com/blog/2014/08/20/billy-is-hiring-middleweight-php-developer-needed/"/>
-    <updated>2014-08-20T10:52:00+02:00</updated>
+    <updated>2014-08-20T10:52:00+03:00</updated>
     <id>http://mrzard.github.com/blog/2014/08/20/billy-is-hiring-middleweight-php-developer-needed</id>
     <content type="html"><![CDATA[<p>As most of you know, since June 2nd I&#8217;ve taken the position of MVAS IT Manager at <a href="http://www.billymob.com">Billy Mobile</a>.</p>
 
@@ -176,7 +264,7 @@
   <entry>
     <title type="html"><![CDATA[What I Have Learnt as a CTO ]]></title>
     <link href="http://mrzard.github.com/blog/2014/05/06/what-i-have-learnt-as-a-cto/"/>
-    <updated>2014-05-06T16:45:00+02:00</updated>
+    <updated>2014-05-06T17:45:00+03:00</updated>
     <id>http://mrzard.github.com/blog/2014/05/06/what-i-have-learnt-as-a-cto</id>
     <content type="html"><![CDATA[<p>When May comes to and end, I will end my one and a half years journey as
 a CTO for <a href="http://www.chicplace.com">ChicPlace.com</a>.</p>
@@ -334,7 +422,7 @@ and drives a wedge between team members.</li>
   <entry>
     <title type="html"><![CDATA[Customize Form Prototype for Collections in Symfony2]]></title>
     <link href="http://mrzard.github.com/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/"/>
-    <updated>2013-10-30T15:45:00+01:00</updated>
+    <updated>2013-10-30T16:45:00+02:00</updated>
     <id>http://mrzard.github.com/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2</id>
     <content type="html"><![CDATA[<p>When working with complex forms, sometimes you will be in need of
 creating a collection field type to manage relations. When this is the
@@ -380,7 +468,7 @@ data-attribute.</p>
   <entry>
     <title type="html"><![CDATA[Fluhsing only desired entities with Doctrine]]></title>
     <link href="http://mrzard.github.com/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/"/>
-    <updated>2013-10-10T16:45:00+02:00</updated>
+    <updated>2013-10-10T17:45:00+03:00</updated>
     <id>http://mrzard.github.com/blog/2013/10/10/flushing-only-desired-entities-with-doctrine</id>
     <content type="html"><![CDATA[<p>Sometimes, you may be working with several entities at the same time. If
 this entities are managed by Doctrine, you may find yourself in the
@@ -395,7 +483,7 @@ the entities you explicitly pass to the function.</p>
   <entry>
     <title type="html"><![CDATA[Loading Cross-domain Fonts From Firefox]]></title>
     <link href="http://mrzard.github.com/blog/2013/03/28/loading-cross-domain-fonts-from-firefox/"/>
-    <updated>2013-03-28T15:45:00+01:00</updated>
+    <updated>2013-03-28T16:45:00+02:00</updated>
     <id>http://mrzard.github.com/blog/2013/03/28/loading-cross-domain-fonts-from-firefox</id>
     <content type="html"><![CDATA[<p>When requiring a font from an external CSS file (assets domain, CDN,
 etc), you may see that Firefox refuses to display the font. This is
@@ -423,7 +511,7 @@ Firefox.</p>
   <entry>
     <title type="html"><![CDATA[My experience with Paymill]]></title>
     <link href="http://mrzard.github.com/blog/2013/03/26/my-experience-with-paymill/"/>
-    <updated>2013-03-26T12:30:00+01:00</updated>
+    <updated>2013-03-26T13:30:00+02:00</updated>
     <id>http://mrzard.github.com/blog/2013/03/26/my-experience-with-paymill</id>
     <content type="html"><![CDATA[<p>I have been using <a href="https://www.paymill.com">Paymill</a> at work for some time now, and this is what I think of it thus far:</p>
 
@@ -470,7 +558,7 @@ Firefox.</p>
   <entry>
     <title type="html"><![CDATA[MrZarD, now on Octopress on GitHub Pages]]></title>
     <link href="http://mrzard.github.com/blog/2013/03/25/mrzard-now-octopress-github-pages/"/>
-    <updated>2013-03-25T15:45:00+01:00</updated>
+    <updated>2013-03-25T16:45:00+02:00</updated>
     <id>http://mrzard.github.com/blog/2013/03/25/mrzard-now-octopress-github-pages</id>
     <content type="html"><![CDATA[<p>Due to <a href="http://www.posterous.com/">Posterous</a> closing soon I had to look for another place to host my (seldomly updated) blog. After 10 minutes, I saw GitHub Pages and then saw <a href="http://octopress.org/">Octopress</a>. The combination of both is awesome and really feels great for a developer instead of a classic web interface.</p>
 
@@ -481,7 +569,7 @@ Firefox.</p>
   <entry>
     <title type="html"><![CDATA[MySQL Query to Export Prestashop Data to a Shopify CSV]]></title>
     <link href="http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/"/>
-    <updated>2013-02-13T18:19:00+01:00</updated>
+    <updated>2013-02-13T19:19:00+02:00</updated>
     <id>http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv</id>
     <content type="html"><![CDATA[<p>If you find yourself migrating your shop from Prestashop to Shopify, you can
 use this query. It was written for an old version of Prestashop, but you probably
@@ -522,7 +610,7 @@ WHERE
   <entry>
     <title type="html"><![CDATA[Generate CSRF token programatically in Symfony 2]]></title>
     <link href="http://mrzard.github.com/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/"/>
-    <updated>2012-08-08T16:28:29+02:00</updated>
+    <updated>2012-08-08T17:28:29+03:00</updated>
     <id>http://mrzard.github.com/blog/2012/08/08/generate-csrf-token-programatically-in-symfon</id>
     <content type="html"><![CDATA[<p>If you find yourself in the need of generating a CSRF token for a &#8216;built&#8217; Request
 or something in that fashion, you can do it rather easily:</p>
@@ -545,7 +633,7 @@ for the correct intention if you are using that option.</p>
   <entry>
     <title type="html"><![CDATA[Release cycles and policies, deploying code thoughts.]]></title>
     <link href="http://mrzard.github.com/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/"/>
-    <updated>2012-02-15T21:17:00+01:00</updated>
+    <updated>2012-02-15T22:17:00+02:00</updated>
     <id>http://mrzard.github.com/blog/2012/02/15/release-cycles-and-policies-deploying-code-th</id>
     <content type="html"><![CDATA[<p>In my programming experience I have worked with different ways of handling
 releases. From the old easy FTP access to other cool stuff like <a href="">phing</a>.</p>
@@ -591,7 +679,7 @@ can wait until the next release.</p>
   <entry>
     <title type="html"><![CDATA[Common recruiting errors made by companies.]]></title>
     <link href="http://mrzard.github.com/blog/2011/12/14/common-recruiting-errors-made-by-companies/"/>
-    <updated>2011-12-14T10:26:00+01:00</updated>
+    <updated>2011-12-14T11:26:00+02:00</updated>
     <id>http://mrzard.github.com/blog/2011/12/14/common-recruiting-errors-made-by-companies</id>
     <content type="html"><![CDATA[<p>Lately I&#8217;ve seen a lot of posts about errors candidates make in interviews.
 Now I am going to write a list of error employers make when looking for candidates.</p>
@@ -642,7 +730,7 @@ and expand this list :D</p>
   <entry>
     <title type="html"><![CDATA[Generate a valid Google Premier signature in PHP]]></title>
     <link href="http://mrzard.github.com/blog/2011/12/12/generate-a-valid-google-premier-signature-in/"/>
-    <updated>2011-12-12T11:23:00+01:00</updated>
+    <updated>2011-12-12T12:23:00+02:00</updated>
     <id>http://mrzard.github.com/blog/2011/12/12/generate-a-valid-google-premier-signature-in</id>
     <content type="html"><![CDATA[<p>Google Premier requires for you to generate a signature over the URL you&#8217;re
 going to ask for, then send that signature alongside the request. Here is how
@@ -691,7 +779,7 @@ request.</p>
   <entry>
     <title type="html"><![CDATA[PHP namespaces simple explanation]]></title>
     <link href="http://mrzard.github.com/blog/2011/10/25/php-namespaces-simple-explanation/"/>
-    <updated>2011-10-25T11:58:00+02:00</updated>
+    <updated>2011-10-25T12:58:00+03:00</updated>
     <id>http://mrzard.github.com/blog/2011/10/25/php-namespaces-simple-explanation</id>
     <content type="html"><![CDATA[<p>This is one of the most clear and comprehensible articles on namespaces I have
 ever seen. If you&#8217;re having trouble understanding the logic behind them or
@@ -704,7 +792,7 @@ how to use them, please do take a look at it:</p>
   <entry>
     <title type="html"><![CDATA[Ubuntu: Window borders & toolbars gone.]]></title>
     <link href="http://mrzard.github.com/blog/2011/09/26/ubuntu-window-borders-toolbars-gone/"/>
-    <updated>2011-09-26T09:01:00+02:00</updated>
+    <updated>2011-09-26T10:01:00+03:00</updated>
     <id>http://mrzard.github.com/blog/2011/09/26/ubuntu-window-borders-toolbars-gone</id>
     <content type="html"><![CDATA[<p>If you happen to run into this problem (you cannot resize your windows and
 have no access to window toolbars) in Ubuntu, the solution is pretty simple.
@@ -720,7 +808,7 @@ and you&#8217;re redy to go.</p>
   <entry>
     <title type="html"><![CDATA[Dynamically activate tinyMCE on a given textarea.]]></title>
     <link href="http://mrzard.github.com/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte/"/>
-    <updated>2011-05-24T11:05:00+02:00</updated>
+    <updated>2011-05-24T12:05:00+03:00</updated>
     <id>http://mrzard.github.com/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte</id>
     <content type="html"><![CDATA[<p>If you are adding textareas dynamically and wish to enable tinyMCE on them,
 you just have to add this on the javascript function that adds said textarea.</p>
@@ -736,7 +824,7 @@ you just have to add this on the javascript function that adds said textarea.</p
   <entry>
     <title type="html"><![CDATA[Memcache vs Memcached (PHP): A simple explanation]]></title>
     <link href="http://mrzard.github.com/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio/"/>
-    <updated>2011-05-06T09:19:00+02:00</updated>
+    <updated>2011-05-06T10:19:00+03:00</updated>
     <id>http://mrzard.github.com/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio</id>
     <content type="html"><![CDATA[<p>In a nutshell:</p>
 
@@ -758,7 +846,7 @@ it seems it is more configurable and has more options.</p>
   <entry>
     <title type="html"><![CDATA[Drag and drop interaction made easy with jQuery (and jQuery UI)]]></title>
     <link href="http://mrzard.github.com/blog/2011/04/12/drag-and-drop-interaction-made-easy-with-jque/"/>
-    <updated>2011-04-12T10:18:00+02:00</updated>
+    <updated>2011-04-12T11:18:00+03:00</updated>
     <id>http://mrzard.github.com/blog/2011/04/12/drag-and-drop-interaction-made-easy-with-jque</id>
     <content type="html"><![CDATA[<p>Last week at work I had to make a drag-and-drop configurable homepage, where
 individual news items had to had the ability to be moved and arranged in a
@@ -841,31 +929,6 @@ you can code the drag&amp;drop interactions you want.</p>
 
 
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Failed to connect to socket /com/ubuntu/upstart ? Upstart Jobs Cannot be Run on chroot]]></title>
-    <link href="http://mrzard.github.com/blog/2011/02/01/failed-to-connect-to-socket-comubuntuupstart/"/>
-    <updated>2011-02-01T13:01:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2011/02/01/failed-to-connect-to-socket-comubuntuupstart</id>
-    <content type="html"><![CDATA[<p>Thanks to <a href="http://www.ashang.org/2010/10/unable-to-connect-to-upstart.html">http://www.ashang.org/2010/10/unable-to-connect-to-upstart.html</a>
-I was finally able to upgrade my system while chrooted.</p>
-
-<p>Being on chroot will cause some packages to fail when they are upgrading. Giving
-us an error message like this one:</p>
-
-<p>start: Unable to connect to Upstart: Failed to connect to socket /com/ubuntu/upstart: Connection refused<br/>
-dpkg: error processing procps (&#8211;configure):</p>
-
-<p>You can workaround this limitation by running these commands</p>
-
-<p>$dpkg-divert &#8211;local &#8211;rename &#8211;add /sbin/initctl<br/>
-Adding &#8216;local diversion of /sbin/initctl to /sbin/initctl.distrib&#8217;<br/>
-$ln -s /bin/true /sbin/initctl</p>
-
-<p>Then you can run the upgrade, or do a dpkg &#8211;configure -a to upgrade the packages
-that were previously failing.</p>
 ]]></content>
   </entry>
   

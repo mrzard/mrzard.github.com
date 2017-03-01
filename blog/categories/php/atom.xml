@@ -4,7 +4,7 @@
   <title><![CDATA[Category: PHP | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/php/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2017-01-31T15:23:53+01:00</updated>
+  <updated>2017-03-01T19:49:38+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Farewell 2014, Welcome 2015]]></title>
     <link href="http://mrzard.github.com/blog/2014/12/30/farewell-2014-welcome-2015/"/>
-    <updated>2014-12-30T10:52:00+01:00</updated>
+    <updated>2014-12-30T10:52:00+02:00</updated>
     <id>http://mrzard.github.com/blog/2014/12/30/farewell-2014-welcome-2015</id>
     <content type="html"><![CDATA[<p>So we are closing another year… And I see this is just my fourth post of the year. Pretty bad, but at least is a good starting point, because it’s easy to improve on it.</p>
 
@@ -45,7 +45,7 @@
   <entry>
     <title type="html"><![CDATA[Billy is hiring! Middleweight PHP developer needed]]></title>
     <link href="http://mrzard.github.com/blog/2014/08/20/billy-is-hiring-middleweight-php-developer-needed/"/>
-    <updated>2014-08-20T10:52:00+02:00</updated>
+    <updated>2014-08-20T10:52:00+03:00</updated>
     <id>http://mrzard.github.com/blog/2014/08/20/billy-is-hiring-middleweight-php-developer-needed</id>
     <content type="html"><![CDATA[<p>As most of you know, since June 2nd I've taken the position of MVAS IT Manager at <a href="http://www.billymob.com">Billy Mobile</a>.</p>
 
@@ -92,7 +92,7 @@
   <entry>
     <title type="html"><![CDATA[My experience with Paymill]]></title>
     <link href="http://mrzard.github.com/blog/2013/03/26/my-experience-with-paymill/"/>
-    <updated>2013-03-26T12:30:00+01:00</updated>
+    <updated>2013-03-26T13:30:00+02:00</updated>
     <id>http://mrzard.github.com/blog/2013/03/26/my-experience-with-paymill</id>
     <content type="html"><![CDATA[<p>I have been using <a href="https://www.paymill.com">Paymill</a> at work for some time now, and this is what I think of it thus far:</p>
 
@@ -139,7 +139,7 @@
   <entry>
     <title type="html"><![CDATA[MySQL Query to Export Prestashop Data to a Shopify CSV]]></title>
     <link href="http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/"/>
-    <updated>2013-02-13T18:19:00+01:00</updated>
+    <updated>2013-02-13T19:19:00+02:00</updated>
     <id>http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv</id>
     <content type="html"><![CDATA[<p>If you find yourself migrating your shop from Prestashop to Shopify, you can
 use this query. It was written for an old version of Prestashop, but you probably
@@ -180,7 +180,7 @@ WHERE
   <entry>
     <title type="html"><![CDATA[Generate CSRF token programatically in Symfony 2]]></title>
     <link href="http://mrzard.github.com/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/"/>
-    <updated>2012-08-08T16:28:29+02:00</updated>
+    <updated>2012-08-08T17:28:29+03:00</updated>
     <id>http://mrzard.github.com/blog/2012/08/08/generate-csrf-token-programatically-in-symfon</id>
     <content type="html"><![CDATA[<p>If you find yourself in the need of generating a CSRF token for a 'built' Request
 or something in that fashion, you can do it rather easily:</p>

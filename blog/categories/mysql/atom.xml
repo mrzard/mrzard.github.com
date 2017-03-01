@@ -4,7 +4,7 @@
   <title><![CDATA[Category: MySQL | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/mysql/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2017-01-31T15:23:53+01:00</updated>
+  <updated>2017-03-01T19:49:38+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[MySQL Query to Export Prestashop Data to a Shopify CSV]]></title>
     <link href="http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/"/>
-    <updated>2013-02-13T18:19:00+01:00</updated>
+    <updated>2013-02-13T19:19:00+02:00</updated>
     <id>http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv</id>
     <content type="html"><![CDATA[<p>If you find yourself migrating your shop from Prestashop to Shopify, you can
 use this query. It was written for an old version of Prestashop, but you probably
@@ -57,7 +57,7 @@ WHERE
   <entry>
     <title type="html"><![CDATA[MySQL, what are you smoking?]]></title>
     <link href="http://mrzard.github.com/blog/2010/07/27/mysql-what-are-you-smoking/"/>
-    <updated>2010-07-27T10:35:00+02:00</updated>
+    <updated>2010-07-27T11:35:00+03:00</updated>
     <id>http://mrzard.github.com/blog/2010/07/27/mysql-what-are-you-smoking</id>
     <content type="html"><![CDATA[<p>Vía '<a href="http://marksverbiage.blogspot.com/2010/05/mysql-what-are-you-smoking.html">Mark's stream of verbiage</a>' I found this article explaining some weird
 behaviour in MySQL, which may have you scratching your head someday (or already

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: VirtualBox | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/virtualbox/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2017-01-31T15:23:53+01:00</updated>
+  <updated>2017-03-01T19:49:38+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Easy VirtualBox setup between Host, Guest and other networks]]></title>
     <link href="http://mrzard.github.com/blog/2010/09/30/easy-virtualbox-setup-between-host-guest-and/"/>
-    <updated>2010-09-30T09:16:00+02:00</updated>
+    <updated>2010-09-30T10:16:00+03:00</updated>
     <id>http://mrzard.github.com/blog/2010/09/30/easy-virtualbox-setup-between-host-guest-and</id>
     <content type="html"><![CDATA[<p>At work, we use <a href="http://www.virtualbox.org/">VirtualBox</a> as our development box. Yesterday due to the
 strike, I worked from home, and as I grew tired of changing network settings

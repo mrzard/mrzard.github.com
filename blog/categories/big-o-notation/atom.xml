@@ -4,7 +4,7 @@
   <title><![CDATA[Category: big O notation | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/big-o-notation/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2017-01-31T15:23:53+01:00</updated>
+  <updated>2017-03-01T19:49:38+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Big O Notation in plain english.]]></title>
     <link href="http://mrzard.github.com/blog/2010/07/16/big-o-notation-english-0/"/>
-    <updated>2010-07-16T12:06:00+02:00</updated>
+    <updated>2010-07-16T13:06:00+03:00</updated>
     <id>http://mrzard.github.com/blog/2010/07/16/big-o-notation-english-0</id>
     <content type="html"><![CDATA[<p>Excellent explanation found on <a href="http://stackoverflow.com/questions/487258/plain-english-explanation-of-big-o/487278#487278">Stack Overflow </a></p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cache | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/cache/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2017-01-31T15:23:53+01:00</updated>
+  <updated>2017-03-01T19:49:38+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Memcache vs Memcached (PHP): A simple explanation]]></title>
     <link href="http://mrzard.github.com/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio/"/>
-    <updated>2011-05-06T09:19:00+02:00</updated>
+    <updated>2011-05-06T10:19:00+03:00</updated>
     <id>http://mrzard.github.com/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio</id>
     <content type="html"><![CDATA[<p>In a nutshell:</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Other ramblings | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/other-ramblings/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2017-01-31T15:23:53+01:00</updated>
+  <updated>2017-03-01T19:49:38+02:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -14,9 +14,97 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Becoming a dadveloper]]></title>
+    <link href="http://mrzard.github.com/blog/2017/03/01/becoming-a-dadveloper/"/>
+    <updated>2017-03-01T18:54:00+02:00</updated>
+    <id>http://mrzard.github.com/blog/2017/03/01/becoming-a-dadveloper</id>
+    <content type="html"><![CDATA[<p>So... this is awkward... It's been almost two years without any new content on
+this blog. I will do something useful in this 4 hour flight from Helsinki to
+Barcelona, and I will try to write some things about what has been going on
+with me for those two years.</p>
+
+<p>2015-2016 at <a href="http://www.billymob.com">Billy Mobile</a> were intense and
+exciting years . I had the immense luck to start working with some amazing
+people like <a href="Dfrison%20LinkedIn">Diego Frisón</a>,
+<a href="Joan%20Viladrosa%20linkedin">Joan Viladrosa</a>, <a href="RR%20linkedin">Roger Rafanell</a>,
+<a href="Aday%20LIN">Aday Robaina</a>, <a href="Davide%20Ferrari">Davide Ferrari</a>,
+<a href="Esardina%20linkedin">Enric Sardina</a>, <a href="gortiz">Ginés Ortiz</a>,
+<a href="Oriol%20Blanc">Oriol Blanc</a>, <a href="mrubia">Marc Rubia</a>, <a href="dllorente">David Llorente</a>,
+<a href="jona">Jonatan Fernández</a> or <a href="Alex%20Serra">Alex Serra</a>. And that is only
+counting people on the Tech Team at Billy. They are all top shelf talent, and
+only great things are ahead of them.</p>
+
+<p>With Joan's leadership, the PHP-MySQL-Redis-ElasticSearch Billy adserver
+prototype was ported to Java-Kafka-HBase-Spark-Redis-HDFS which made a lot more
+sense as to deal with the concurrency and speed needed. He even introduced some
+very cool and cutting edge technology like Apache Kylin. At the same time all
+of these cool changes were happening, I started realizing that my daughter
+needed for me to devote more time to her. And I also started realizing that <em>I</em>
+needed to devote more time to her. The fine people at Billy Mobile tried to
+work out a semi-remote schedule with me, but it was not the best fit to have
+one of the Tech Leads away for a big part of the day, which shifted a lot of
+work onto Joan's shoulders, and ended up making obvious that a change had to
+be made. So after having the luck of being contacted by
+<a href="http://www.dealdash.com">DealDash</a>, it was a golden opportunity for me and
+I decided to say goodbye to Billy. I will always be grateful for their support
+and effort to help me out, and for the chance to work and learn with so many
+amazing people.</p>
+
+<p><a href="http://www.dealdash.com">DealDash</a> offered me the opportunity to get back into
+a developer position and also start working remotely. The company is based in
+Helsinki, and the remote philosophy allows me to do these kinds of things:</p>
+
+<ul>
+<li><p>Take a couple of hours off to bring Ada to the park, or dancing, or to the
+"ludoteca". Then either wake up early and work before the daily meeting, or
+do it before going to bed at night.</p></li>
+<li><p>Stop worrying about the added commute time to and from the office, specially
+if I also happened to have to bring Ada to the doctor's. That used to mean
+almost a "lost" day when I was working in the office, now it's just a minor
+adjustment and no work is lost.</p></li>
+<li><p>When I sit to work I just check Slack and the GitHub issues to see what
+progress has been made so I can pick up like I were there when it happened.</p></li>
+<li><p>If Ada's mom needs to go to the doctor or run any errands, it's a lot easier
+for her as she can just leave Ada with me. I just pick up smaller stuff or
+bring her to a cafe that has toys where she can play in a new environment
+while I keep working.</p></li>
+</ul>
+
+
+<p>I think I break most of the 'rules' of working remotely, as other than fixed
+meetings (Grooming, Retrospectives, Sprint Planning, Daily standup), I tend to
+bend my hours to whichever happens that day. It's working out for me, and at
+the same time I can see that it's not for everyone.
+But there is a method to my chaos.</p>
+
+<p>At DealDash I have found another amazing team and while I am still learning a
+lot about the business of penny auctions, we have already started on the path
+of improving and refactoring a lot of functionality. I have been with them for
+a little bit over 4 months now and I already have had the chance to try some
+new things (for me) like Docker, provisioning machines with Salt, some NodeJS,
+using Gherkin to describe the behavior of functionalities and couple that with
+unit and/or functional tests and also pick up Symfony again.</p>
+
+<p>DealDash is also teaching me a great deal on how to make a remote team work,
+how to keep your team in touch with your users' needs and how to encourage and
+foster an open communication style where everyone knows their voices matter.</p>
+
+<p>So what more can I ask for? I am working with once again on an amazing team, on
+interesting problems, I am learning new stuff AND I have all the time I need to
+devote to my daughter: right now I am heading back to Barcelona from the first
+team offsite with DealDash, which I had to cut short because Ada had an
+accident. And they were again supportive and understanding.</p>
+
+<p>So this is my new life. I have become a <em>dadveloper</em>.</p>
+
+<p><em>And I could not be happier</em>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Farewell 2014, Welcome 2015]]></title>
     <link href="http://mrzard.github.com/blog/2014/12/30/farewell-2014-welcome-2015/"/>
-    <updated>2014-12-30T10:52:00+01:00</updated>
+    <updated>2014-12-30T10:52:00+02:00</updated>
     <id>http://mrzard.github.com/blog/2014/12/30/farewell-2014-welcome-2015</id>
     <content type="html"><![CDATA[<p>So we are closing another year… And I see this is just my fourth post of the year. Pretty bad, but at least is a good starting point, because it’s easy to improve on it.</p>
 
