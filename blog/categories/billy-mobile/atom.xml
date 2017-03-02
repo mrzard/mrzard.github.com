@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Billy Mobile | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/billy-mobile/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2017-03-02T07:24:26+01:00</updated>
+  <updated>2017-03-02T07:26:17+01:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -26,14 +26,23 @@ with me for those two years.</p>
 <p>2015-2016 at <a href="http://www.billymob.com">Billy Mobile</a> were intense and
 exciting years . I had the immense luck to start working with some amazing
 people like <a href="https://es.linkedin.com/in/diego-frison-715279b1">Diego Frisón</a>,
-<a href="https://es.linkedin.com/in/joanviladrosa">Joan Viladrosa</a>, <a href="https://es.linkedin.com/in/rogerrafanell">Roger Rafanell</a>,
-<a href="https://es.linkedin.com/in/adayrobaina">Aday Robaina</a>, <a href="https://es.linkedin.com/in/ibruque">Ivan Bruque</a>, <a href="https://es.linkedin.com/in/davideferrari">Davide Ferrari</a>,
-<a href="https://es.linkedin.com/in/enric-sardina-marti-97717217">Enric Sardina</a>, <a href="https://es.linkedin.com/in/ginesortiz">Ginés Ortiz</a>,
-<a href="https://es.linkedin.com/in/oriolblanc">Oriol Blanc</a>, <a href="https://es.linkedin.com/in/marc-rubia-criado-94a9a458">Marc Rubia</a>, <a href="https://es.linkedin.com/in/david-llorente-garrido-001552a1">David Llorente</a>, <a href="https://es.linkedin.com/in/slissner">Sam Lissner</a>,
-<a href="https://es.linkedin.com/in/jonatan-fernandez-389aa271">Jonatan Fernández</a> or <a href="https://es.linkedin.com/in/aserrabl">Alex Serra</a>,
-on top of other great people like Oriol Orellana or Horacio Herrera, who I have
-talked about in the past. And that is only counting people on the Tech Team at
-Billy. They are all top shelf talent, and only great things are ahead of them.</p>
+<a href="https://es.linkedin.com/in/joanviladrosa">Joan Viladrosa</a>,
+<a href="https://es.linkedin.com/in/rogerrafanell">Roger Rafanell</a>,
+<a href="https://es.linkedin.com/in/adayrobaina">Aday Robaina</a>,
+<a href="https://es.linkedin.com/in/ibruque">Ivan Bruque</a>,
+<a href="https://es.linkedin.com/in/davideferrari">Davide Ferrari</a>,
+<a href="https://es.linkedin.com/in/enric-sardina-marti-97717217">Enric Sardina</a>,
+<a href="https://es.linkedin.com/in/ginesortiz">Ginés Ortiz</a>,
+<a href="https://es.linkedin.com/in/oriolblanc">Oriol Blanc</a>,
+<a href="https://es.linkedin.com/in/marc-rubia-criado-94a9a458">Marc Rubia</a>,
+<a href="https://es.linkedin.com/in/david-llorente-garrido-001552a1">David Llorente</a>,
+<a href="https://es.linkedin.com/in/slissner">Sam Lissner</a>,
+<a href="https://es.linkedin.com/in/jonatan-fernandez-389aa271">Jonatan Fernández</a> or
+<a href="https://es.linkedin.com/in/aserrabl">Alex Serra</a>,
+as well as keep working with other great people like Oriol Orellana or
+Horacio Herrera, whom I have talked about in the past. And that is only
+counting people on the Tech Team at Billy. They are all top notch talent,
+and only great things are ahead of them.</p>
 
 <p>With Joan's leadership, the PHP-MySQL-Redis-ElasticSearch Billy adserver
 prototype was ported to Java-Kafka-HBase-Spark-Redis-HDFS which made a lot more
