@@ -4,7 +4,7 @@
   <title><![CDATA[Category: paymill | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/paymill/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2017-03-01T19:49:38+02:00</updated>
+  <updated>2017-03-02T07:24:26+01:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[My experience with Paymill]]></title>
     <link href="http://mrzard.github.com/blog/2013/03/26/my-experience-with-paymill/"/>
-    <updated>2013-03-26T13:30:00+02:00</updated>
+    <updated>2013-03-26T12:30:00+01:00</updated>
     <id>http://mrzard.github.com/blog/2013/03/26/my-experience-with-paymill</id>
     <content type="html"><![CDATA[<p>I have been using <a href="https://www.paymill.com">Paymill</a> at work for some time now, and this is what I think of it thus far:</p>
 

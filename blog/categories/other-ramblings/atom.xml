@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Other ramblings | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/other-ramblings/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2017-03-01T19:49:38+02:00</updated>
+  <updated>2017-03-02T07:24:26+01:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Becoming a dadveloper]]></title>
     <link href="http://mrzard.github.com/blog/2017/03/01/becoming-a-dadveloper/"/>
-    <updated>2017-03-01T18:54:00+02:00</updated>
+    <updated>2017-03-01T18:54:00+01:00</updated>
     <id>http://mrzard.github.com/blog/2017/03/01/becoming-a-dadveloper</id>
     <content type="html"><![CDATA[<p>So... this is awkward... It's been almost two years without any new content on
 this blog. I will do something useful in this 4 hour flight from Helsinki to
@@ -25,14 +25,15 @@ with me for those two years.</p>
 
 <p>2015-2016 at <a href="http://www.billymob.com">Billy Mobile</a> were intense and
 exciting years . I had the immense luck to start working with some amazing
-people like <a href="Dfrison%20LinkedIn">Diego Frisón</a>,
-<a href="Joan%20Viladrosa%20linkedin">Joan Viladrosa</a>, <a href="RR%20linkedin">Roger Rafanell</a>,
-<a href="Aday%20LIN">Aday Robaina</a>, <a href="Davide%20Ferrari">Davide Ferrari</a>,
-<a href="Esardina%20linkedin">Enric Sardina</a>, <a href="gortiz">Ginés Ortiz</a>,
-<a href="Oriol%20Blanc">Oriol Blanc</a>, <a href="mrubia">Marc Rubia</a>, <a href="dllorente">David Llorente</a>,
-<a href="jona">Jonatan Fernández</a> or <a href="Alex%20Serra">Alex Serra</a>. And that is only
-counting people on the Tech Team at Billy. They are all top shelf talent, and
-only great things are ahead of them.</p>
+people like <a href="https://es.linkedin.com/in/diego-frison-715279b1">Diego Frisón</a>,
+<a href="https://es.linkedin.com/in/joanviladrosa">Joan Viladrosa</a>, <a href="https://es.linkedin.com/in/rogerrafanell">Roger Rafanell</a>,
+<a href="https://es.linkedin.com/in/adayrobaina">Aday Robaina</a>, <a href="https://es.linkedin.com/in/ibruque">Ivan Bruque</a>, <a href="https://es.linkedin.com/in/davideferrari">Davide Ferrari</a>,
+<a href="https://es.linkedin.com/in/enric-sardina-marti-97717217">Enric Sardina</a>, <a href="https://es.linkedin.com/in/ginesortiz">Ginés Ortiz</a>,
+<a href="https://es.linkedin.com/in/oriolblanc">Oriol Blanc</a>, <a href="https://es.linkedin.com/in/marc-rubia-criado-94a9a458">Marc Rubia</a>, <a href="https://es.linkedin.com/in/david-llorente-garrido-001552a1">David Llorente</a>, <a href="https://es.linkedin.com/in/slissner">Sam Lissner</a>,
+<a href="https://es.linkedin.com/in/jonatan-fernandez-389aa271">Jonatan Fernández</a> or <a href="https://es.linkedin.com/in/aserrabl">Alex Serra</a>,
+on top of other great people like Oriol Orellana or Horacio Herrera, who I have
+talked about in the past. And that is only counting people on the Tech Team at
+Billy. They are all top shelf talent, and only great things are ahead of them.</p>
 
 <p>With Joan's leadership, the PHP-MySQL-Redis-ElasticSearch Billy adserver
 prototype was ported to Java-Kafka-HBase-Spark-Redis-HDFS which made a lot more
@@ -56,7 +57,7 @@ Helsinki, and the remote philosophy allows me to do these kinds of things:</p>
 
 <ul>
 <li><p>Take a couple of hours off to bring Ada to the park, or dancing, or to the
-"ludoteca". Then either wake up early and work before the daily meeting, or
+toy library. Then either wake up early and work before the daily meeting, or
 do it before going to bed at night.</p></li>
 <li><p>Stop worrying about the added commute time to and from the office, specially
 if I also happened to have to bring Ada to the doctor's. That used to mean
@@ -104,7 +105,7 @@ accident. And they were again supportive and understanding.</p>
   <entry>
     <title type="html"><![CDATA[Farewell 2014, Welcome 2015]]></title>
     <link href="http://mrzard.github.com/blog/2014/12/30/farewell-2014-welcome-2015/"/>
-    <updated>2014-12-30T10:52:00+02:00</updated>
+    <updated>2014-12-30T10:52:00+01:00</updated>
     <id>http://mrzard.github.com/blog/2014/12/30/farewell-2014-welcome-2015</id>
     <content type="html"><![CDATA[<p>So we are closing another year… And I see this is just my fourth post of the year. Pretty bad, but at least is a good starting point, because it’s easy to improve on it.</p>
 

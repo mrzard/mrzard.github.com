@@ -4,7 +4,7 @@
   <title><![CDATA[Category: flush | Programming Rambling]]></title>
   <link href="http://mrzard.github.com/blog/categories/flush/atom.xml" rel="self"/>
   <link href="http://mrzard.github.com/"/>
-  <updated>2017-03-01T19:49:38+02:00</updated>
+  <updated>2017-03-02T07:24:26+01:00</updated>
   <id>http://mrzard.github.com/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Fluhsing only desired entities with Doctrine]]></title>
     <link href="http://mrzard.github.com/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/"/>
-    <updated>2013-10-10T17:45:00+03:00</updated>
+    <updated>2013-10-10T16:45:00+02:00</updated>
     <id>http://mrzard.github.com/blog/2013/10/10/flushing-only-desired-entities-with-doctrine</id>
     <content type="html"><![CDATA[<p>Sometimes, you may be working with several entities at the same time. If
 this entities are managed by Doctrine, you may find yourself in the
