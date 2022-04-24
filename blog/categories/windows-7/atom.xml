@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Windows 7 | Programming Rambling]]></title>
-  <link href="http://mrzard.github.com/blog/categories/windows-7/atom.xml" rel="self"/>
-  <link href="http://mrzard.github.com/"/>
+  <link href="http://mrzard.github.io/blog/categories/windows-7/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.io/"/>
   <updated>2017-03-02T07:26:17+01:00</updated>
-  <id>http://mrzard.github.com/</id>
+  <id>http://mrzard.github.io/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cygwin + Rsync error 13 + Windows 7 problems]]></title>
-    <link href="http://mrzard.github.com/blog/2010/09/07/cygwin-rsync-error-13-windows-7-problems/"/>
+    <link href="http://mrzard.github.io/blog/2010/09/07/cygwin-rsync-error-13-windows-7-problems/"/>
     <updated>2010-09-07T23:30:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2010/09/07/cygwin-rsync-error-13-windows-7-problems</id>
+    <id>http://mrzard.github.io/blog/2010/09/07/cygwin-rsync-error-13-windows-7-problems</id>
     <content type="html"><![CDATA[<p>If you find yourself getting rsync error 13 when using it on cygwin, check
 the permissions on your source folder. For some reason, out of the box all
 directories have 400 permissions, and if your destination folder needs anything

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Shopify | Programming Rambling]]></title>
-  <link href="http://mrzard.github.com/blog/categories/shopify/atom.xml" rel="self"/>
-  <link href="http://mrzard.github.com/"/>
+  <link href="http://mrzard.github.io/blog/categories/shopify/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.io/"/>
   <updated>2017-03-02T07:26:17+01:00</updated>
-  <id>http://mrzard.github.com/</id>
+  <id>http://mrzard.github.io/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[MySQL Query to Export Prestashop Data to a Shopify CSV]]></title>
-    <link href="http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/"/>
+    <link href="http://mrzard.github.io/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/"/>
     <updated>2013-02-13T18:19:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv</id>
+    <id>http://mrzard.github.io/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv</id>
     <content type="html"><![CDATA[<p>If you find yourself migrating your shop from Prestashop to Shopify, you can
 use this query. It was written for an old version of Prestashop, but you probably
 won't have much trouble adapting it to newer versions.</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: SVN | Programming Rambling]]></title>
-  <link href="http://mrzard.github.com/blog/categories/svn/atom.xml" rel="self"/>
-  <link href="http://mrzard.github.com/"/>
+  <link href="http://mrzard.github.io/blog/categories/svn/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.io/"/>
   <updated>2017-03-02T07:26:17+01:00</updated>
-  <id>http://mrzard.github.com/</id>
+  <id>http://mrzard.github.io/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[SVN merge conflict fffffffuuuuuuuuuuuu comic]]></title>
-    <link href="http://mrzard.github.com/blog/2010/11/17/svn-merge-conflict-fffffffuuuuuuuuuuuu-comic/"/>
+    <link href="http://mrzard.github.io/blog/2010/11/17/svn-merge-conflict-fffffffuuuuuuuuuuuu-comic/"/>
     <updated>2010-11-17T09:00:51+01:00</updated>
-    <id>http://mrzard.github.com/blog/2010/11/17/svn-merge-conflict-fffffffuuuuuuuuuuuu-comic</id>
+    <id>http://mrzard.github.io/blog/2010/11/17/svn-merge-conflict-fffffffuuuuuuuuuuuu-comic</id>
     <content type="html"><![CDATA[<p>I found this comic, it perfectly expresses how painful code merges can be...
 Enjoy! :)</p>
 
@@ -29,9 +29,9 @@ Enjoy! :)</p>
   
   <entry>
     <title type="html"><![CDATA[Very nice video about DVCS - Kiln - Mercurial]]></title>
-    <link href="http://mrzard.github.com/blog/2010/11/16/very-nice-video-about-dvcs-kiln-mercurial/"/>
+    <link href="http://mrzard.github.io/blog/2010/11/16/very-nice-video-about-dvcs-kiln-mercurial/"/>
     <updated>2010-11-16T16:52:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2010/11/16/very-nice-video-about-dvcs-kiln-mercurial</id>
+    <id>http://mrzard.github.io/blog/2010/11/16/very-nice-video-about-dvcs-kiln-mercurial</id>
     <content type="html"><![CDATA[<p>I'd like to give this a try, SVN's merges are really very painful sometimes.</p>
 
 <p><a href="http://www.youtube.com/v/1BbK9o5fQD4?fs=1&amp;hl=es_ES"></a></p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: VCS | Programming Rambling]]></title>
-  <link href="http://mrzard.github.com/blog/categories/vcs/atom.xml" rel="self"/>
-  <link href="http://mrzard.github.com/"/>
+  <link href="http://mrzard.github.io/blog/categories/vcs/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.io/"/>
   <updated>2017-03-02T07:26:17+01:00</updated>
-  <id>http://mrzard.github.com/</id>
+  <id>http://mrzard.github.io/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[SVN merge conflict fffffffuuuuuuuuuuuu comic]]></title>
-    <link href="http://mrzard.github.com/blog/2010/11/17/svn-merge-conflict-fffffffuuuuuuuuuuuu-comic/"/>
+    <link href="http://mrzard.github.io/blog/2010/11/17/svn-merge-conflict-fffffffuuuuuuuuuuuu-comic/"/>
     <updated>2010-11-17T09:00:51+01:00</updated>
-    <id>http://mrzard.github.com/blog/2010/11/17/svn-merge-conflict-fffffffuuuuuuuuuuuu-comic</id>
+    <id>http://mrzard.github.io/blog/2010/11/17/svn-merge-conflict-fffffffuuuuuuuuuuuu-comic</id>
     <content type="html"><![CDATA[<p>I found this comic, it perfectly expresses how painful code merges can be...
 Enjoy! :)</p>
 

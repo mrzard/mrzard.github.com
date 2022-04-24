@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Eclipse | Programming Rambling]]></title>
-  <link href="http://mrzard.github.com/blog/categories/eclipse/atom.xml" rel="self"/>
-  <link href="http://mrzard.github.com/"/>
+  <link href="http://mrzard.github.io/blog/categories/eclipse/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.io/"/>
   <updated>2017-03-02T07:26:17+01:00</updated>
-  <id>http://mrzard.github.com/</id>
+  <id>http://mrzard.github.io/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Getting a grey window in the compare editor with Eclipse Helios (w/PDT)]]></title>
-    <link href="http://mrzard.github.com/blog/2010/11/23/getting-a-grey-window-in-the-compare-editor-w/"/>
+    <link href="http://mrzard.github.io/blog/2010/11/23/getting-a-grey-window-in-the-compare-editor-w/"/>
     <updated>2010-11-23T11:58:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2010/11/23/getting-a-grey-window-in-the-compare-editor-w</id>
+    <id>http://mrzard.github.io/blog/2010/11/23/getting-a-grey-window-in-the-compare-editor-w</id>
     <content type="html"><![CDATA[<p>This is a very annoying bug (it really surprises me it is not already patched
 in the main update site), that makes the compare editor not work.</p>
 

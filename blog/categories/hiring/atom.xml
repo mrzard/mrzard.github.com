@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: hiring | Programming Rambling]]></title>
-  <link href="http://mrzard.github.com/blog/categories/hiring/atom.xml" rel="self"/>
-  <link href="http://mrzard.github.com/"/>
+  <link href="http://mrzard.github.io/blog/categories/hiring/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.io/"/>
   <updated>2017-03-02T07:26:17+01:00</updated>
-  <id>http://mrzard.github.com/</id>
+  <id>http://mrzard.github.io/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Billy is hiring! Middleweight PHP developer needed]]></title>
-    <link href="http://mrzard.github.com/blog/2014/08/20/billy-is-hiring-middleweight-php-developer-needed/"/>
+    <link href="http://mrzard.github.io/blog/2014/08/20/billy-is-hiring-middleweight-php-developer-needed/"/>
     <updated>2014-08-20T10:52:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2014/08/20/billy-is-hiring-middleweight-php-developer-needed</id>
+    <id>http://mrzard.github.io/blog/2014/08/20/billy-is-hiring-middleweight-php-developer-needed</id>
     <content type="html"><![CDATA[<p>As most of you know, since June 2nd I've taken the position of MVAS IT Manager at <a href="http://www.billymob.com">Billy Mobile</a>.</p>
 
 <p>Well, the family is growing, and I need a pair of hands on my side.</p>

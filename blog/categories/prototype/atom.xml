@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: prototype | Programming Rambling]]></title>
-  <link href="http://mrzard.github.com/blog/categories/prototype/atom.xml" rel="self"/>
-  <link href="http://mrzard.github.com/"/>
+  <link href="http://mrzard.github.io/blog/categories/prototype/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.io/"/>
   <updated>2017-03-02T07:26:17+01:00</updated>
-  <id>http://mrzard.github.com/</id>
+  <id>http://mrzard.github.io/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Customize Form Prototype for Collections in Symfony2]]></title>
-    <link href="http://mrzard.github.com/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/"/>
+    <link href="http://mrzard.github.io/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/"/>
     <updated>2013-10-30T15:45:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2</id>
+    <id>http://mrzard.github.io/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2</id>
     <content type="html"><![CDATA[<p>When working with complex forms, sometimes you will be in need of
 creating a collection field type to manage relations. When this is the
 case, you may find yourself in the need of tweaking how the ‘add’ form

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: VirtualBox | Programming Rambling]]></title>
-  <link href="http://mrzard.github.com/blog/categories/virtualbox/atom.xml" rel="self"/>
-  <link href="http://mrzard.github.com/"/>
+  <link href="http://mrzard.github.io/blog/categories/virtualbox/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.io/"/>
   <updated>2017-03-02T07:26:17+01:00</updated>
-  <id>http://mrzard.github.com/</id>
+  <id>http://mrzard.github.io/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Easy VirtualBox setup between Host, Guest and other networks]]></title>
-    <link href="http://mrzard.github.com/blog/2010/09/30/easy-virtualbox-setup-between-host-guest-and/"/>
+    <link href="http://mrzard.github.io/blog/2010/09/30/easy-virtualbox-setup-between-host-guest-and/"/>
     <updated>2010-09-30T09:16:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2010/09/30/easy-virtualbox-setup-between-host-guest-and</id>
+    <id>http://mrzard.github.io/blog/2010/09/30/easy-virtualbox-setup-between-host-guest-and</id>
     <content type="html"><![CDATA[<p>At work, we use <a href="http://www.virtualbox.org/">VirtualBox</a> as our development box. Yesterday due to the
 strike, I worked from home, and as I grew tired of changing network settings
 to make my VirtualBox installation accessible, I gathered some info and found

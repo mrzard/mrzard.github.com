@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Programming | Programming Rambling]]></title>
-  <link href="http://mrzard.github.com/blog/categories/programming/atom.xml" rel="self"/>
-  <link href="http://mrzard.github.com/"/>
+  <link href="http://mrzard.github.io/blog/categories/programming/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.io/"/>
   <updated>2017-03-02T07:26:17+01:00</updated>
-  <id>http://mrzard.github.com/</id>
+  <id>http://mrzard.github.io/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Farewell 2014, Welcome 2015]]></title>
-    <link href="http://mrzard.github.com/blog/2014/12/30/farewell-2014-welcome-2015/"/>
+    <link href="http://mrzard.github.io/blog/2014/12/30/farewell-2014-welcome-2015/"/>
     <updated>2014-12-30T10:52:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2014/12/30/farewell-2014-welcome-2015</id>
+    <id>http://mrzard.github.io/blog/2014/12/30/farewell-2014-welcome-2015</id>
     <content type="html"><![CDATA[<p>So we are closing another year… And I see this is just my fourth post of the year. Pretty bad, but at least is a good starting point, because it’s easy to improve on it.</p>
 
 <p>This will be a long post, so let’s stop it here, and you can proceed to the full wall of text if you feel like it :)</p>
@@ -44,9 +44,9 @@
   
   <entry>
     <title type="html"><![CDATA[MySQL Query to Export Prestashop Data to a Shopify CSV]]></title>
-    <link href="http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/"/>
+    <link href="http://mrzard.github.io/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/"/>
     <updated>2013-02-13T18:19:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv</id>
+    <id>http://mrzard.github.io/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv</id>
     <content type="html"><![CDATA[<p>If you find yourself migrating your shop from Prestashop to Shopify, you can
 use this query. It was written for an old version of Prestashop, but you probably
 won't have much trouble adapting it to newer versions.</p>
@@ -85,9 +85,9 @@ WHERE
   
   <entry>
     <title type="html"><![CDATA[A new take on PHP Object Oriented Programming]]></title>
-    <link href="http://mrzard.github.com/blog/2010/09/24/a-new-take-on-php-object-oriented-programming/"/>
+    <link href="http://mrzard.github.io/blog/2010/09/24/a-new-take-on-php-object-oriented-programming/"/>
     <updated>2010-09-24T17:20:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2010/09/24/a-new-take-on-php-object-oriented-programming</id>
+    <id>http://mrzard.github.io/blog/2010/09/24/a-new-take-on-php-object-oriented-programming</id>
     <content type="html"><![CDATA[<p>I think this is an interesting idea, check it out!</p>
 
 <p><a href="http://dhotson.tumblr.com/post/1167021666/php-object-oriented-programming-reinvented">Antipodean - PHP OO Programming reinvented</a></p>

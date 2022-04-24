@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: tinyMCE | Programming Rambling]]></title>
-  <link href="http://mrzard.github.com/blog/categories/tinymce/atom.xml" rel="self"/>
-  <link href="http://mrzard.github.com/"/>
+  <link href="http://mrzard.github.io/blog/categories/tinymce/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.io/"/>
   <updated>2017-03-02T07:26:17+01:00</updated>
-  <id>http://mrzard.github.com/</id>
+  <id>http://mrzard.github.io/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Dynamically activate tinyMCE on a given textarea.]]></title>
-    <link href="http://mrzard.github.com/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte/"/>
+    <link href="http://mrzard.github.io/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte/"/>
     <updated>2011-05-24T11:05:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte</id>
+    <id>http://mrzard.github.io/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte</id>
     <content type="html"><![CDATA[<p>If you are adding textareas dynamically and wish to enable tinyMCE on them,
 you just have to add this on the javascript function that adds said textarea.</p>
 

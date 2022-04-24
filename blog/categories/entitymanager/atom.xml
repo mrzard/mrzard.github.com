@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: EntityManager | Programming Rambling]]></title>
-  <link href="http://mrzard.github.com/blog/categories/entitymanager/atom.xml" rel="self"/>
-  <link href="http://mrzard.github.com/"/>
+  <link href="http://mrzard.github.io/blog/categories/entitymanager/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.io/"/>
   <updated>2017-03-02T07:26:17+01:00</updated>
-  <id>http://mrzard.github.com/</id>
+  <id>http://mrzard.github.io/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Fluhsing only desired entities with Doctrine]]></title>
-    <link href="http://mrzard.github.com/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/"/>
+    <link href="http://mrzard.github.io/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/"/>
     <updated>2013-10-10T16:45:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2013/10/10/flushing-only-desired-entities-with-doctrine</id>
+    <id>http://mrzard.github.io/blog/2013/10/10/flushing-only-desired-entities-with-doctrine</id>
     <content type="html"><![CDATA[<p>Sometimes, you may be working with several entities at the same time. If
 this entities are managed by Doctrine, you may find yourself in the
 situation where you want to flush only some of them. If you want to do

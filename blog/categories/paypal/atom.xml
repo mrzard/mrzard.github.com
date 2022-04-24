@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: PayPal | Programming Rambling]]></title>
-  <link href="http://mrzard.github.com/blog/categories/paypal/atom.xml" rel="self"/>
-  <link href="http://mrzard.github.com/"/>
+  <link href="http://mrzard.github.io/blog/categories/paypal/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.io/"/>
   <updated>2017-03-02T07:26:17+01:00</updated>
-  <id>http://mrzard.github.com/</id>
+  <id>http://mrzard.github.io/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Setting Shipping Costs For A Whole Third Party Shopping Cart With Paypal]]></title>
-    <link href="http://mrzard.github.com/blog/2010/09/21/setting-shipping-costs-for-a-whole-shopping-t/"/>
+    <link href="http://mrzard.github.io/blog/2010/09/21/setting-shipping-costs-for-a-whole-shopping-t/"/>
     <updated>2010-09-21T16:26:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2010/09/21/setting-shipping-costs-for-a-whole-shopping-t</id>
+    <id>http://mrzard.github.io/blog/2010/09/21/setting-shipping-costs-for-a-whole-shopping-t</id>
     <content type="html"><![CDATA[<p>Today I found that paypal just ignores the 'shipping' parameter when dealing
 with a third party cart.</p>
 
@@ -36,9 +36,9 @@ do the trick. At least if worked for me!</p>
   
   <entry>
     <title type="html"><![CDATA[Nice quick reference for Paypal HTML Variables for Website Payments]]></title>
-    <link href="http://mrzard.github.com/blog/2010/09/14/nice-quick-reference-for-paypal-html-variable/"/>
+    <link href="http://mrzard.github.io/blog/2010/09/14/nice-quick-reference-for-paypal-html-variable/"/>
     <updated>2010-09-14T08:02:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2010/09/14/nice-quick-reference-for-paypal-html-variable</id>
+    <id>http://mrzard.github.io/blog/2010/09/14/nice-quick-reference-for-paypal-html-variable</id>
     <content type="html"><![CDATA[<p>I found this appendix to be a lot clearer than the standard reference guide
 at paypal.</p>
 

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: paymill | Programming Rambling]]></title>
-  <link href="http://mrzard.github.com/blog/categories/paymill/atom.xml" rel="self"/>
-  <link href="http://mrzard.github.com/"/>
+  <link href="http://mrzard.github.io/blog/categories/paymill/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.io/"/>
   <updated>2017-03-02T07:26:17+01:00</updated>
-  <id>http://mrzard.github.com/</id>
+  <id>http://mrzard.github.io/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[My experience with Paymill]]></title>
-    <link href="http://mrzard.github.com/blog/2013/03/26/my-experience-with-paymill/"/>
+    <link href="http://mrzard.github.io/blog/2013/03/26/my-experience-with-paymill/"/>
     <updated>2013-03-26T12:30:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2013/03/26/my-experience-with-paymill</id>
+    <id>http://mrzard.github.io/blog/2013/03/26/my-experience-with-paymill</id>
     <content type="html"><![CDATA[<p>I have been using <a href="https://www.paymill.com">Paymill</a> at work for some time now, and this is what I think of it thus far:</p>
 
 <p>PROS:</p>

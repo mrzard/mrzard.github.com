@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: DealDash | Programming Rambling]]></title>
-  <link href="http://mrzard.github.com/blog/categories/dealdash/atom.xml" rel="self"/>
-  <link href="http://mrzard.github.com/"/>
+  <link href="http://mrzard.github.io/blog/categories/dealdash/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.io/"/>
   <updated>2017-03-02T07:26:17+01:00</updated>
-  <id>http://mrzard.github.com/</id>
+  <id>http://mrzard.github.io/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Becoming a dadveloper]]></title>
-    <link href="http://mrzard.github.com/blog/2017/03/01/becoming-a-dadveloper/"/>
+    <link href="http://mrzard.github.io/blog/2017/03/01/becoming-a-dadveloper/"/>
     <updated>2017-03-01T18:54:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2017/03/01/becoming-a-dadveloper</id>
+    <id>http://mrzard.github.io/blog/2017/03/01/becoming-a-dadveloper</id>
     <content type="html"><![CDATA[<p>So... this is awkward... It's been almost two years without any new content on
 this blog. I will do something useful in this 4 hour flight from Helsinki to
 Barcelona, and I will try to write some things about what has been going on

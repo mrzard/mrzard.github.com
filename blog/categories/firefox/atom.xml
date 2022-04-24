@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: firefox | Programming Rambling]]></title>
-  <link href="http://mrzard.github.com/blog/categories/firefox/atom.xml" rel="self"/>
-  <link href="http://mrzard.github.com/"/>
+  <link href="http://mrzard.github.io/blog/categories/firefox/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.io/"/>
   <updated>2017-03-02T07:26:17+01:00</updated>
-  <id>http://mrzard.github.com/</id>
+  <id>http://mrzard.github.io/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Loading Cross-domain Fonts From Firefox]]></title>
-    <link href="http://mrzard.github.com/blog/2013/03/28/loading-cross-domain-fonts-from-firefox/"/>
+    <link href="http://mrzard.github.io/blog/2013/03/28/loading-cross-domain-fonts-from-firefox/"/>
     <updated>2013-03-28T15:45:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2013/03/28/loading-cross-domain-fonts-from-firefox</id>
+    <id>http://mrzard.github.io/blog/2013/03/28/loading-cross-domain-fonts-from-firefox</id>
     <content type="html"><![CDATA[<p>When requiring a font from an external CSS file (assets domain, CDN,
 etc), you may see that Firefox refuses to display the font. This is
 because Firefox, by default, disables cross-domain fonts. To solve this

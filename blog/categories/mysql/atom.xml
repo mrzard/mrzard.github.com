@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: MySQL | Programming Rambling]]></title>
-  <link href="http://mrzard.github.com/blog/categories/mysql/atom.xml" rel="self"/>
-  <link href="http://mrzard.github.com/"/>
+  <link href="http://mrzard.github.io/blog/categories/mysql/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.io/"/>
   <updated>2017-03-02T07:26:17+01:00</updated>
-  <id>http://mrzard.github.com/</id>
+  <id>http://mrzard.github.io/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[MySQL Query to Export Prestashop Data to a Shopify CSV]]></title>
-    <link href="http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/"/>
+    <link href="http://mrzard.github.io/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/"/>
     <updated>2013-02-13T18:19:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv</id>
+    <id>http://mrzard.github.io/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv</id>
     <content type="html"><![CDATA[<p>If you find yourself migrating your shop from Prestashop to Shopify, you can
 use this query. It was written for an old version of Prestashop, but you probably
 won't have much trouble adapting it to newer versions.</p>
@@ -56,9 +56,9 @@ WHERE
   
   <entry>
     <title type="html"><![CDATA[MySQL, what are you smoking?]]></title>
-    <link href="http://mrzard.github.com/blog/2010/07/27/mysql-what-are-you-smoking/"/>
+    <link href="http://mrzard.github.io/blog/2010/07/27/mysql-what-are-you-smoking/"/>
     <updated>2010-07-27T10:35:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2010/07/27/mysql-what-are-you-smoking</id>
+    <id>http://mrzard.github.io/blog/2010/07/27/mysql-what-are-you-smoking</id>
     <content type="html"><![CDATA[<p>Vía '<a href="http://marksverbiage.blogspot.com/2010/05/mysql-what-are-you-smoking.html">Mark's stream of verbiage</a>' I found this article explaining some weird
 behaviour in MySQL, which may have you scratching your head someday (or already
 has had). It has to do with the 'strictness' of the errors, and how does MySQL

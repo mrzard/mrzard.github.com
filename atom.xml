@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Programming Rambling]]></title>
-  <link href="http://mrzard.github.com/atom.xml" rel="self"/>
-  <link href="http://mrzard.github.com/"/>
+  <link href="http://mrzard.github.io/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.io/"/>
   <updated>2017-03-02T07:26:17+01:00</updated>
-  <id>http://mrzard.github.com/</id>
+  <id>http://mrzard.github.io/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Becoming a dadveloper]]></title>
-    <link href="http://mrzard.github.com/blog/2017/03/01/becoming-a-dadveloper/"/>
+    <link href="http://mrzard.github.io/blog/2017/03/01/becoming-a-dadveloper/"/>
     <updated>2017-03-01T18:54:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2017/03/01/becoming-a-dadveloper</id>
+    <id>http://mrzard.github.io/blog/2017/03/01/becoming-a-dadveloper</id>
     <content type="html"><![CDATA[<p>So&#8230; this is awkward&#8230; It&#8217;s been almost two years without any new content on
 this blog. I will do something useful in this 4 hour flight from Helsinki to
 Barcelona, and I will try to write some things about what has been going on
@@ -113,9 +113,9 @@ accident. And they were again supportive and understanding.</p>
   
   <entry>
     <title type="html"><![CDATA[ElasticSearch: Enable Mlockall in CentOS 7]]></title>
-    <link href="http://mrzard.github.com/blog/2015/03/25/elasticsearch-enable-mlockall-in-centos-7/"/>
+    <link href="http://mrzard.github.io/blog/2015/03/25/elasticsearch-enable-mlockall-in-centos-7/"/>
     <updated>2015-03-25T10:52:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2015/03/25/elasticsearch-enable-mlockall-in-centos-7</id>
+    <id>http://mrzard.github.io/blog/2015/03/25/elasticsearch-enable-mlockall-in-centos-7</id>
     <content type="html"><![CDATA[<p>I have recently been wrestling with ElasticSearch/Elastic and how to finally enable mlockall under CentOS 7. You usually will get the “Unable to lock JVM memory (ENOMEM). This can result in part of the JVM being swapped out. Increase RLIMIT_MEMLOCK (ulimit)`.”</p>
 
 <p>These are all the places I made changes to get it to work. Now, I don’t know if some of these steps are skippable (my guess is some of them are), but I got it working i nthe end, and my nodes are now happily showing `mlockall: true“</p>
@@ -197,9 +197,9 @@ accident. And they were again supportive and understanding.</p>
   
   <entry>
     <title type="html"><![CDATA[Farewell 2014, Welcome 2015]]></title>
-    <link href="http://mrzard.github.com/blog/2014/12/30/farewell-2014-welcome-2015/"/>
+    <link href="http://mrzard.github.io/blog/2014/12/30/farewell-2014-welcome-2015/"/>
     <updated>2014-12-30T10:52:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2014/12/30/farewell-2014-welcome-2015</id>
+    <id>http://mrzard.github.io/blog/2014/12/30/farewell-2014-welcome-2015</id>
     <content type="html"><![CDATA[<p>So we are closing another year… And I see this is just my fourth post of the year. Pretty bad, but at least is a good starting point, because it’s easy to improve on it.</p>
 
 <p>This will be a long post, so let’s stop it here, and you can proceed to the full wall of text if you feel like it :)</p>
@@ -226,9 +226,9 @@ accident. And they were again supportive and understanding.</p>
   
   <entry>
     <title type="html"><![CDATA[Billy is hiring! Middleweight PHP developer needed]]></title>
-    <link href="http://mrzard.github.com/blog/2014/08/20/billy-is-hiring-middleweight-php-developer-needed/"/>
+    <link href="http://mrzard.github.io/blog/2014/08/20/billy-is-hiring-middleweight-php-developer-needed/"/>
     <updated>2014-08-20T10:52:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2014/08/20/billy-is-hiring-middleweight-php-developer-needed</id>
+    <id>http://mrzard.github.io/blog/2014/08/20/billy-is-hiring-middleweight-php-developer-needed</id>
     <content type="html"><![CDATA[<p>As most of you know, since June 2nd I&#8217;ve taken the position of MVAS IT Manager at <a href="http://www.billymob.com">Billy Mobile</a>.</p>
 
 <p>Well, the family is growing, and I need a pair of hands on my side.</p>
@@ -273,9 +273,9 @@ accident. And they were again supportive and understanding.</p>
   
   <entry>
     <title type="html"><![CDATA[What I Have Learnt as a CTO ]]></title>
-    <link href="http://mrzard.github.com/blog/2014/05/06/what-i-have-learnt-as-a-cto/"/>
+    <link href="http://mrzard.github.io/blog/2014/05/06/what-i-have-learnt-as-a-cto/"/>
     <updated>2014-05-06T16:45:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2014/05/06/what-i-have-learnt-as-a-cto</id>
+    <id>http://mrzard.github.io/blog/2014/05/06/what-i-have-learnt-as-a-cto</id>
     <content type="html"><![CDATA[<p>When May comes to and end, I will end my one and a half years journey as
 a CTO for <a href="http://www.chicplace.com">ChicPlace.com</a>.</p>
 
@@ -431,9 +431,9 @@ and drives a wedge between team members.</li>
   
   <entry>
     <title type="html"><![CDATA[Customize Form Prototype for Collections in Symfony2]]></title>
-    <link href="http://mrzard.github.com/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/"/>
+    <link href="http://mrzard.github.io/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2/"/>
     <updated>2013-10-30T15:45:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2</id>
+    <id>http://mrzard.github.io/blog/2013/10/30/customize-form-prototype-for-collections-in-symfony2</id>
     <content type="html"><![CDATA[<p>When working with complex forms, sometimes you will be in need of
 creating a collection field type to manage relations. When this is the
 case, you may find yourself in the need of tweaking how the ‘add’ form
@@ -477,9 +477,9 @@ data-attribute.</p>
   
   <entry>
     <title type="html"><![CDATA[Fluhsing only desired entities with Doctrine]]></title>
-    <link href="http://mrzard.github.com/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/"/>
+    <link href="http://mrzard.github.io/blog/2013/10/10/flushing-only-desired-entities-with-doctrine/"/>
     <updated>2013-10-10T16:45:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2013/10/10/flushing-only-desired-entities-with-doctrine</id>
+    <id>http://mrzard.github.io/blog/2013/10/10/flushing-only-desired-entities-with-doctrine</id>
     <content type="html"><![CDATA[<p>Sometimes, you may be working with several entities at the same time. If
 this entities are managed by Doctrine, you may find yourself in the
 situation where you want to flush only some of them. If you want to do
@@ -492,9 +492,9 @@ the entities you explicitly pass to the function.</p>
   
   <entry>
     <title type="html"><![CDATA[Loading Cross-domain Fonts From Firefox]]></title>
-    <link href="http://mrzard.github.com/blog/2013/03/28/loading-cross-domain-fonts-from-firefox/"/>
+    <link href="http://mrzard.github.io/blog/2013/03/28/loading-cross-domain-fonts-from-firefox/"/>
     <updated>2013-03-28T15:45:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2013/03/28/loading-cross-domain-fonts-from-firefox</id>
+    <id>http://mrzard.github.io/blog/2013/03/28/loading-cross-domain-fonts-from-firefox</id>
     <content type="html"><![CDATA[<p>When requiring a font from an external CSS file (assets domain, CDN,
 etc), you may see that Firefox refuses to display the font. This is
 because Firefox, by default, disables cross-domain fonts. To solve this
@@ -520,9 +520,9 @@ Firefox.</p>
   
   <entry>
     <title type="html"><![CDATA[My experience with Paymill]]></title>
-    <link href="http://mrzard.github.com/blog/2013/03/26/my-experience-with-paymill/"/>
+    <link href="http://mrzard.github.io/blog/2013/03/26/my-experience-with-paymill/"/>
     <updated>2013-03-26T12:30:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2013/03/26/my-experience-with-paymill</id>
+    <id>http://mrzard.github.io/blog/2013/03/26/my-experience-with-paymill</id>
     <content type="html"><![CDATA[<p>I have been using <a href="https://www.paymill.com">Paymill</a> at work for some time now, and this is what I think of it thus far:</p>
 
 <p>PROS:</p>
@@ -567,9 +567,9 @@ Firefox.</p>
   
   <entry>
     <title type="html"><![CDATA[MrZarD, now on Octopress on GitHub Pages]]></title>
-    <link href="http://mrzard.github.com/blog/2013/03/25/mrzard-now-octopress-github-pages/"/>
+    <link href="http://mrzard.github.io/blog/2013/03/25/mrzard-now-octopress-github-pages/"/>
     <updated>2013-03-25T15:45:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2013/03/25/mrzard-now-octopress-github-pages</id>
+    <id>http://mrzard.github.io/blog/2013/03/25/mrzard-now-octopress-github-pages</id>
     <content type="html"><![CDATA[<p>Due to <a href="http://www.posterous.com/">Posterous</a> closing soon I had to look for another place to host my (seldomly updated) blog. After 10 minutes, I saw GitHub Pages and then saw <a href="http://octopress.org/">Octopress</a>. The combination of both is awesome and really feels great for a developer instead of a classic web interface.</p>
 
 <p>So, now you can find me here, at GitHub. Same content, same guy, same few updates!</p>
@@ -578,9 +578,9 @@ Firefox.</p>
   
   <entry>
     <title type="html"><![CDATA[MySQL Query to Export Prestashop Data to a Shopify CSV]]></title>
-    <link href="http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/"/>
+    <link href="http://mrzard.github.io/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv/"/>
     <updated>2013-02-13T18:19:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv</id>
+    <id>http://mrzard.github.io/blog/2013/02/13/export-prestashop-data-to-a-shopify-csv</id>
     <content type="html"><![CDATA[<p>If you find yourself migrating your shop from Prestashop to Shopify, you can
 use this query. It was written for an old version of Prestashop, but you probably
 won&#8217;t have much trouble adapting it to newer versions.</p>
@@ -619,9 +619,9 @@ WHERE
   
   <entry>
     <title type="html"><![CDATA[Generate CSRF token programatically in Symfony 2]]></title>
-    <link href="http://mrzard.github.com/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/"/>
+    <link href="http://mrzard.github.io/blog/2012/08/08/generate-csrf-token-programatically-in-symfon/"/>
     <updated>2012-08-08T16:28:29+02:00</updated>
-    <id>http://mrzard.github.com/blog/2012/08/08/generate-csrf-token-programatically-in-symfon</id>
+    <id>http://mrzard.github.io/blog/2012/08/08/generate-csrf-token-programatically-in-symfon</id>
     <content type="html"><![CDATA[<p>If you find yourself in the need of generating a CSRF token for a &#8216;built&#8217; Request
 or something in that fashion, you can do it rather easily:</p>
 
@@ -642,9 +642,9 @@ for the correct intention if you are using that option.</p>
   
   <entry>
     <title type="html"><![CDATA[Release cycles and policies, deploying code thoughts.]]></title>
-    <link href="http://mrzard.github.com/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/"/>
+    <link href="http://mrzard.github.io/blog/2012/02/15/release-cycles-and-policies-deploying-code-th/"/>
     <updated>2012-02-15T21:17:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2012/02/15/release-cycles-and-policies-deploying-code-th</id>
+    <id>http://mrzard.github.io/blog/2012/02/15/release-cycles-and-policies-deploying-code-th</id>
     <content type="html"><![CDATA[<p>In my programming experience I have worked with different ways of handling
 releases. From the old easy FTP access to other cool stuff like <a href="">phing</a>.</p>
 
@@ -688,9 +688,9 @@ can wait until the next release.</p>
   
   <entry>
     <title type="html"><![CDATA[Common recruiting errors made by companies.]]></title>
-    <link href="http://mrzard.github.com/blog/2011/12/14/common-recruiting-errors-made-by-companies/"/>
+    <link href="http://mrzard.github.io/blog/2011/12/14/common-recruiting-errors-made-by-companies/"/>
     <updated>2011-12-14T10:26:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2011/12/14/common-recruiting-errors-made-by-companies</id>
+    <id>http://mrzard.github.io/blog/2011/12/14/common-recruiting-errors-made-by-companies</id>
     <content type="html"><![CDATA[<p>Lately I&#8217;ve seen a lot of posts about errors candidates make in interviews.
 Now I am going to write a list of error employers make when looking for candidates.</p>
 
@@ -739,9 +739,9 @@ and expand this list :D</p>
   
   <entry>
     <title type="html"><![CDATA[Generate a valid Google Premier signature in PHP]]></title>
-    <link href="http://mrzard.github.com/blog/2011/12/12/generate-a-valid-google-premier-signature-in/"/>
+    <link href="http://mrzard.github.io/blog/2011/12/12/generate-a-valid-google-premier-signature-in/"/>
     <updated>2011-12-12T11:23:00+01:00</updated>
-    <id>http://mrzard.github.com/blog/2011/12/12/generate-a-valid-google-premier-signature-in</id>
+    <id>http://mrzard.github.io/blog/2011/12/12/generate-a-valid-google-premier-signature-in</id>
     <content type="html"><![CDATA[<p>Google Premier requires for you to generate a signature over the URL you&#8217;re
 going to ask for, then send that signature alongside the request. Here is how
 to do it, as there is no PHP example in the <a href="http://code.google.com/intl/es-ES/apis/maps/documentation/webservices/#URLSigning">Google Premier URL Signature documentation</a></p>
@@ -788,9 +788,9 @@ request.</p>
   
   <entry>
     <title type="html"><![CDATA[PHP namespaces simple explanation]]></title>
-    <link href="http://mrzard.github.com/blog/2011/10/25/php-namespaces-simple-explanation/"/>
+    <link href="http://mrzard.github.io/blog/2011/10/25/php-namespaces-simple-explanation/"/>
     <updated>2011-10-25T11:58:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2011/10/25/php-namespaces-simple-explanation</id>
+    <id>http://mrzard.github.io/blog/2011/10/25/php-namespaces-simple-explanation</id>
     <content type="html"><![CDATA[<p>This is one of the most clear and comprehensible articles on namespaces I have
 ever seen. If you&#8217;re having trouble understanding the logic behind them or
 how to use them, please do take a look at it:</p>
@@ -801,9 +801,9 @@ how to use them, please do take a look at it:</p>
   
   <entry>
     <title type="html"><![CDATA[Ubuntu: Window borders & toolbars gone.]]></title>
-    <link href="http://mrzard.github.com/blog/2011/09/26/ubuntu-window-borders-toolbars-gone/"/>
+    <link href="http://mrzard.github.io/blog/2011/09/26/ubuntu-window-borders-toolbars-gone/"/>
     <updated>2011-09-26T09:01:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2011/09/26/ubuntu-window-borders-toolbars-gone</id>
+    <id>http://mrzard.github.io/blog/2011/09/26/ubuntu-window-borders-toolbars-gone</id>
     <content type="html"><![CDATA[<p>If you happen to run into this problem (you cannot resize your windows and
 have no access to window toolbars) in Ubuntu, the solution is pretty simple.
 Just run &#8220;gtk-window-decorator&#8221; (no quotes) from a terminal (or from ALT-F2)
@@ -817,9 +817,9 @@ and you&#8217;re redy to go.</p>
   
   <entry>
     <title type="html"><![CDATA[Dynamically activate tinyMCE on a given textarea.]]></title>
-    <link href="http://mrzard.github.com/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte/"/>
+    <link href="http://mrzard.github.io/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte/"/>
     <updated>2011-05-24T11:05:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte</id>
+    <id>http://mrzard.github.io/blog/2011/05/24/dynamically-activate-tinymce-on-a-given-texte</id>
     <content type="html"><![CDATA[<p>If you are adding textareas dynamically and wish to enable tinyMCE on them,
 you just have to add this on the javascript function that adds said textarea.</p>
 
@@ -833,9 +833,9 @@ you just have to add this on the javascript function that adds said textarea.</p
   
   <entry>
     <title type="html"><![CDATA[Memcache vs Memcached (PHP): A simple explanation]]></title>
-    <link href="http://mrzard.github.com/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio/"/>
+    <link href="http://mrzard.github.io/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio/"/>
     <updated>2011-05-06T09:19:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio</id>
+    <id>http://mrzard.github.io/blog/2011/05/06/memcache-vs-memcached-php-a-simple-explanatio</id>
     <content type="html"><![CDATA[<p>In a nutshell:</p>
 
 <p>memcache is older, less mantained.</p>
@@ -855,9 +855,9 @@ it seems it is more configurable and has more options.</p>
   
   <entry>
     <title type="html"><![CDATA[Drag and drop interaction made easy with jQuery (and jQuery UI)]]></title>
-    <link href="http://mrzard.github.com/blog/2011/04/12/drag-and-drop-interaction-made-easy-with-jque/"/>
+    <link href="http://mrzard.github.io/blog/2011/04/12/drag-and-drop-interaction-made-easy-with-jque/"/>
     <updated>2011-04-12T10:18:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2011/04/12/drag-and-drop-interaction-made-easy-with-jque</id>
+    <id>http://mrzard.github.io/blog/2011/04/12/drag-and-drop-interaction-made-easy-with-jque</id>
     <content type="html"><![CDATA[<p>Last week at work I had to make a drag-and-drop configurable homepage, where
 individual news items had to had the ability to be moved and arranged in a
 grid which represented the available placeholders on the homepage.</p>

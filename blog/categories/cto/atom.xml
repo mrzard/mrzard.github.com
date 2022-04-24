@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: CTO | Programming Rambling]]></title>
-  <link href="http://mrzard.github.com/blog/categories/cto/atom.xml" rel="self"/>
-  <link href="http://mrzard.github.com/"/>
+  <link href="http://mrzard.github.io/blog/categories/cto/atom.xml" rel="self"/>
+  <link href="http://mrzard.github.io/"/>
   <updated>2017-03-02T07:26:17+01:00</updated>
-  <id>http://mrzard.github.com/</id>
+  <id>http://mrzard.github.io/</id>
   <author>
     <name><![CDATA[Gonzalo Míguez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[What I Have Learnt as a CTO ]]></title>
-    <link href="http://mrzard.github.com/blog/2014/05/06/what-i-have-learnt-as-a-cto/"/>
+    <link href="http://mrzard.github.io/blog/2014/05/06/what-i-have-learnt-as-a-cto/"/>
     <updated>2014-05-06T16:45:00+02:00</updated>
-    <id>http://mrzard.github.com/blog/2014/05/06/what-i-have-learnt-as-a-cto</id>
+    <id>http://mrzard.github.io/blog/2014/05/06/what-i-have-learnt-as-a-cto</id>
     <content type="html"><![CDATA[<p>When May comes to and end, I will end my one and a half years journey as
 a CTO for <a href="http://www.chicplace.com">ChicPlace.com</a>.</p>
 
